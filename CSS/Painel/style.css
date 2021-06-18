@@ -1,0 +1,43 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body{
+    font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;
+    display: flex;
+}
+
+#borda{
+    display: flex;
+    background-image: linear-gradient(to right, #404040 ,#1a1a1a);
+    width: 15px;
+    height: 100vh;
+}
+#painelL{
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: #404040;
+}
+#lateral{
+    margin: 0;
+    border:0;
+    height: 100vh;
+}
+.links{
+    display: flex;
+    color: white;
+}
+.linked{
+
+    margin: 20px;
+    justify-content: space-between;
+    list-style: none;
+}
+.linked:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.icons{
+    width: 15px;
+}
