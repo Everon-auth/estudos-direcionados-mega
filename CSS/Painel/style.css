@@ -1,3 +1,4 @@
+/* Corpo do documento */
 html, body{
     margin: 0;
     padding: 0;
@@ -6,38 +7,63 @@ html, body{
 body{
     font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;
     display: flex;
+    flex-direction: column;
 }
 
+/* Painel Lateral*/
 #borda{
-    display: flex;
     background-image: linear-gradient(to right, #404040 ,#1a1a1a);
-    width: 15px;
-    height: 100vh;
+    width: 20px;
 }
-#painelL{
-    flex-direction: row;
-    justify-content: flex-end;
+aside{
+    color: white;
+    width: 15%;
+    min-width: 200px;
     background-color: #404040;
-}
-#lateral{
-    margin: 0;
-    border:0;
-    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 .links{
     display: flex;
-    color: white;
+    flex-direction: column;
 }
-.linked{
 
-    margin: 20px;
-    justify-content: space-between;
-    list-style: none;
-}
-.linked:hover{
-    cursor: pointer;
-    text-decoration: underline;
-}
 .icons{
     width: 15px;
+}
+.linked{
+    margin-top: 20px;
+    display: flex;
+    list-style: none;
+    cursor: pointer;
+}
+.linked:hover{
+    text-decoration: underline;
+
+}
+/* Painel Superior*/
+header{
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(39, 0, 113);
+    width: 100%;
+    height: 200px;
+}
+#bordaS{
+    display: flex;
+    width: 100%;
+    height: 15px;
+    background-image: linear-gradient(to bottom, rgb(39, 0, 113), rgb(33, 1, 94))
+}
+
+
+/* Rodapé da página */
+/*
+footer{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: yellow;
 }
