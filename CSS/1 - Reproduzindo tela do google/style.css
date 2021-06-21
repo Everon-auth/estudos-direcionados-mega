@@ -162,3 +162,17 @@ a:hover{
 a:visited{
     color: black;
 }
+@media only screen and (max-width:600px){
+#search{
+    width: 90%;
+}
+#atalhos{
+    display: none;
+}
+#m{
+    transform: translateX(-30px);
+}
+#l{
+    transform: translateX(30px);
+}
+}
