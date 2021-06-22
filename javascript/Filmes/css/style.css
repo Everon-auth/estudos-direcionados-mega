@@ -1,0 +1,43 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: row;
+}
+
+/* Menu lateral */
+aside, main{
+    display: flex;
+    flex-direction: column;
+}
+aside{
+    align-items: center;
+    width:15vw;
+    height:100%;
+    min-width:200px;
+    background-color: ;
+}
+aside button{
+width: 15vw;
+min-width: 200px;
+box-sizing: border-box;
+
+border-width: 0px 0px 2px 0px;
+border-bottom-color: yellow;
+}
+aside button:hover{
+    border-bottom-color: red;
+}
+aside button:focus{
+    border-bottom-color: blue;
+}
+/* Conteúdo principal */
+main{
+    width:80vw;
+    height:100%;
+    background-color: ;
+
+}
