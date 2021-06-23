@@ -13,6 +13,7 @@ Conteúdo principal:
 -Lista de filmes.
 -Adicionar filme.
 -Checkbox de remoção.
+-Viauzização de informações.
 
 
 Informações necessárias dos filmes:
