@@ -75,7 +75,7 @@ justify-content: flex-end;
 align-items: center;
 align-content: center;
 }
-main span span{
+#add{
     border-width: 2px;
     border-color: rgb(255, 56, 21);
     border-style: solid;
@@ -90,10 +90,10 @@ main span span{
     padding: 5px;
     color: white;
 }
-main span span::before{
+#add::before{
 content: "+";
 }
-main span span:hover{
+#add:hover{
     transition: 0.5s;
     background-color: whitesmoke;
     color: gray;
@@ -103,39 +103,39 @@ section,div span{
     flex-direction: column;
     align-items: center;
 }
-section input{
-    border-width: 0px 0px 1px 0px;
-    width: 200px;
-    border-style: solid;
-}
-#closeadd{
-    font-size: 22px;    
-    background-color: none;
-    font-weight: bolder;
-    border:none;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    width: 35px;
-    height: 35px;
-}
+
 #closeadd:hover{
     background-color:red;
 }
-section div{
-    border-style: solid;
-    border-width: 1px;
-    border-color: tomato;
-    box-sizing: border-box;
-    padding: 20px;
-}
-#send{
-    margin-top: 10px;
-    border-radius: 7px;
-    background-color: greenyellow;
-    box-sizing: border-box;
-    padding: 10px;
-}
+
 #send:hover{
     background-color: green;
+}
+.lista{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.separacao{
+    width: 2px;
+    height: 100%;
+    background-color: gray;
+    opacity: 50%;
+
+}
+.check{
+    margin: 0;
+
+}
+.labels{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+hr{
+    width: 99%;
+}
+.inpform{
+    border-width: 0px 0px 1px 0px;
+    width: 200px;
+    border-style: solid;
 }
