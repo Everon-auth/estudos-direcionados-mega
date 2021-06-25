@@ -18,7 +18,20 @@ function menuadd(){
 }
 
 function vizualizer(){
-
+    /* Botão de excluir mais de um item */
+    excluiritens.style.borderWidth="2px"
+    excluiritens.style.borderColor="rgb(255,56,21)"
+    excluiritens.style.borderStyle="solid"
+    excluiritens.style.margin="40px"
+    excluiritens.style.display="none"
+    excluiritens.style.justifyContent="center"
+    excluiritens.style.alignItems="center"
+    excluiritens.style.fontSize="40px"
+    excluiritens.style.width="50px"
+    excluiritens.style.height="40px"
+    excluiritens.style.backgroundColor="tomato"
+    excluiritens.style.padding="5px"
+    excluiritens.style.color="white"
 }
 function list(){
 }
@@ -64,5 +77,6 @@ function menuaddestiliza(){
     adicionar.style.borderColor="tomato"
     adicionar.style.boxSizing="border-box"
     adicionar.style.padding="20px"
+
 
 }

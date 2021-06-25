@@ -1,4 +1,3 @@
-
 /* Salva os dados no localstorage no formato JSON */
 function savedb(){
     var filme = document.getElementById("filme").value
@@ -6,53 +5,47 @@ function savedb(){
     var gen = document.getElementById("gen").value
     var dur = document.getElementById("dur").value
     var osc = document.getElementById("osc").value
+    
+    var dado = JSON.parse(localStorage.getItem("filmes"));
 
-    let dados = new Array()
+    dado.push({
+        "filme": filme,
+        "ano":year,
+        "genero":gen,
+        "duração":dur,
+        "oscar":osc
+    })
 
-    dados = (
-        '{"Info":['+
-        '{"nome":"'+filme+'", "ano":"'+year+'",'+
-        ' "genero" : "'+gen+'", "duracao": "'+dur+'",'+
-        ' "oscar" :"'+osc+'"}]}')
-
-        var id = localStorage.length
-        id++
-        console.log(id)
+    dado = JSON.stringify(dado)
 
 
-    localStorage.setItem(id,dados)
+    localStorage.setItem("filmes",dado)
 }
 
 /* Recupera os dados do localstorage para manipular */
 function getdb(){
-    let bdl = localStorage.getItem(0)
-    console.log(bdl)
-    let basedadoslocal = localStorage
 
-    for (let i = 1; i < basedadoslocal.length+1; i++) {
-        //percorre os dados do localstorage
+    var dado = JSON.parse(localStorage.getItem("filmes"));
+    var database = Object.values(dado)
 
 
-        const aaa = basedadoslocal[i];
-        //converte o JSON em objeto
-        var prontosdados = JSON.parse(aaa)
-        //Acessa a array principal
-        var info = prontosdados["Info"]
-        //Coleta os dado da array (usar essa para puxar as informações)
-        var dadosfilmes = info[0]
+    for (let i = 0; i < database.length; i++) {
+        var aaa = database[i]
 
-        // Criar elementos
  
         //span
         var span = document.createElement("span")
         section.appendChild(span).setAttribute("class", "lista")
-        var spanclass = document.getElementsByClassName("lista")[i-1]
+        var spanclass = document.getElementsByClassName("lista")[i]
+
+        
         spanclass.style.justifyContent="flex-start"
+
 
         // checkbox
         var input = document.createElement("INPUT")
         spanclass.appendChild(input).setAttribute("class", "checkbox")
-        var checkbox = document.getElementsByClassName("checkbox")[i-1]
+        var checkbox = document.getElementsByClassName("checkbox")[i]
         checkbox.setAttribute("id", "ch"+i)
         checkbox.setAttribute("type","checkbox")
         checkbox.style.width="100px"
@@ -64,7 +57,7 @@ function getdb(){
         //label
         var label = document.createElement("LABEL")
         spanclass.appendChild(label).setAttribute("class","labels")
-        var labels = document.getElementsByClassName("labels")[i-1]
+        var labels = document.getElementsByClassName("labels")[i]
         labels.innerText="Nome do filme:"
         labels.style.width="200px"
 
@@ -72,7 +65,7 @@ function getdb(){
         var output = document.createElement("OUTPUT")
         spanclass.appendChild(output).setAttribute("class", 'ou'+i)
         var outputs = document.getElementsByClassName("ou"+i)[0]
-        outputs.value = dadosfilmes["nome"]
+        outputs.value = aaa["filme"]
 
         //vizualizar
         var createspan = document.createElement("SPAN")
@@ -110,6 +103,9 @@ function getdb(){
         //hr
         var hr = document.createElement("HR")
         section.appendChild(hr)
+       
+           
+
     }
 }
 

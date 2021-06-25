@@ -139,3 +139,12 @@ hr{
     width: 200px;
     border-style: solid;
 }
+
+#remove:hover{
+    transition: 0.5s;
+    background-color: whitesmoke;
+    color: gray;
+}
+#remove::before{
+    content: "X";
+}
