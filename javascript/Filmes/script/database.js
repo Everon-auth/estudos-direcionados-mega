@@ -7,19 +7,31 @@ function savedb(){
     var osc = document.getElementById("osc").value
     
     var dado = JSON.parse(localStorage.getItem("filmes"));
+    
+    if(dado == null){
+        dado = [{
+            "filme": filme,
+            "ano":year,
+            "genero":gen,
+            "duração":dur,
+            "oscar":osc
+        }]
 
-    dado.push({
-        "filme": filme,
-        "ano":year,
-        "genero":gen,
-        "duração":dur,
-        "oscar":osc
-    })
+    }else{
+        dado.push({
+            "filme":filme,
+            "ano":year,
+            "genero":gen,
+            "duração":dur,
+            "oscar":osc
+        })
+
+    }
 
     dado = JSON.stringify(dado)
-
-
     localStorage.setItem("filmes",dado)
+
+
 }
 
 /* Recupera os dados do localstorage para manipular */
@@ -107,8 +119,4 @@ function getdb(){
            
 
     }
-}
-
-function exclude(){
-
 }

@@ -68,38 +68,50 @@ filmes.addEventListener("click", function(){
 
         excl.addEventListener("click", function(){
 
-            /* Evento de click exclusão única */
+
+            let filter = database.splice(a,1)
+
+            console.log(database)
+
+            dado = JSON.stringify(database)
+            localStorage.setItem("filmes", dado)
 
 
         })
         
     }
 
-    for (let d = database.length; d == 1; d--) {
+    for (let d = database.length; d == 1; d++) {
         /* Evento de clique de abrir a vizualização */
-        var vizualizar = document.getElementById("vi"+d)
+/*        var vizualizar = document.getElementById("vi"+d)
         
         vizualizar.addEventListener("click", function(){
         section.innerHTML=""
 
         
 
-    })
+    })*/
     }
     eliminar.addEventListener("click",function(){
     
         var dado = JSON.parse(localStorage.getItem("filmes"));
         var database = Object.values(dado)
         
-        for (let d = 0; d < database.length; d++) {
-            
-            var checkbox = document.getElementById("ch"+d)
+        for (let d = 0 ; d < database.length; d++) {
 
+            
+            var checkbox = document.getElementsByTagName("input")[d]
             if(checkbox.checked == true){
-                for (let e = 0; e < database.length; e++) {
-                    const element = array[e];
-                    
-                }
+
+
+                console.log("entrando!!")
+                let filter = database.splice(d,1)
+
+                console.log(filter)
+
+                dado = JSON.stringify(database)
+                localStorage.setItem("filmes", dado)
+
             }
             
         }
