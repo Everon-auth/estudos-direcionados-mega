@@ -44,7 +44,7 @@ function getdb(){
     for (let i = 0; i < database.length; i++) {
         var aaa = database[i]
 
- 
+        section.style.alignItems="flex-start"
         //span
         var span = document.createElement("span")
         section.appendChild(span).setAttribute("class", "lista")
@@ -78,6 +78,7 @@ function getdb(){
         spanclass.appendChild(output).setAttribute("class", 'ou'+i)
         var outputs = document.getElementsByClassName("ou"+i)[0]
         outputs.value = aaa["filme"]
+        outputs.style.width="60%"
 
         //vizualizar
         var createspan = document.createElement("SPAN")
@@ -90,7 +91,7 @@ function getdb(){
         var views = document.getElementById("vi"+i)
         views.setAttribute("src", "assets/eye.png")
         views.style.width="30px"
-        views.style.marginRight="20px"
+        views.style.marginRight="40px"
         views.style.cursor="pointer"
 
         //editar
@@ -99,7 +100,7 @@ function getdb(){
         var edits = document.getElementById("ed"+i)
         edits.setAttribute("src","assets/editing.png")
         edits.style.width="30px"
-        edits.style.marginRight="20px"
+        edits.style.marginRight="40px"
         edits.style.cursor="pointer"
 
         //excluir
@@ -108,7 +109,7 @@ function getdb(){
         var excluir = document.getElementById(i)
         excluir.setAttribute("src", "assets/bin.png")
         excluir.style.width="25px"
-        excluir.style.marginRight="20px"
+        excluir.style.marginRight="40px"
         excluir.style.cursor="pointer"
         
         
@@ -117,6 +118,16 @@ function getdb(){
         section.appendChild(hr)
        
            
+
+    }
+}
+
+function viewdata(){
+    var dado = JSON.parse(localStorage.getItem("filmes"));
+    var database = Object.values(dado)
+
+    for (let g = 0; g < database.length; g++) {
+        var counter = database[g];
 
     }
 }

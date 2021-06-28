@@ -77,7 +77,7 @@ section::-webkit-scrollbar-thumb{
     background-color: #0386dd;
     border-radius: 6px;
 }
-main span{
+.spanbtns{
 display: flex;
 width: 100%;
 justify-content: flex-end;
@@ -110,12 +110,13 @@ content: "+";
 section,div span{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 }
 .lista{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    width: 100%;
 }
 .separacao{
     width: 2px;
@@ -174,4 +175,7 @@ hr{
 #closeadd:hover{
     transition: 0.5s;
     background-color: rgb(197, 0, 0);
+}
+.labels{
+    width: 50%;
 }
