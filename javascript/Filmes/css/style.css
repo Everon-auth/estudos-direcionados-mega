@@ -67,6 +67,15 @@ section{
     box-sizing: border-box;
     margin-left: 10vw;
     margin-right: 10vw;
+    overflow: scroll;
+}
+section::-webkit-scrollbar{
+    width: 12px;
+    border: 1px solid rgb(200, 200, 200)
+}
+section::-webkit-scrollbar-thumb{
+    background-color: #0386dd;
+    border-radius: 6px;
 }
 main span{
 display: flex;
@@ -103,14 +112,6 @@ section,div span{
     flex-direction: column;
     align-items: center;
 }
-
-#closeadd:hover{
-    background-color:red;
-}
-
-#send:hover{
-    background-color: green;
-}
 .lista{
     display: flex;
     flex-direction: row;
@@ -136,8 +137,14 @@ hr{
 }
 .inpform{
     border-width: 0px 0px 1px 0px;
-    width: 200px;
+    width: 300px;
     border-style: solid;
+    background-color: transparent;
+}
+.inpform:focus{
+    box-shadow: 0 0 0 0;
+
+    outline: 0;
 }
 
 #remove:hover{
@@ -147,4 +154,24 @@ hr{
 }
 #remove::before{
     content: "X";
+}
+ 
+
+.buttons:hover{
+    transition: 0.5s;
+    background-color: #0386dd;
+}
+#adicionar{
+    border: 1px;
+    border-style: solid;
+    padding: 20px;
+    background-color: #E4EBF1;
+    border-radius: 20px;
+    border: none;
+    box-shadow: #d6d6d6 1px 2px 1px 1px;
+}
+
+#closeadd:hover{
+    transition: 0.5s;
+    background-color: rgb(197, 0, 0);
 }

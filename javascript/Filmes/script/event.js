@@ -8,7 +8,7 @@ excluiritens.style.display="none"
 
 var tela = 0;
 
-section.innerHTML=""
+
 
 add.addEventListener("click", function(){ 
    
@@ -105,12 +105,12 @@ filmes.addEventListener("click", function(){
 
 
                 console.log("entrando!!")
-                let filter = database.splice(d,1)
-
-                console.log(filter)
+                database.splice(d,1)
 
                 dado = JSON.stringify(database)
                 localStorage.setItem("filmes", dado)
+                
+                
 
             }
             
