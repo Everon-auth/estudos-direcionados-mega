@@ -11,20 +11,27 @@ var tela = 0;
 
 
 add.addEventListener("click", function(){ 
-   
+   // se a tela atual for qualquer uma menos a de adiconar executa a seguinte função
    if(tela==0){
+       //Cria o formulário de adicionar
         menuadd()
         var closeadd = document.getElementById("closeadd");
         excluiritens.style.display="none"
     }
+    //Fecha o menu add
     closeadd.addEventListener("click",function(){
         section.innerHTML=''
 
     })
+    //Fecha o menu add
+    document.getElementById("cancel").addEventListener("click",function(){
+        section.innerHTML=""
+    })
     var send = document.getElementById("send")
+    //Evento de enviar os dados 
     send.addEventListener("click", function(){
         
-
+        // Se não houver algum campo vazio, ele envia os dados, se não, marca a borda do campo vazio com vermelho
         if(filme.value!="" && year.value !="" && gen.value!="" && dur.value!="" && osc.value!=""){
         savedb();
         section.innerHTML=""
@@ -53,6 +60,7 @@ add.addEventListener("click", function(){
     }
     })
 })
+//Função de vizualizar os filmes em lista
 filmes.addEventListener("click", function listaview(){
     section.innerHTML=""
     
@@ -63,64 +71,81 @@ filmes.addEventListener("click", function listaview(){
     var dado = JSON.parse(localStorage.getItem("filmes"));
     var database = Object.values(dado)
     eliminar.style.display="flex"
-
+    // laço responsável por excluir um elemento clicando na lixeira
     for (let a = 0; a < database.length; a++) {
         var excl = document.getElementById(a)
-
+        //cria o evento de click
         excl.addEventListener("click", function(){
-
+            //remove o que é para ser excluido
             database.splice(a,1)
+            //Converte
             dado = JSON.stringify(database)
+            //Envia para o db
             localStorage.setItem("filmes", dado)
-
+            //recarrega a vizualização
             listaview()
 
         })
         
     }
 
-
+    //Laço responsável pela vizualização dos filmes
     for (let g = 0; g < database.length; g++) {
+        //recupera o elemento pelo ID
         const viewer = document.getElementById("vi"+g)
+
+        //cria o Evento de click
         viewer.addEventListener("click", function(){
+
         var view = database[g]
+        //chama a função de criar os elementos e exibir os seus valores
         filmview(view, g)
+            //armazena o elemento do botão de voltar
         let back = document.getElementById("back")      
+        //Evento click de voltar
         back.addEventListener("click", function(){
+            
+            //chama a função de exibição por lista
             listaview()
         })
         })
         
     }
-
+    
+    //Eliminar mais de um por vez
     eliminar.addEventListener("click",function(){
     
+        //recupera os dados para sí
         var dado = JSON.parse(localStorage.getItem("filmes"));
+        //Converte
         var database = Object.values(dado)
-        
+        // Laço responsável por vizualizar quais checkbox foram marcadas
         for (let d =  database.length-1; d >=0 ; d--) {
 
-            
+            //armazena o valor de armazenamento dos checkbox
             var checkbox = document.getElementsByTagName("input")[d]
+            //se o checkbox estiver marcado, exclui e faz a atualização no banco de dados
             if(checkbox.checked == true){
-
-
+                // separa o dado a ser excluido
                 database.splice(d,1)
+                //converte
                 dado = JSON.stringify(database)
+                //Envia para o DB
                 localStorage.setItem("filmes", dado)
-                
             }
             
         }
+        //chama a função de vizualizar em lista
         listaview()
     
     })
+    // Laço responsável pela edição
     for (let x = 0; x < database.length; x++) {
-        
+        // Armazena o valor do elemento
         let edit = document.getElementById("ed"+x)
-        
+        //Inicia o evento de click
         edit.addEventListener("click", function(){
-
+            // recupera os dados
             var dado = JSON.parse(localStorage.getItem("filmes"));
             var database = Object.values(dado)
 
@@ -229,6 +254,14 @@ filmes.addEventListener("click", function listaview(){
             cancela.style.boxShadow="indianred 1px 2px 1px 1px;"
             cancela.style.width="40%"
             cancela.style.height="30px"
+            cancela.style.cursor="pointer"
+            
+            // Evento de cancelar o Envio da alteração
+            cancela.addEventListener("click",function(){
+                listaview()
+            })
+
+
             //botão confirmar
             confirma.innerText="Confirmar"
             confirma.style.marginTop="10px"
@@ -243,6 +276,7 @@ filmes.addEventListener("click", function listaview(){
             confirma.style.border="none"
             confirma.style.boxShadow="steelblue 1px 2px 2px 1px"
             confirma.style.color="white"
+            confirma.style.cursor="pointer"
             //section
             section.style.alignItems="center"
             //caixa de edição
@@ -255,20 +289,44 @@ filmes.addEventListener("click", function listaview(){
             editing.style.width="500px"
             editing.style.borderRadius="7px"
             editing.style.boxShadow="rgb(200,200,200) 1px 2px 1px 1px"
-
-
             
+            //Labels do Editar
+            nome.style.display="flex"
+            nome.style.margin="5px"
+            ano.style.display="flex"
+            ano.style.margin="5px"
+            genero.style.display="flex"
+            genero.style.margin="5px"
+            dur.style.display="flex"
+            dur.style.margin="5px"
+            osc.style.display="flex"
+            osc.style.margin="5px"
 
+            //Inputs do Editar
+            inp.style.borderWidth=" 0px 0px 1px 0px"
+            inp.style.width="60%"
+            Anp.style.borderWidth=" 0px 0px 1px 0px"
+            Anp.style.width="60%"
+            Gnv.style.borderWidth=" 0px 0px 1px 0px"
+            Gnv.style.width="60%"
+            Onv.style.borderWidth=" 0px 0px 1px 0px"
+            Onv.style.width="60%"
+            Dnv.style.borderWidth=" 0px 0px 1px 0px"
+            Dnv.style.width="60%"
 
-
+            // elemento de confirmar a edição
             let confirm = document.getElementById("Confirmar")
-
+            //Evento de confirmar a Edição
             confirm.addEventListener("click", function(){
+
+                // Recupera os valores para serem editados no db
                 let inp = document.getElementById("Fnv").value
                 let Anv = document.getElementById("Anv").value
                 let Gnv = document.getElementById("Gnv").value
                 let Dnv = document.getElementById("Dnv").value
                 let Onv = document.getElementById("Onv").value
+                
+                // Armazena os dados no local correto
                 dado[x] = {
                     "filme": inp,
                     "ano":Anv,
@@ -276,8 +334,11 @@ filmes.addEventListener("click", function listaview(){
                     "duração":Dnv,
                     "oscar":Onv
                 }
+                // converte
                 dado = JSON.stringify(dado)
+                //envia
                 localStorage.setItem("filmes",dado)
+                //Chama a função de exibir em lista
                 listaview()
             })
 

@@ -7,7 +7,7 @@ function savedb(){
     var osc = document.getElementById("osc").value
     
     var dado = JSON.parse(localStorage.getItem("filmes"));
-    
+        //se não houver nenhum dado, ele cria e adiciona os valores dos inputs
     if(dado == null){
         dado = [{
             "filme": filme,
@@ -16,7 +16,7 @@ function savedb(){
             "duração":dur,
             "oscar":osc
         }]
-
+        //se não, adiciona os dados depois da ultima
     }else{
         dado.push({
             "filme":filme,
@@ -27,7 +27,7 @@ function savedb(){
         })
 
     }
-
+    //envia os dados
     dado = JSON.stringify(dado)
     localStorage.setItem("filmes",dado)
 
@@ -40,7 +40,7 @@ function getdb(){
     var dado = JSON.parse(localStorage.getItem("filmes"));
     var database = Object.values(dado)
 
-
+        //cria os elementos de vizualização de lista curta
     for (let i = 0; i < database.length; i++) {
         var aaa = database[i]
 
@@ -118,16 +118,6 @@ function getdb(){
         section.appendChild(hr)
        
            
-
-    }
-}
-
-function viewdata(){
-    var dado = JSON.parse(localStorage.getItem("filmes"));
-    var database = Object.values(dado)
-
-    for (let g = 0; g < database.length; g++) {
-        var counter = database[g];
 
     }
 }

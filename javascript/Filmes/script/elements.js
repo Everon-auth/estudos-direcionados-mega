@@ -54,18 +54,18 @@ function filmview(view){
     spanback.style.display="flex"
     spanback.style.flexDirection="row"
     spanback.style.alignItems="flex-start"
-        back.innerText="Voltar"
-        back.style.borderRadius="4px"
-        back.style.backgroundColor="#009AFF"
-        back.style.boxSizing="border-box"
-        back.style.display="flex"
-        back.style.alignItems="center"
-        back.style.justifyContent="center"
-        back.style.width="60px"
-        back.style.height="30px"
-        back.style.border="none"
-        back.style.boxShadow="steelblue 1px 2px 2px 1px"
-        back.style.color="white"
+    back.innerText="Voltar"
+    back.style.borderRadius="4px"
+    back.style.backgroundColor="#009AFF"
+    back.style.boxSizing="border-box"
+    back.style.display="flex"
+    back.style.alignItems="center"
+    back.style.justifyContent="center"
+    back.style.width="60px"
+    back.style.height="30px"
+    back.style.border="none"
+    back.style.boxShadow="steelblue 1px 2px 2px 1px"
+    back.style.color="white"
 
 
 
@@ -232,4 +232,5 @@ function menuaddestiliza(){
     btnsadd.style.display="flex"
     btnsadd.style.flexDirection="row"
     btnsadd.style.justifyContent="space-between"
+    
 }
