@@ -67,7 +67,7 @@ section{
     box-sizing: border-box;
     margin-left: 10vw;
     margin-right: 10vw;
-    overflow: scroll;
+     
 }
 section::-webkit-scrollbar{
     width: 12px;
