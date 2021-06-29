@@ -8,62 +8,10 @@ excluiritens.style.display="none"
 
 var tela = 0;
 
-
-
-add.addEventListener("click", function(){ 
-   // se a tela atual for qualquer uma menos a de adiconar executa a seguinte função
-   if(tela==0){
-       //Cria o formulário de adicionar
-        menuadd()
-        var closeadd = document.getElementById("closeadd");
-        excluiritens.style.display="none"
-    }
-    //Fecha o menu add
-    closeadd.addEventListener("click",function(){
-        section.innerHTML=''
-
-    })
-    //Fecha o menu add
-    document.getElementById("cancel").addEventListener("click",function(){
-        section.innerHTML=""
-    })
-    var send = document.getElementById("send")
-    //Evento de enviar os dados 
-    send.addEventListener("click", function(){
-        
-        // Se não houver algum campo vazio, ele envia os dados, se não, marca a borda do campo vazio com vermelho
-        if(filme.value!="" && year.value !="" && gen.value!="" && dur.value!="" && osc.value!=""){
-        savedb();
-        section.innerHTML=""
-        
-    }else{
-        if(filme.value == ""){
-
-            filme.style.borderColor="red"
-        }
-        if(year.value == ""){
-            
-            year.style.borderColor="red"
-        }
-        if(gen.value == ""){
-            
-            gen.style.borderColor="red"
-        }
-        if(dur.value == ""){
-            
-            dur.style.borderColor="red"
-        }
-        if(osc.value == ""){
-            
-            osc.style.borderColor="red"
-        }
-    }
-    })
-})
 //Função de vizualizar os filmes em lista
 filmes.addEventListener("click", function listaview(){
     section.innerHTML=""
-    
+    add.style.display="flex"
     getdb()
 
     vizualizer()
@@ -347,4 +295,51 @@ filmes.addEventListener("click", function listaview(){
        
         
     }
+
+    
+
+    // Função de adiconar outro filme na lista
+    add.addEventListener("click", function(){ 
+        // se a tela atual for qualquer uma menos a de adiconar executa a seguinte função
+        if(tela==0){
+            //Cria o formulário de adicionar
+             menuadd()
+             var closeadd = document.getElementById("closeadd");
+             excluiritens.style.display="none"
+         }
+         //Fecha o menu add
+         closeadd.addEventListener("click",function(){
+            listaview()
+     
+         })
+         //Fecha o menu add
+         document.getElementById("cancel").addEventListener("click",function(){
+             listaview()
+         })
+         var send = document.getElementById("send")
+         //Evento de enviar os dados 
+         send.addEventListener("click", function(){
+             
+             // Se não houver algum campo vazio, ele envia os dados, se não, marca a borda do campo vazio com vermelho
+             if(filme.value!="" && year.value !="" && gen.value!="" && dur.value!="" && osc.value!=""){
+             savedb();
+             listaview();
+             let dialog = document.querySelector("#warning")
+             if(dialog != null){
+                dialog.remove()
+             }
+         }else{
+
+            dialog()
+         }
+         })
+     })
+
+
+})
+
+document.querySelector("#btn-home").addEventListener("click", function(){
+    section.innerHTML=""
+    excluiritens.style.display="none"
+    add.style.display="none"
 })

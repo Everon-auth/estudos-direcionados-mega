@@ -1,24 +1,35 @@
 function menuadd(){
     section.innerHTML = '<div id="adicionar"><span id="main"><button id="closeadd">X</button></span><span><label class="labelform">Nome do Filme:</label><input type="text" id="filme" class="inpform"><label class="labelform">Ano:</label><input type="text" id="year" class="inpform"><label class="labelform">Gênero:</label><input type="text" id="gen" class="inpform"><label class="labelform">Duração:</label><input type="text" id="dur" class="inpform"><label class="labelform">Óscar:</label><input type="text" id="osc" class="inpform"><span id="btns"><button id="cancel" class="buttons"> Cancelar</button><button id="send" class="buttons">Salvar</button></span></span></div>'
     section.style.alignItems="center"
+    section.justifyContent="center"
     menuaddestiliza()
 }
 
 function vizualizer(){
     /* Botão de excluir mais de um item */
-    excluiritens.style.borderWidth="2px"
-    excluiritens.style.borderColor="rgb(255,56,21)"
-    excluiritens.style.borderStyle="solid"
-    excluiritens.style.margin="40px"
-    excluiritens.style.display="none"
+    excluiritens.style.marginRight="40px"
+    excluiritens.style.marginBottom="20px"
+    excluiritens.style.display="flex"
+    excluiritens.style.alignContent="center"
     excluiritens.style.justifyContent="center"
     excluiritens.style.alignItems="center"
-    excluiritens.style.fontSize="40px"
-    excluiritens.style.width="50px"
-    excluiritens.style.height="40px"
-    excluiritens.style.backgroundColor="tomato"
-    excluiritens.style.padding="5px"
+    excluiritens.style.fontSize="30px"
+    excluiritens.style.width="60px"
+    excluiritens.style.height="30px"
+    excluiritens.style.backgroundColor="red"
     excluiritens.style.color="white"
+    excluiritens.style.borderRadius="7px"
+    excluiritens.style.boxShadow="#b70000 1px 2px 1px 1px"
+    //se o mouse sair do botão, ele muda de cor
+    excluiritens.addEventListener("mouseout", function(){
+        excluiritens.style.transition="0.5s"
+        excluiritens.style.backgroundColor="red"
+    })
+    //se o mouse entrar no botão, ele muda de cor
+    excluiritens.addEventListener("mouseover", function(){
+        excluiritens.style.transition="0.5s"
+        excluiritens.style.backgroundColor="#b70000"
+    })
 }
 function filmview(view){
 
@@ -165,13 +176,12 @@ function filmview(view){
 function menuaddestiliza(){
     /* Espaço do botao add */ 
     let espaco = document.getElementById("main")
-    
     espaco.style.display="flex"
     espaco.style.alignItems="flex-end"
 
     /* botão de salvar */
-    let btnsend = document.getElementsByClassName("buttons")[1]
-    let btncancel = document.getElementsByClassName("buttons")[0] 
+    let btnsend =document.getElementById("send")
+    let btncancel = document.getElementById("cancel") 
     btnsend.style.marginTop="10px"
     btnsend.style.borderRadius="4px"
     btnsend.style.backgroundColor="#009AFF"
@@ -184,6 +194,17 @@ function menuaddestiliza(){
     btnsend.style.border="none"
     btnsend.style.boxShadow="steelblue 1px 2px 2px 1px"
     btnsend.style.color="white"
+    btnsend.style.cursor="pointer"
+
+    btnsend.addEventListener("mouseover", function(){
+        btnsend.style.transition="0.5s"
+        btnsend.style.backgroundColor="#004777"
+    })
+
+    btnsend.addEventListener("mouseout", function(){
+        btnsend.style.transition="0.5s"
+        btnsend.style.backgroundColor="rgb(0, 154, 255)"
+    })
 
     btncancel.style.marginTop="10px"
     btncancel.style.borderRadius="4px"
@@ -197,8 +218,17 @@ function menuaddestiliza(){
     btncancel.style.border="none"
     btncancel.style.boxShadow="steelblue 1px 2px 2px 1px"
     btncancel.style.color="white"
+    btncancel.style.cursor="pointer"
 
-    //falta o hover
+    btncancel.addEventListener("mouseover", function(){
+        btncancel.style.transition="0.5s"
+        btncancel.style.backgroundColor="#004777"
+    })
+
+    btncancel.addEventListener("mouseout", function(){
+        btncancel.style.transition="0.5s"
+        btncancel.style.backgroundColor="rgb(0, 154, 255)"
+    })
 
     /* Botão de fechar */
     let fechaadd = document.getElementById("closeadd")
@@ -211,21 +241,21 @@ function menuaddestiliza(){
     fechaadd.style.color="white"
     fechaadd.style.borderRadius="4px"
     fechaadd.style.border="none"
-    fechaadd.style.boxShadow="indianred 1px 2px 1px 1px;"
+    fechaadd.style.boxShadow="#9e0000 1px 2px 1px 1px"
     fechaadd.style.width="20%"
     fechaadd.style.height="30px"
-    //falta o hover
+    fechaadd.style.cursor="pointer"
 
-    /* caixa do menu adicionar */
-    
-    let adicionar = document.getElementById("adicionar")
-    
-    adicionar.style.borderStyle="solid"
-    adicionar.style.borderWidth="1px"
-    adicionar.style.borderColor="tomato"
-    adicionar.style.boxSizing="border-box"
-    adicionar.style.padding="20px"
+    fechaadd.addEventListener("mouseover", function(){
+        fechaadd.style.transition="0.5s"
+        fechaadd.style.backgroundColor="#a20000"
+    })
 
+    fechaadd.addEventListener("mouseout", function(){
+        fechaadd.style.transition="0.5s"
+        fechaadd.style.backgroundColor="red"
+    })
+    
     // Caixa do botões
     let btnsadd = document.getElementById("btns")
     btnsadd.style.width="100%"
@@ -233,4 +263,49 @@ function menuaddestiliza(){
     btnsadd.style.flexDirection="row"
     btnsadd.style.justifyContent="space-between"
     
+}
+
+
+function dialog(){
+    //cria o dialog e seta o id dele
+    document.body.appendChild(document.createElement("dialog")).setAttribute("id", "warning")
+    //seletor do elemento
+    var dialog = document.querySelector("#warning")
+    dialog.setAttribute("open", "open")
+    dialog.appendChild(document.createElement("span")).setAttribute("id","aviso")
+
+
+    dialog.appendChild(document.createElement("H1")).setAttribute("id","close")
+    
+    let close = document.querySelector("#close")
+    close.innerText="X"
+    close.style.cursor="pointer"
+    close.style.fontSize="30px"
+    close.style.color="white"
+    close.style.height="100%"
+    close.style.width="50px"
+    close.style.alignItems="center"
+    close.style.display="flex"
+    close.style.justifyContent="center"
+
+    close.addEventListener("click", function(){
+        dialog.remove()
+    })
+
+    dialog.style.marginRight="5px"
+    dialog.style.marginTop="5px"
+    dialog.style.float="right"
+    dialog.style.width="200px"
+    dialog.style.height="60px"
+    dialog.style.border="none"
+    dialog.style.borderRadius="7px"
+    dialog.style.display="flex"
+    dialog.style.alignItems="center"
+    dialog.style.backgroundColor="#da0000"
+    
+    let aviso = document.getElementById("aviso")
+    aviso.innerText="Favor preencher todos os campos"
+    aviso.style.color="white"
+    aviso.style.width="150px"
+
 }

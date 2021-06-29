@@ -49,6 +49,7 @@ function getdb(){
         var span = document.createElement("span")
         section.appendChild(span).setAttribute("class", "lista")
         var spanclass = document.getElementsByClassName("lista")[i]
+        
 
         
         spanclass.style.justifyContent="flex-start"
@@ -61,6 +62,7 @@ function getdb(){
         checkbox.setAttribute("id", "ch"+i)
         checkbox.setAttribute("type","checkbox")
         checkbox.style.width="100px"
+        checkbox.minWidth="50px"
 
         //separação
         var separa = document.createElement("DIV")
@@ -78,14 +80,18 @@ function getdb(){
         spanclass.appendChild(output).setAttribute("class", 'ou'+i)
         var outputs = document.getElementsByClassName("ou"+i)[0]
         outputs.value = aaa["filme"]
-        outputs.style.width="60%"
+        outputs.style.width="100%"
+        outputs.style.whiteSpace="nowrap"
 
         //vizualizar
         var createspan = document.createElement("SPAN")
         spanclass.appendChild(createspan).setAttribute("class", "sp"+i)
         var span2 = document.getElementsByClassName("sp"+i)
 
+
         span2[0].style.justifyContent="flex-end"
+        span2[0].style.display="flex"
+        span2[0].style.minWidth="205px"
         var view = document.createElement("IMG")
         span2[0].appendChild(view).setAttribute("id","vi"+i)
         var views = document.getElementById("vi"+i)
