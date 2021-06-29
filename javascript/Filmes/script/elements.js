@@ -307,5 +307,10 @@ function dialog(){
     aviso.innerText="Favor preencher todos os campos"
     aviso.style.color="white"
     aviso.style.width="150px"
-
+}
+function dialogview(){
+    let dialog = document.querySelector("#warning")
+    if(dialog != null){
+        dialog.remove()
+    }
 }

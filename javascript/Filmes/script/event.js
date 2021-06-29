@@ -310,11 +310,12 @@ filmes.addEventListener("click", function listaview(){
          //Fecha o menu add
          closeadd.addEventListener("click",function(){
             listaview()
-     
+            dialogview()
          })
          //Fecha o menu add
          document.getElementById("cancel").addEventListener("click",function(){
              listaview()
+            dialogview()
          })
          var send = document.getElementById("send")
          //Evento de enviar os dados 
@@ -326,7 +327,7 @@ filmes.addEventListener("click", function listaview(){
              listaview();
              let dialog = document.querySelector("#warning")
              if(dialog != null){
-                dialog.remove()
+                 dialog.remove()
              }
          }else{
 
