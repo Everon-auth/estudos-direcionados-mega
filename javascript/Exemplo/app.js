@@ -29,6 +29,9 @@
         messageError : "Informe a senha!"
       }
     }
+
+
+    
     let userDB = new Database("usuarios", false, userModel);
     userDB.loadDatabase();
     userDB.saveData({

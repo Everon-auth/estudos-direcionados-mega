@@ -1,129 +1,89 @@
-/* Salva os dados no localstorage no formato JSON */
-function savedb(){
-    var filme = document.getElementById("filme").value
-    var year = document.getElementById("year").value
-    var gen = document.getElementById("gen").value
-    var dur = document.getElementById("dur").value
-    var osc = document.getElementById("osc").value
+/*
+    Responsável por fazer toda a comunicação com o local Storage ou session storage
+    Necessita ser feit ode forma reutilizavel para outras ocasiões.
+*/
+
+//key = chave de indexção pro meu banco de dados em sessão ou em local.
+//session = Define se deve ser em sessão o salvamento de dados ou em local
+//Define se deve ter algum requisito a ser seguido para enviar os dados para o banco de dados.
+// variáveis com o '_' são variáveis locais
+//função pai
+function database(key,session){
+    const _key = key
+    const _session = session ? sessionStorage : localStorage    
+    let _storage = new Array
+
     
-    var dado = JSON.parse(localStorage.getItem("filmes"));
-        //se não houver nenhum dado, ele cria e adiciona os valores dos inputs
-    if(dado == null){
-        dado = [{
-            "filme": filme,
-            "ano":year,
-            "genero":gen,
-            "duração":dur,
-            "oscar":osc
-        }]
-        //se não, adiciona os dados depois da ultima
-    }else{
-        dado.push({
-            "filme":filme,
-            "ano":year,
-            "genero":gen,
-            "duração":dur,
-            "oscar":osc
-        })
+    let _createDB = () => {
+
+        // Se o DB não existir no local definido, ele cria um DB vazio
+        if(!_session.getItem(_key)){
+       
+            // seta o DB inicial como vazio
+            _session.setItem(_key,JSON.stringify([]))
+
+        }
 
     }
-    //envia os dados
-    dado = JSON.stringify(dado)
-    localStorage.setItem("filmes",dado)
+    let _readDB= () => {
 
 
-}
-
-/* Recupera os dados do localstorage para manipular */
-function getdb(){
-
-    var dado = JSON.parse(localStorage.getItem("filmes"));
-    var database = Object.values(dado)
-
-        //cria os elementos de vizualização de lista curta
-    for (let i = 0; i < database.length; i++) {
-        var aaa = database[i]
-
-        section.style.alignItems="flex-start"
-        //span
-        var span = document.createElement("span")
-        section.appendChild(span).setAttribute("class", "lista")
-        var spanclass = document.getElementsByClassName("lista")[i]
-        
-
-        
-        spanclass.style.justifyContent="flex-start"
+        // armazena o db na variavel        
+        _storage = JSON.parse(_session.getItem(_key))
 
 
-        // checkbox
-        var input = document.createElement("INPUT")
-        spanclass.appendChild(input).setAttribute("class", "checkbox")
-        var checkbox = document.getElementsByClassName("checkbox")[i]
-        checkbox.setAttribute("id", "ch"+i)
-        checkbox.setAttribute("type","checkbox")
-        checkbox.style.width="100px"
-        checkbox.minWidth="50px"
+    }
+    
+    let _updateDB = () =>{
+        _session.setItem(_key,JSON.stringify(_storage))
+    }
 
-        //separação
-        var separa = document.createElement("DIV")
-        spanclass.appendChild(separa).setAttribute("class","separacao")
+    // inicio o createDB para criar o DB se ele não existir
+    _createDB()
 
-        //label
-        var label = document.createElement("LABEL")
-        spanclass.appendChild(label).setAttribute("class","labels")
-        var labels = document.getElementsByClassName("labels")[i]
-        labels.innerText="Nome do filme:"
-        labels.style.width="200px"
+    //abro oque o meu return deve retornar
+    return{
 
-        // output
-        var output = document.createElement("OUTPUT")
-        spanclass.appendChild(output).setAttribute("class", 'ou'+i)
-        var outputs = document.getElementsByClassName("ou"+i)[0]
-        outputs.value = aaa["filme"]
-        outputs.style.width="100%"
-        outputs.style.whiteSpace="nowrap"
+        //define como vou chamara a função dos meus valores de retorno
+        // Lê os dados do DB escolhido 
+        readData : () =>{
+            //defino oque vou chamar
+            _readDB()
+        },
 
-        //vizualizar
-        var createspan = document.createElement("SPAN")
-        spanclass.appendChild(createspan).setAttribute("class", "sp"+i)
-        var span2 = document.getElementsByClassName("sp"+i)
+        //define como vou chamara a função dos meus valores de retorno
+        // Salva os valores no DB
 
+        saveData : (Data,excluir = false) => {
+            // deve ser excluido? se sim, executa isso:
+            if(excluir == true){
 
-        span2[0].style.justifyContent="flex-end"
-        span2[0].style.display="flex"
-        span2[0].style.minWidth="205px"
-        var view = document.createElement("IMG")
-        span2[0].appendChild(view).setAttribute("id","vi"+i)
-        var views = document.getElementById("vi"+i)
-        views.setAttribute("src", "assets/eye.png")
-        views.style.width="30px"
-        views.style.marginRight="40px"
-        views.style.cursor="pointer"
+                // filtra no storage se o ID do dado recebido for diferente
+                // do ID da Data, ele deixa no storage, se não for, ele cria
+                // um array novo com os dados filtrados.
+                _storage = _storage.filter(dado => dado.ID != Data.ID )
+                
+                //se não deve ser excluido, executa isso:
+            }else{
+                let objeto =  _storage.find(dado => dado.ID == Data.ID)
 
-        //editar
-        var edit = document.createElement("img")
-        span2[0].appendChild(edit).setAttribute("id", "ed"+i)
-        var edits = document.getElementById("ed"+i)
-        edits.setAttribute("src","assets/editing.png")
-        edits.style.width="30px"
-        edits.style.marginRight="40px"
-        edits.style.cursor="pointer"
+                // se o dado não existir, deve ser colocado no final do array 
+                if(objeto == null){
+                    _storage.push(Data)
+                }
+                // se o dado já existir, deve ser atualizado
+                else{
+                    //Resgata as chaves do Objeto
+                    let keys = Object.keys(objeto)
+                    //Percorre o objeto para redefinir os valores das chaves
+                    keys.forEach(key =>{
+                        objeto[key]= Data[key]
+                    })
+                }
 
-        //excluir
-        var exclui = document.createElement("img")
-        span2[0].appendChild(exclui).setAttribute("id", i)
-        var excluir = document.getElementById(i)
-        excluir.setAttribute("src", "assets/bin.png")
-        excluir.style.width="25px"
-        excluir.style.marginRight="40px"
-        excluir.style.cursor="pointer"
-        
-        
-        //hr
-        var hr = document.createElement("HR")
-        section.appendChild(hr)
-       
-           
-
+            }
+            // Atualiza o banco de dados enviando o array
+            _updateDB()
+        }
     }
 }
