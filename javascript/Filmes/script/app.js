@@ -15,5 +15,6 @@ const home = document.getElementById("btn-home")
 //    })
 
 
-    let Events = new events("click",filmes)
+    let btnfilme = new events("click",filmes)
+    let btnhome = new events("click", home)
 })()

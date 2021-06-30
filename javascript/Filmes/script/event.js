@@ -3,10 +3,8 @@ function events (type,element,funct){
     const _element = element
 
     let _createEvent = () => {
-        element.addEventListener(type, ()=>{
-            console.log("a")
+        _element.addEventListener(_type, ()=>{
         })
-    } 
-
+    }
     _createEvent()
 }
