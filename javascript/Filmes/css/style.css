@@ -84,29 +84,7 @@ justify-content: flex-end;
 align-items: flex-end;
 align-content: center;
 }
-#add{
-background-color: #0386dd;
-width:60px;
-height: 30px;
-display: none;
-align-content: center;
-align-items: center;
-justify-content: center;
-border-radius: 7px;
-color: white;
-box-shadow: #004777 1px 2px 1px 1px;
-font-size: 30px;
-margin-right: 40px;
-margin-bottom: 20px;
-cursor: pointer;
-}
-#add::before{
-content: "+";
-}
-#add:hover{
-    transition: 0.5s;
-background-color: #004777;
-}
+
 section,div span{
     display: flex;
     flex-direction: column;

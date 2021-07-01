@@ -21,26 +21,22 @@ function database(key,session){
        
             // seta o DB inicial como vazio
             _session.setItem(_key,JSON.stringify([]))
-
         }
-
     }
+    
     let _readDB= () => {
-
-
         // armazena o db na variavel        
         _storage = JSON.parse(_session.getItem(_key))
-
-
     }
     
     let _updateDB = () =>{
         _session.setItem(_key,JSON.stringify(_storage))
     }
+    
 
     // inicio o createDB para criar o DB se ele não existir
     _createDB()
-
+    _readDB()
     //abro oque o meu return deve retornar
     return{
 
@@ -48,7 +44,7 @@ function database(key,session){
         // Lê os dados do DB escolhido 
         readData : () =>{
             //defino oque vou chamar
-            _readDB()
+            return _storage
         },
 
         //define como vou chamara a função dos meus valores de retorno

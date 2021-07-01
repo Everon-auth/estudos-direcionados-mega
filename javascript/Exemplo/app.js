@@ -34,6 +34,7 @@
     
     let userDB = new Database("usuarios", false, userModel);
     userDB.loadDatabase();
+    console.log(userDB.loadDatabase())
     userDB.saveData({
       ID : 1678,
       username : "anderson.koester",
