@@ -22,7 +22,7 @@ struct = ["button",
     "Label",
     "Input",
     "button"]
-structID = ["1",
+structID = ["close",
     "2",
     "NF",
     "4",
@@ -33,7 +33,7 @@ structID = ["1",
     "DurF",
     "10",
     "Desc",
-    "12"]        
+    "Add"]        
 structValue = ["X",
     "Nome do filme:",
     "",

@@ -1,6 +1,5 @@
 const btns = document.getElementsByClassName("spanbtns")[0]
 const session = document.getElementsByTagName("SECTION")[0]
-const Addbtn = document.getElementById("btnAdd")
 let i = true
 function showHome (){
     session.innerHTML=""
@@ -9,11 +8,11 @@ function showHome (){
 }
 function showFilms (){
     session.innerHTML=""
+    btns.innerHTML=""
     if(i){
         new elements(btns,"BUTTON","+",Buttons,"btnAdd","#0386dd")
         new elements(btns,"BUTTON","X",Buttons,"btnRemove","red")
         new events("click",document.getElementById("btnAdd"),createWindow(struct,structID,structValue,structStyle,session,true,windowadd,false,document.getElementById("btnAdd")))
-        
 
         let i = 0
         let data = new database ("filmes",false)
@@ -28,6 +27,7 @@ function showFilms (){
         })
     }
     i=false
+    i=true
 
 } 
 function createWindow(struct,structID,structValue,structStyle,father,window,windowStyle,active = true,btn){
@@ -69,6 +69,8 @@ function createWindow(struct,structID,structValue,structStyle,father,window,wind
             cleanFather()
             createWindow()
             createForm()
+            new events("click",document.getElementById("Add"),PrepairingData)
+            new events("click",document.getElementById("close"),showFilms)
             y++
         }
 
