@@ -12,7 +12,7 @@ function database(key,session){
     const _key = key
     const _session = session ? sessionStorage : localStorage    
     let _storage = new Array
-
+    let _ID
     
     let _createDB = () => {
 
@@ -32,11 +32,23 @@ function database(key,session){
     let _updateDB = () =>{
         _session.setItem(_key,JSON.stringify(_storage))
     }
+    // Se o ID existir, ele chama a função novamente
+    let genID = () => {
+        //Gera o ID aleatório
+        _ID = Math.ceil(Math.random()*10000000)
+
+        for (let i = 0; i < _storage.length; i++) {
+            if(_ID == _storage[i]["ID"]){
+            genID()
+        }
+        }
+    }
     
 
     // inicio o createDB para criar o DB se ele não existir
     _createDB()
     _readDB()
+    genID()
     //abro oque o meu return deve retornar
     return{
 
@@ -47,6 +59,9 @@ function database(key,session){
             return _storage
         },
 
+        createID : () =>{
+            return _ID
+        },
         //define como vou chamara a função dos meus valores de retorno
         // Salva os valores no DB
 

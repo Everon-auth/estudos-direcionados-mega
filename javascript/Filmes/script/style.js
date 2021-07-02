@@ -1,6 +1,6 @@
 //estilização dos elementos
-let blueButtons = new Array()
 Buttons= {
+    backgroundColor:"#0386dd",
     width : "70px",
     height : "35px",
     color : "white",
@@ -13,7 +13,6 @@ Buttons= {
     cursor : "pointer"
 }
 
-let windowadd = new Array()
 windowadd={
     display : "flex",
     flexDirection : "column",
@@ -26,24 +25,20 @@ windowadd={
     padding : "20px",
     borderRadius : "7px",
 }
-let labels = new Array()
 labels = {
     width :"100%",
     margin: "10px",
     fontSize: "20px"
 }
-let inputs = new Array()
 inputs = {
     width : "400px",
     borderWidth : "0px 0px 1px 0px",
 }
-let spanright = new Array()
 spanright = {
     display : "flex",
     justifyContent : "flex-end",
     marginTop : "10px"
 }
-let spanmain = new Array ()
 spanmain ={
     display : "flex",
     flexDirection : "row",

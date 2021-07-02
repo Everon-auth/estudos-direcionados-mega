@@ -1,4 +1,4 @@
-function elements(pai,type,value,estilo,ID,color){
+function elements(pai,type,value,estilo,ID,color,tipo){
     const _type = type
     const _value = value
     const _ID = ID
@@ -12,7 +12,6 @@ function elements(pai,type,value,estilo,ID,color){
     }
     let styleElement = () => {
         const _element = document.getElementById(_ID)
-        
         key = Object.keys(_estilo)
         let i =0
         key.forEach(keys => {
@@ -25,10 +24,17 @@ function elements(pai,type,value,estilo,ID,color){
         _element.style.backgroundColor=color
 
     }
+    let typeElement = () => {
+        document.getElementById(_ID).setAttribute("type",tipo)
+    }
     //Cria o elemento passado por parâmetros
     cretateElement()
     //se não for definido o estilo do elemento criado, ignora a estilização
     if(_estilo != undefined){
     styleElement()
     }
+    if(tipo != undefined){
+        typeElement()
+    }
+
 }
