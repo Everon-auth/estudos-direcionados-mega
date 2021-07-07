@@ -1,40 +1,38 @@
-function elements(pai,type,value,estilo,ID,color,tipo){
-    const _type = type
-    const _value = value
-    const _ID = ID
-    const _pai = pai
-    let _estilo = estilo
+function elements(pai,type,value,ID){
     let cretateElement = () => {
-        _pai.appendChild(document.createElement(_type)).setAttribute("id", _ID)
-        if(_value!=""){
-            document.getElementById(_ID).innerText=value
+        pai.appendChild(document.createElement(type)).setAttribute("id", ID)
+        if(value!=""){
+            document.getElementById(ID).innerText=value
         }
     }
-    let styleElement = () => {
-        const _element = document.getElementById(_ID)
-        key = Object.keys(_estilo)
-        let i =0
-        key.forEach(keys => {
+    let styleElement = (estilo) => {
+
+        key = Object.keys(estilo)
+        key.forEach((keys,i) => {
             /*
             Usado o [] entre style para definir que ele não procure nos elementos proprios dele
             mas sim do meu array definido*/
-            _element.style[key[i]]=_estilo[keys]
-            i++        
+            _element.style[key[i]]=estilo[keys]        
         });
-        _element.style.backgroundColor=color
-
-    }
-    let typeElement = () => {
-        document.getElementById(_ID).setAttribute("type",tipo)
     }
     //Cria o elemento passado por parâmetros
     cretateElement()
-    //se não for definido o estilo do elemento criado, ignora a estilização
-    if(_estilo != undefined){
-    styleElement()
-    }
-    if(tipo != undefined){
-        typeElement()
+    //seletor do elemento.
+    const _element = document.getElementById(ID)
+    
+    return{
+        setcolor : (cor) =>{
+            _element.style.backgroundColor=cor
+        },
+        setStyle : (estilo) =>{
+            styleElement(estilo)
+        },
+        giveAtrr : (atributo,valor) =>{
+            _element.setAttribute(atributo,valor)
+        },
+        selectElement : () =>{
+            return _element
+        }
     }
 
 }

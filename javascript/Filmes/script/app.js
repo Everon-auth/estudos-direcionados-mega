@@ -10,51 +10,7 @@
 
 })()
 //dados do meu form de adicionar um filme
-struct = ["button",
-    "Label",
-    "Input",
-    "Label",
-    "Input",
-    "Label",
-    "Input",
-    "Label",
-    "Input",
-    "Label",
-    "Input",
-    "button"]
-structID = ["close",
-    "2",
-    "NF",
-    "4",
-    "YF",
-    "6" ,
-    "GF" ,
-    "8",
-    "DurF",
-    "10",
-    "Desc",
-    "Add"]        
-structValue = ["X",
-    "Nome do filme:",
-    "",
-     "Ano:",
-    "",
-     "Gênero:",
-    "",
-    "Duração:",
-    "",
-    "Descrição:",
-    "",
-    "Add"]
-structStyle = [Buttons,
-    labels,
-    inputs,
-    labels,
-    inputs,
-    labels,
-    inputs,
-    labels,
-    inputs,
-    labels,
-    inputs,
-    Buttons]
+struct = ["button","Label","Input","Label","Input","Label","Input","Label","Input","Label","Input","button"]
+structID = ["close","2","NF","4","YF","6" ,"GF" ,"8","DurF","10","Desc","Add"]        
+structValue = ["X","Nome do filme:","", "Ano:","", "Gênero:","","Duração:","","Descrição:","","Add"]
+structStyle = [Buttons,labels,inputs,labels,inputs,labels,inputs,labels,inputs,labels,inputs,Buttons]
