@@ -24,6 +24,15 @@ Informações necessárias dos filmes:
 -Duração.
 -Oscar.
 -ID (para identificação)
+-Descrição
+
+### Funções necessárias:
+
+1 - Abrir a vizualização em lista
+2 - abrir janela de adicionar
+3 - Adicionar filme
+4 - vizualização com descrição
+5 - excluir filme
 
 >**NOTA:** Usar database local em javascript.
 Dividir o conteúdo javascript em arquivos.

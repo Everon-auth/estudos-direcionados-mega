@@ -1,3 +1,10 @@
+import '../script/style.js'
+import '../script/functions-events.js'
+import '../script/elements.js'
+import '../script/event.js'
+import '../script/database.js'
+
+
 //mesma coisa que o windows.onload
 (()=>{
 //
