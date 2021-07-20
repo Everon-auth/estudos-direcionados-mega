@@ -90,3 +90,21 @@ spanbts={
     justifyContent:'flex-end',
 
 }
+export let lista = new Array()
+lista={
+    width: '100%',
+    height: '60px',
+    display: 'flex',
+    flexDirection: 'row',
+}
+export let spanIcons = new Array()
+spanIcons={
+    width: '7%',
+    display: 'flex',
+    justifyContent: 'space-between',
+    cursor: 'pointer',
+}
+export let outputs = new Array()
+outputs={
+    width: '80%'
+}
