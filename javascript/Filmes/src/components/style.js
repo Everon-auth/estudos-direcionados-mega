@@ -53,6 +53,3 @@ spanmain ={
     paddingTop : "20px",
     
 }
-/* icons ={
-    
-} */

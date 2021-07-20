@@ -1,4 +1,4 @@
-function elements(pai,type,value,ID){
+export function elements(pai,type,value,ID){
     let cretateElement = () => {
         pai.appendChild(document.createElement(type)).setAttribute("id", ID)
         if(value!=""){
