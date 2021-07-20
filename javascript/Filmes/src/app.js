@@ -1,5 +1,6 @@
 import { view } from'../src/views/view.js'
 import '../src/database.js'
+import { Controll } from './views/controller.js'
 
 
 //mesma coisa que o windows.onload
@@ -11,7 +12,7 @@ import '../src/database.js'
     /* btnfilme = new events("click",filmes,showFilms)
     btnhome = new events("click",home,showHome) */
 
-    /* const vizualize = new view() */
+    const controller = new Controll()
 })()
 //dados do meu form de adicionar um filme
 /* struct = ["button","Label","Input","Label","Input","Label","Input","Label","Input","Label","Input","button"]

@@ -6,8 +6,8 @@ export function elements(pai,type,value,ID){
         }
     }
     let styleElement = (estilo) => {
-
-        key = Object.keys(estilo)
+    
+        const key = Object.keys(estilo)
         key.forEach((keys,i) => {
             /*
             Usado o [] entre style para definir que ele não procure nos elementos proprios dele
@@ -32,6 +32,9 @@ export function elements(pai,type,value,ID){
         },
         selectElement : () =>{
             return _element
+        },
+        classAdd: (classe) =>{
+            _element.classList.add(classe)
         }
     }
 
