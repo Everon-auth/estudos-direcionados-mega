@@ -8,7 +8,7 @@
 //Define se deve ter algum requisito a ser seguido para enviar os dados para o banco de dados.
 // variáveis com o '_' são variáveis locais
 //função pai
-function database(key,session){
+export function database(key,session){
     const _key = key
     const _session = session ? sessionStorage : localStorage    
     let _storage = new Array

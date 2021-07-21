@@ -1,23 +1,41 @@
 import { components } from "../components/components.js";
+import { section, btns } from "../config.js";
 
-const section = document.querySelector('section')
 
 export function viewLista(){
-    const lista = new components(section)
-    lista.lista("li")
 
-    const spanlist = document.querySelector('#li')
+    const window = function(dado,i){   
+        const lista = new components(section)
+        lista.lista(`li${i}`)
 
-    const elements = new components(spanlist)
-    elements.check('10')
-    elements.labelsLi('Filme:','lb')
-    elements.out('A menina e o porquinho','fm#1')
-    elements.FawSpace('t')
-    
-    const ico = new components(document.querySelector('#t'))
-    
-    ico.iconAwesome('a',"fa-eye")
-    ico.iconAwesome('b',"fa-edit")
-    ico.iconAwesome('c',"fa-trash")
+        const spanlist = document.querySelector(`#li${i}`)
 
+        const elements = new components(spanlist)
+        elements.check(`${i}`)
+        elements.labelsLi('Filme:',`lb${i}`)
+        elements.out(dado,`fm${i}`)
+        elements.FawSpace(`el${i}`)
+        
+        const ico = new components(document.querySelector(`#el${i}`))
+        
+        ico.iconAwesome(`ed${i}`,"fa-edit")
+        ico.iconAwesome(`ey${i}`,"fa-eye")
+        ico.iconAwesome(`tr${i}`,"fa-trash")
+        lista.hr(`h${i}`)
+
+    }
+    const buttonsLista= function(){
+        const elem = new components(btns)
+        elem.btnadd('add','Adicionar Filme')
+        elem.btnclose('exc','Excluir Filmes')
+    }
+    const clean = function(){
+        btns.innerHTML=''
+        section.innerHTML=''
+    }
+    return{
+        showWindow:(dado,index)=> window(dado,index),
+        showBtns:()=>buttonsLista(),
+        closeWindow:()=>clean()
+    }
 }

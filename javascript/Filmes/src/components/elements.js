@@ -2,7 +2,7 @@ export function elements(pai,type,value,ID){
     let cretateElement = () => {
         pai.appendChild(document.createElement(type)).setAttribute("id", ID)
         if(value!=""){
-            document.getElementById(ID).innerText=value
+            document.getElementById(ID).innerHTML=value
         }
     }
     let styleElement = (estilo) => {

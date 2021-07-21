@@ -1,100 +1,109 @@
-import { Buttons,icone,inputs,labels,shadowBox,windowadd,textarea, spanbts, lista, spanIcons} from "./style.js"
+import { Buttons,icone,inputs,labels,shadowBox,windowadd,textarea, spanbts, lista, spanIcons, checkbx, lblist, outputs, fincons, back, carta} from "./style.js"
 import { elements } from "./elements.js"
 
 export function components (pai){
 
+    let constructor
+
     const buttonAdd = function(id,valor = 'confirmar'){
-        const btn = new elements(pai,'Button',valor,id)
-        btn.giveAtrr('data-set','add')
-        btn.setStyle(Buttons)
+        constructor= new elements(pai,'Button',valor,id)
+        constructor.setStyle(Buttons)
     }
-    const buttonClose = function (){
-        const btn = new elements(pai,'Button','Cancelar')
-        btn.giveAtrr('data-set','close')
-        btn.setStyle(Buttons)
-        btn.setcolor("red")
+    const buttonClose = function (id,data = 'Cancelar'){
+        constructor= new elements(pai,'Button',data,id)
+        constructor.setStyle(Buttons)
+        constructor.setcolor("red")
     }
     const shadow = function(){
-        const shad = new elements(pai,'div','')
-        shad.setStyle(shadowBox)
-        shad.giveAtrr('id','shadow')
+        constructor = new elements(pai,'div','','shadow')
+        constructor.setStyle(shadowBox)
     }
     const WindowAdd = function(){
-        const wind = new elements(pai,'span','')
-        wind.setStyle(windowadd)
-        wind.giveAtrr('id','addWindow')
+        constructor= new elements(pai,'span','','addWindow')
+        constructor.setStyle(windowadd)
     }
-    const labelAdd = function(father,valor,id){
-        const label = new elements(father,'label',valor)
-        label.setStyle(labels)
-        label.giveAtrr('id',id)
+    const labelAdd = function(father,valor,id,style = labels){
+        constructor = new elements(father,'label',valor,id)
+        constructor.setStyle(style)
     }
     const inputAdd = function(valor,id){
-        const input = new elements(pai,'input',valor,id)
-        input.setStyle(inputs)
-        input.classAdd('inpAnim')
+        constructor = new elements(pai,'input',"",id)
+        constructor.setStyle(inputs)
+        constructor.giveAtrr('value', valor)
+        constructor.classAdd('inpAnim')
     }
     const inputBox = function(valor,id){
-        const input = new elements(pai,'textarea',valor,id)
-        input.setStyle(inputs)
-        input.setStyle(textarea)
+        constructor= new elements(pai,'textarea',valor,id)
+        constructor.setStyle(inputs)
+        constructor.setStyle(textarea)
     }
-    const icones = function(src,data){
-        const icon = new elements(pai,'img','')
-        icon.setStyle(icone)
-        icon.giveAtrr('src',src)
-        icon.giveAtrr('data-id',data)
+    const cartaz = function(src,id){
+        constructor = new elements(pai,'img','',id)
+        constructor.setStyle(carta)
+        constructor.giveAtrr('src',src)
     }
     const checkbox = function(data){
-        const check = new elements(pai,'input','',data)
-        check.giveAtrr('type','checkbox')
-        /* check.setStyle() */
+        constructor = new elements(pai,'input','',data)
+        constructor.giveAtrr('type','checkbox')
+        constructor.setStyle(checkbx)
     }
     const list = function(id){
-        const li = new elements(pai,'span','',id)
-        li.setStyle(lista)
+        constructor = new elements(pai,'span','',id)
+        constructor.setStyle(lista)
     }
-    const hrs = function(){
-        const hr = new elements(pai,'hr','')
+    const hrs = function(id){
+        constructor= new elements(pai,'hr','',id)
        /*  hr.setStyle() */
     }
-    const output = function(valor,id){
-        const out = new elements(pai,'output',valor,id)
-        /* out.setStyle() */
+    const output = function(valor,id,style = outputs){
+        constructor = new elements(pai,'output',valor,id)
+        constructor.setStyle(style)
     }
     const labelList = function(valor,id){
-        const label = new elements(pai,'label',valor,id)   
+        constructor = new elements(pai,'label',valor,id)
+        constructor.setStyle(lblist)   
     }
     const spans = function(id){
-        const span = new elements(pai,'span','',id)
-        span.setStyle(spanbts)
+        constructor = new elements(pai,'span','',id)
+        constructor.setStyle(spanbts)
     }
     const Fawesome = function(id = 'a',icon){
-        const el = new elements(pai,'i','',id)
-        el.classAdd('fas')
-        el.classAdd(icon)
+        constructor = new elements(pai,'i','',id)
+        constructor.classAdd('fas')
+        constructor.classAdd(icon)
+        constructor.setStyle(fincons)
     }
     const spanFaw = function(id){
-        const el = new elements(pai,'span','',id)
-        el.setStyle(spanIcons)
+        constructor = new elements(pai,'span','',id)
+        constructor.setStyle(spanIcons)
+    }
+    const btnback = function(id,valor='<-'){
+        constructor = new elements(pai,'Button',valor,id)
+        constructor.setStyle(back)
+    }
+    const box = function(id,style){
+        constructor = new elements(pai,'span','',id)
+        constructor.setStyle(style)
     }
  //<i class="fas fa-eye"></i>
     return{
         span:(id)=>spans(id),
-        btnadd:(id)=> buttonAdd(id),
-        btnclose:(id)=>buttonClose(id),
+        btnadd:(id,data)=> buttonAdd(id,data),
+        btnclose:(id,data)=>buttonClose(id,data),
         BoxShadow:()=> shadow(),
         windA:()=> WindowAdd(),
-        labelA:(fd,valor,id)=>labelAdd(fd,valor,id),
+        labelA:(fd,valor,id,style)=>labelAdd(fd,valor,id,style),
         inpAdd:(valor,id)=>inputAdd(valor,id),
         inpbox:(valor,id)=>inputBox(valor,id),
-        icon:(src,data)=> icones(src,data),
+        cart:(src,id)=> cartaz(src,id),
         check:(data)=>checkbox(data),
         lista:(id)=>list(id),
-        hr:()=>hrs(),
+        hr:(id)=>hrs(id),
         labelsLi:(valor,id)=>labelList(valor,id),
-        out:(valor,id)=> output(valor,id),
+        out:(valor,id,style)=> output(valor,id,style),
         iconAwesome:(id,icon)=>Fawesome(id,icon),
-        FawSpace:(id)=>spanFaw(id)
+        FawSpace:(id)=>spanFaw(id),
+        backBTN:(id,valor)=> btnback(id,valor),
+        createbox:(id,style)=> box(id,style)
     }
 }
