@@ -67,11 +67,12 @@ export function components (pai){
         constructor = new elements(pai,'span','',id)
         constructor.setStyle(spanbts)
     }
-    const Fawesome = function(id = 'a',icon){
+    const Fawesome = function(id = 'a',icon,data){
         constructor = new elements(pai,'i','',id)
         constructor.classAdd('fas')
         constructor.classAdd(icon)
         constructor.setStyle(fincons)
+        constructor.giveAtrr('data-id', data)
     }
     const spanFaw = function(id){
         constructor = new elements(pai,'span','',id)
@@ -101,7 +102,7 @@ export function components (pai){
         hr:(id)=>hrs(id),
         labelsLi:(valor,id)=>labelList(valor,id),
         out:(valor,id,style)=> output(valor,id,style),
-        iconAwesome:(id,icon)=>Fawesome(id,icon),
+        iconAwesome:(id,icon,data)=>Fawesome(id,icon,data),
         FawSpace:(id)=>spanFaw(id),
         backBTN:(id,valor)=> btnback(id,valor),
         createbox:(id,style)=> box(id,style)

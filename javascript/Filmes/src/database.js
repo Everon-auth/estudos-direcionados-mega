@@ -26,7 +26,7 @@ export function database(key,session){
     
     let _readDB= () => {
         // armazena o db na variavel        
-        _storage = JSON.parse(_session.getItem(_key))
+     return   _storage = JSON.parse(_session.getItem(_key))
     }
     
     let _updateDB = () =>{
@@ -36,14 +36,23 @@ export function database(key,session){
     let genID = () => {
         //Gera o ID aleatório
         _ID = Math.ceil(Math.random()*10000000)
-
         for (let i = 0; i < _storage.length; i++) {
             if(_ID == _storage[i]["ID"]){
-            genID()
+                genID()
+            }
         }
+        return _ID
+    }
+    const filterID = (Data)=>{
+        _storage = _storage.filter(dado => dado.ID != Data.ID )
+    }
+    const catchData = (id)=>{
+        const dados = _readDB()
+        for (let i = 0; i < dados.length; i++) {
+            const dado = dados[i]   
+            if(dado.ID == id) return dados[i]
         }
     }
-    
 
     // inicio o createDB para criar o DB se ele não existir
     _createDB()
@@ -54,14 +63,15 @@ export function database(key,session){
 
         //define como vou chamara a função dos meus valores de retorno
         // Lê os dados do DB escolhido 
-        readData : () =>{
-            //defino oque vou chamar
-            return _storage
-        },
-
-        createID : () =>{
-            return _ID
-        },
+        //defino oque vou chamar
+        readData : () => _storage,
+            //chama a função para gerar um Id aleatório novo 
+        createID : () => genID(),
+            //filtra os dados por ID
+        filterData:(data)=> filterID(data),
+            //pelo ID, recupera os dados
+        catchDate:(id) => catchData(id),
+        
         //define como vou chamara a função dos meus valores de retorno
         // Salva os valores no DB
 
@@ -72,8 +82,7 @@ export function database(key,session){
                 // filtra no storage se o ID do dado recebido for diferente
                 // do ID da Data, ele deixa no storage, se não for, ele cria
                 // um array novo com os dados filtrados.
-                _storage = _storage.filter(dado => dado.ID != Data.ID )
-                
+                filterID(Data)
                 //se não deve ser excluido, executa isso:
             }else{
                 let objeto =  _storage.find(dado => dado.ID == Data.ID)
@@ -91,7 +100,6 @@ export function database(key,session){
                         objeto[key]= Data[key]
                     })
                 }
-
             }
             // Atualiza o banco de dados enviando o array
             _updateDB()

@@ -76,9 +76,10 @@ export let spanbts={
 }
 export let lista={
     width: '100%',
-    height: '60px',
+    height: '25px',
     display: 'flex',
     flexDirection: 'row',
+    alignItems:'center',
 }
 export let spanIcons={
     width: '70px',
@@ -98,7 +99,9 @@ export let lblist= {
     textAlign:'center'
 }
 export let fincons={
-    marginRight: '30px'
+    marginRight: '15px',
+    width : '60px',
+    padding:'10px'
 }
 export let back={
     width:'80px',

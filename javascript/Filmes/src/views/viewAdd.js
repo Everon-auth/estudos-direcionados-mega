@@ -1,14 +1,13 @@
 import { components } from "../components/components.js"
-import { labelText,inpIDs,body } from "../config.js"
+import { labelText,inpIDs,body, data } from "../config.js"
 
 export function Add (){
 
     const window = function(){
-        const shadow = new components(body)
-        shadow.BoxShadow()
+        const bcom = new components(body)
+        bcom.BoxShadow()
 
-        const addWindow = new components(document.querySelector('#shadow'))
-        addWindow.windA()
+        bcom.windA()
         
         const selectorAddWindow = document.querySelector('#addWindow')
         
@@ -35,13 +34,30 @@ export function Add (){
     }
 
     const close = function(){
-        const conteudo = document.querySelector('#shadow')
-        document.body.removeChild(conteudo)
+        const shadow = document.querySelector('#shadow')
+        console.log(shadow)
+        const add = document.querySelector('#addWindow')
+        document.body.removeChild(shadow)
+        document.body.removeChild(add)
 
+    }
+    const dados = function(){
+        let _dados={
+            nome: document.querySelector('#nome').value,
+            genero: document.querySelector('#gen').value,
+            data: document.querySelector('#data').value,
+            dur: document.querySelector('#dur').value,
+            osc: document.querySelector('#osc').value,
+            url: document.querySelector('#url').value,
+            descricao: document.querySelector('#descript').value,
+            ID:data.createID(),
+        }
+        return _dados 
     }
 
     return{
         showWindow:()=>window(),
         closeWindow:()=>close(),
+        getDataAdd:()=>dados()
     }
 }
