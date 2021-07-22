@@ -100,7 +100,7 @@ export let lblist= {
 }
 export let fincons={
     marginRight: '15px',
-    width : '60px',
+    width : '25px',
     padding:'10px'
 }
 export let back={
@@ -109,7 +109,8 @@ export let back={
     backgroundColor: 'white',
     borderWidth: '1px',
     borderColor: '#e0e0e0',
-    borderStyle:'solid'
+    borderStyle:'solid',
+    cursor: 'pointer',
 }
 
 export let box={

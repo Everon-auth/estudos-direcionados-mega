@@ -22,7 +22,7 @@ aside{
     width:15vw;
     height:100%;
     min-width:200px;
-    background-color: rgb(236, 236, 236);
+    background-image: linear-gradient(to bottom, red, green);
     border-right-width: 100%;
     border-right-color: tomato;
     border-right-style: solid;
@@ -34,6 +34,7 @@ aside button{
     background-color: transparent;
     padding: 20px;
     text-align: center;
+    cursor: pointer;
 }
 aside button:hover{
     transition: 0.5s;

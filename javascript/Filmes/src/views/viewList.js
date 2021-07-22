@@ -18,9 +18,9 @@ export function viewLista(){
         
         const ico = new components(document.querySelector(`#el${i}`))
         
-        ico.iconAwesome(`ed${i}`,"fa-edit",i)
-        ico.iconAwesome(`ey${i}`,"fa-eye",i)
-        ico.iconAwesome(`tr${i}`,"fa-trash",i)
+        ico.iconAwesome(`ed${i}`,i,'./assets/editing.png')
+        ico.iconAwesome(`ey${i}`,i,'./assets/eye.png')
+        ico.iconAwesome(`tr${i}`,i,'./assets/bin.png')
         lista.hr(`h${i}`)
 
     }

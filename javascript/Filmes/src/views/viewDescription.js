@@ -9,13 +9,15 @@ export function description(){
     const window = function(data){
         const key = Object.keys(data)
         let constructor
+
         section.style.flexDirection='column'
         section.style.alignItems='center'
+
             constructor = new components(section)
                 constructor.createbox("view",boxvi)
         const backview = document.querySelector('#view')
             constructor = new components(backview)
-                constructor.backBTN('voltar','<i class="fas fa-arrow-left"></i>')
+                constructor.backBTN('voltar','Voltar')
             constructor = new components(section)
                 constructor.cart("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTKEA012hh9aw1RMI7VSpvSWVITnhiOgKQt4qoiVvDcrp04CIvt","cd")
                 constructor.createbox('list',bx)

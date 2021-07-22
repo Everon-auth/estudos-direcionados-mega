@@ -37,9 +37,9 @@ export function components (pai){
         constructor.setStyle(inputs)
         constructor.setStyle(textarea)
     }
-    const cartaz = function(src,id){
+    const cartaz = function(src,id,style = carta){
         constructor = new elements(pai,'img','',id)
-        constructor.setStyle(carta)
+        constructor.setStyle(style)
         constructor.giveAtrr('src',src)
     }
     const checkbox = function(data){
@@ -67,12 +67,11 @@ export function components (pai){
         constructor = new elements(pai,'span','',id)
         constructor.setStyle(spanbts)
     }
-    const Fawesome = function(id = 'a',icon,data){
-        constructor = new elements(pai,'i','',id)
-        constructor.classAdd('fas')
-        constructor.classAdd(icon)
+    const Fawesome = function(id,data,src){
+        constructor = new elements(pai,'img','',id)
         constructor.setStyle(fincons)
         constructor.giveAtrr('data-id', data)
+        constructor.giveAtrr('src', src)
     }
     const spanFaw = function(id){
         constructor = new elements(pai,'span','',id)
@@ -96,14 +95,14 @@ export function components (pai){
         labelA:(fd,valor,id,style)=>labelAdd(fd,valor,id,style),
         inpAdd:(valor,id)=>inputAdd(valor,id),
         inpbox:(valor,id)=>inputBox(valor,id),
-        cart:(src,id)=> cartaz(src,id),
+        cart:(src,id,style)=> cartaz(src,id,style),
         check:(data)=>checkbox(data),
         lista:(id)=>list(id),
         hr:(id)=>hrs(id),
         labelsLi:(valor,id)=>labelList(valor,id),
         out:(valor,id,style)=> output(valor,id,style),
-        iconAwesome:(id,icon,data)=>Fawesome(id,icon,data),
-        FawSpace:(id)=>spanFaw(id),
+        iconAwesome:(id,data,src)=>Fawesome(id,data,src),
+        FawSpace:(id,)=>spanFaw(id),
         backBTN:(id,valor)=> btnback(id,valor),
         createbox:(id,style)=> box(id,style)
     }
