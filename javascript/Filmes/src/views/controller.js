@@ -88,43 +88,5 @@ export function Controll (){
                 reload()
             break
         }
-    }) 
-   
-    
-
-
-/*     
-    
-
-/*      if(dados.length>0){
-         
-    function controllDATA(id){
-        const filterdata = function(){
-            for (let i = 0; i < dados.length; i++) {
-                const dado = dados[i]   
-                if(dado.ID == id) return dados[i]
-            }
-        }
-        return {
-            getdata:()=>filterdata(),
-            
-        }
-    }
-
-
-    }  
-    
-        data.saveData({
     })
-    
- 
-    vizualizarfilme.showWindow(dados[0])
-    
-    vizualizarfilme.closeWindow()
-    
-   
-    */
-
-
-
 }

@@ -3,31 +3,32 @@ import { section, btns } from "../config.js";
 
 
 export function viewLista(){
-
+    let constructor
     const window = function(dado,i){   
-        const lista = new components(section)
-        lista.lista(`li${i}`)
+        constructor = new components(section)
+        constructor.lista(`li${i}`)
 
         const spanlist = document.querySelector(`#li${i}`)
 
-        const elements = new components(spanlist)
-        elements.check(`${i}`)
-        elements.labelsLi('Filme:',`lb${i}`)
-        elements.out(dado,`fm${i}`)
-        elements.FawSpace(`el${i}`)
+        constructor = new components(spanlist)
+        constructor.check(`${i}`)
+        constructor.labelsLi('Filme:',`lb${i}`)
+        constructor.out(dado,`fm${i}`)
+        constructor.FawSpace(`el${i}`)
         
-        const ico = new components(document.querySelector(`#el${i}`))
+        constructor = new components(document.querySelector(`#el${i}`))
         
-        ico.iconAwesome(`ed${i}`,i,'./assets/editing.png')
-        ico.iconAwesome(`ey${i}`,i,'./assets/eye.png')
-        ico.iconAwesome(`tr${i}`,i,'./assets/bin.png')
-        lista.hr(`h${i}`)
+        constructor.iconAwesome(`ed${i}`,i,'./assets/editing.png')
+        constructor.iconAwesome(`ey${i}`,i,'./assets/eye.png')
+        constructor.iconAwesome(`tr${i}`,i,'./assets/bin.png')
+        constructor = new components(section)
+        constructor.hr(`h${i}`)
 
     }
     const buttonsLista= function(){
-        const elem = new components(btns)
-        elem.btnadd('add','Adicionar Filme')
-        elem.btnclose('exc','Excluir Filmes')
+        constructor = new components(btns)
+        constructor.btnadd('add','Adicionar Filme')
+        constructor.btnclose('exc','Excluir Filmes')
     }
     const clean = function(){
         btns.innerHTML=''

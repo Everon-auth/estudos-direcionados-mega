@@ -4,33 +4,33 @@ import { labelText,inpIDs,body, data } from "../config.js"
 export function Add (){
 
     const window = function(){
-        const bcom = new components(body)
-        bcom.BoxShadow()
+        let  constructor = new components(body)
+        constructor.BoxShadow()
 
-        bcom.windA()
+        constructor.windA()
         
         const selectorAddWindow = document.querySelector('#addWindow')
         
         labelText.forEach((value,i)=> {
 
-            const labels = new components()
-            labels.labelA(selectorAddWindow,value,i)
-            if(i <=labelText.length-2){
-                const inputs = new components(selectorAddWindow)
-                inputs.inpAdd('',inpIDs[i])
+            constructor = new components()
+            constructor.labelA(selectorAddWindow,value,i)
+            if(i <= labelText.length-2){
+                constructor = new components(selectorAddWindow)
+                constructor.inpAdd('',inpIDs[i])
             }else{
-                const inputs = new components(selectorAddWindow)
-                inputs.inpbox('',inpIDs[i])
+                constructor = new components(selectorAddWindow)
+                constructor.inpbox('',inpIDs[i])
             }
         })
-        const span = new components(selectorAddWindow)
-        span.span('btns')
+        constructor = new components(selectorAddWindow)
+        constructor.span('btns')
 
         const spanBtns = document.querySelector('#btns')
         
-        const btn = new components(spanBtns)
-        btn.btnadd('Adicionar')
-        btn.btnclose('fechar')
+        constructor = new components(spanBtns)
+        constructor.btnadd('Adicionar')
+        constructor.btnclose('fechar')
     }
 
     const close = function(){
