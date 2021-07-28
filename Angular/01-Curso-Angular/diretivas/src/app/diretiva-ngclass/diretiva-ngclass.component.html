@@ -1,0 +1,13 @@
+<i class="bi"
+(click)="changed()"
+[class.bi-volume-down-fill]="volume"
+[class.bi-volume-down]="!volume"
+></i>
+
+
+<i class="bi"
+[ngClass]="{
+  'bi-volume-down-fill':volume,
+  'bi-volume-down':!volume
+}"
+(click)="changed()"></i>
