@@ -1,0 +1,31 @@
+<p appFundoAmarelo>
+  diretivas-customizadas works!
+</p>
+
+<p appHighlightMouse>
+  texto com highlight quando passo o mouse
+</p>
+
+<!--
+  Passando a diretiva e os Inputs cada um separadamente: 
+  
+  <p appHiglight defaultColor="gray" highlight="red">
+    texto com highlight com cores customizadas
+  </p> 
+-->
+
+<p [appHiglight]="'red'" defaultColor="gray" >
+  texto com highlight com cores customizadas
+</p>
+
+
+
+<div *ngIf="mostraCursos">
+  Lista de cursos aqui.
+</div>
+
+<div *appNgElse="mostraCursos">
+  Não existem cursos para serem listados.
+</div>
+
+<button (click)="mostrarcurso()">Mostra ou esconde</button>
