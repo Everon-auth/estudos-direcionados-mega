@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs/Rx';
 
 @Component({
   selector: 'app-exemplos-pipes',
@@ -16,10 +17,35 @@ export class ExemplosPipesComponent implements OnInit {
     url: 'https://a.co/glqjpRP'
   };
 
+  filtro: string;
   livros: string[] = ['Angular', 'Javascript']
   constructor() { }
 
   ngOnInit() {
   }
 
-}
+  addCurso(valor){
+    this.livros.push(valor)
+  }
+
+  obterCursos(){
+    if(this.livros.length ===0 || this.filtro === undefined || this.filtro.trim() === '') return this.livros;
+
+    return this.livros.filter((v) =>{
+      if(v.toLowerCase().indexOf(this.filtro.toLowerCase()) >=0){
+        return true;
+      }
+      return false;
+    });
+  };
+
+  valorAsync = new Promise((resolve,reject)=>{
+    setTimeout(()=> resolve('valor assíncrono'),2000)
+  })
+
+  valorAsync2 = Observable.interval(2000)
+  .map(valor => 'valor assíncrono2')
+
+};
+
+/*   Questão de performance usar o filtro nos componentes direto, não criar pipes com o filtro. */

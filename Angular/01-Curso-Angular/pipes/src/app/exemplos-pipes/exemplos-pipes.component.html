@@ -15,8 +15,38 @@
   oque vier depois define o formato de Pipe utilizado
 -->
 
+<input type="text" #novoValor>
+<button (click)="addCurso(novoValor.value)">Adicoinar Curso</button>
+
+<input type="text" [(ngModel)]="filtro">
+
+<h5> Pipe Puro </h5>
 <ul>
-  <li *ngFor="let liv of livros | filtroArray">
+  <li *ngFor="let liv of livros | filtroArray:filtro">
     {{ liv }}
   </li>
 </ul>
+
+<br>
+
+<h5> Pipe Impuro </h5>
+<ul>
+  <li *ngFor="let liv of livros | filtroArrayImpuro:filtro">
+    {{ liv }}
+  </li>
+</ul>
+
+<h5> Maneira correta de filtrar (segundo a instrutora do curso) </h5>
+<ul>
+  <li *ngFor="let liv of livros | filtroArrayImpuro:filtro">
+    {{ liv }}
+  </li>
+</ul>
+
+
+
+<p> {{ valorAsync | async }} </p>
+
+<p> {{ valorAsync2 | async }} </p>
+
+<!-- o pipe async pega pra nós o valor da promessa direto, sem demonstrar o objeto da promessa diretamente -->
