@@ -1,17 +1,16 @@
-<nav class="nav-extended blue accent-4 ">
+<nav class="nav-extended blue accent-4" *ngIf="mostrarMenu">
   <div class="nav-wrapper">
     <a routerLink="" class="brand-logo right">Logo</a>
     <ul id="nav-mobile" class="left">
       <li routerLink="/login" routerLinkActive="active" class="tab"><a>Login</a></li>
       <li routerLink="/cursos" routerLinkActive="active" [queryParams]="{pagina:1}" class="tab"><a>cursos</a></li>
-      <li [routerLink]="['curso', idCurso.value]" routerLinkActive="active" class="tab"><a>curso com ID</a></li>
+      <!-- <li [routerLink]="['curso', idCurso.value]" routerLinkActive="active" class="tab"><a>curso com ID</a></li> -->
+      <li routerLink="/alunos" routerLinkActive="active" class="tab"><a>Alunos</a></li>
     </ul>
   </div>
 </nav>
 
 <div class="container">
 
-  <p>ID:</p>
-  <input type="text" #idCurso value="2">
   <router-outlet></router-outlet>
 </div>

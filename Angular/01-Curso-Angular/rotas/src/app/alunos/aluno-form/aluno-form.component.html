@@ -1,0 +1,11 @@
+<h5>Novo Aluno/Editar Aluno</h5>
+
+<input type="text" placeholder="id" disabled 
+[(ngModel)]="aluno.id">
+<input type="text" placeholder="nome" 
+[(ngModel)]="aluno.nome"
+(input)="onInput()">
+<input type="text" placeholder="email" 
+[(ngModel)]="aluno.email">
+
+<a class="waves-effect waves-light btn" (click)="sendValue()">Enviar</a>

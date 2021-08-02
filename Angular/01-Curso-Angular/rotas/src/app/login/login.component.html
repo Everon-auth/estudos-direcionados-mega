@@ -1,3 +1,14 @@
-<p>
-  login works!
-</p>
+<div class="container">
+  <div class="col" style="text-align: center;">
+    <div class="input-field s6 offset-s3">
+      <h5>Login</h5>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s6 offset-s3">
+      <input placeholder="Usuário" type="text" class="validate" [(ngModel)]="usuario.nome">
+      <input placeholder="Senha" type="password" class="validate" [(ngModel)]="usuario.senha">
+      <button class="waves-effect waves-light btn" (click)="login()">Login</button>
+    </div>
+  </div>
+</div>
