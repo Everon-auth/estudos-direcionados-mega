@@ -10,6 +10,9 @@ export class AlunoDetalheResolver implements Resolve<Aluno> {
 
     resolve(route: ActivatedRouteSnapshot): 
     Observable<Aluno> | Promise<Aluno> | Aluno {
-        return ;
+        
+        let id = route.params['id'];
+        
+        return this.alunosService.getAluno(id);
     }
 }
