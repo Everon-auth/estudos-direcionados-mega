@@ -1,0 +1,21 @@
+<nav class="navbar navbar-dark bg-dark">
+  <div class="btn-group">
+
+    <a class="btn btn-danger" 
+    [routerLink]="['templateForm']"
+    routerLinkActive="active">
+    Form - Template Driven</a>
+
+    <a class="btn btn-danger" 
+    [routerLink]="['dataForm']" 
+    routerLinkActive="active">
+    Form - Data Driven</a>
+
+  </div>
+</nav>
+
+<div class="container-sm">
+  <div class="container-md col-12 card">
+    <router-outlet></router-outlet>
+  </div>
+</div>
