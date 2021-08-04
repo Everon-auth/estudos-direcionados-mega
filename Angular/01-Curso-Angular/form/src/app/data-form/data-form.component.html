@@ -1,0 +1,96 @@
+<form class="form-horizontal" [formGroup]="formulario" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <!-- Nome -->
+    <div class="col-sm-12">
+      <label for="nome" class="control-label">Nome</label>
+    </div>
+    <div class="col-sm-12">
+      <input type="text" class="form-control" formControlName="nome" 
+        id="nome" placeholder="Nome">
+     </div>
+  </div>
+  <!-- Email -->
+  <div class="form-group">
+    <div class="col-sm-12">
+      <label for="email" class="control-label">Email</label>
+    </div>
+    <div class="col-sm-12">
+      <input type="email" class="form-control" formControlName="email"
+        id="email" placeholder="nome@email.com">     
+    </div>
+  </div>
+  <!-- Endereço -->
+  <div formGroupName="endereco">
+    <div class="form-group">
+      <!-- CEP -->
+      <div class="col-md-3">
+        <label for="cep" class="control-label">CEP</label>
+        <input type="text" class="form-control" id="cep" formControlName="cep"
+        (blur)="consultar()">
+      </div>
+      <!-- Número -->
+      <div class="col-md-3">
+        <label for="numero" class="control-label">Número</label>
+        <input type="text" class="form-control" id="numero" formControlName="numero">
+      </div>
+      <!-- Complemento -->
+      <div class="col-md-6">
+        <label for="complemento" class="control-label">Complemento</label>
+        <input type="text" class="form-control" id="complemento" formControlName="complemento">
+      </div>
+    </div>
+    <!-- Rua -->
+    <div class="form-group">
+      <div class="col-sm-12">
+        <label for="rua" class="control-label">Rua</label>
+      </div>
+      <div class="col-sm-12">
+        <input type="text" class="form-control" name="rua" id="rua"  formControlName="rua">
+      </div>
+    </div>
+    <!-- Bairro -->
+    <div class="form-group">
+      <div class="col-md-5">
+        <label for="bairro" class="control-label">Bairro</label>
+        <input type="text" class="form-control" id="bairro" formControlName="bairro">
+      </div>
+      <!-- Cidade -->
+      <div class="col-md-4">
+        <label for="cidade" class="control-label">Cidade</label>
+        <input type="text" class="form-control" id="cidade" formControlName="cidade">
+      </div>
+      <!-- Estado -->
+      <div class="col-md-3">
+        <label for="estado" class="control-label">Estado</label>
+        <select type="text" class="form-control" id="estado" formControlName="estado"> 
+         <option *ngFor="let estado of estados | async" [value]="estado.sigla"> {{ estado.nome }} </option>
+        </select>
+        </div>
+    </div>
+  </div>
+    <!-- Cargo -->
+    <div class="form-group">
+      <div class="col-md-3">
+        <label for="cargo" class="control-label">cargo</label>
+        <select type="text" class="form-control" id="cargo" formControlName="cargo" [compareWith]="compararCargos"> 
+         <option *ngFor="let cargo of cargos" [ngValue]="cargo.sigla"> {{ cargo.desc }} </option>
+        </select>
+        </div>
+    </div>
+    <div class="form-group">
+      <div class="col-md-3">
+        <label for="tecnologias" class="control-label">tecnologias</label>
+        <select multiple type="text" class="form-control" id="tecnologias" formControlName="tecnologias"> 
+         <option *ngFor="let tecnologia of tecnologias" [ngValue]="tecnologias.nome"> {{ tecnologia.desc }} </option>
+        </select>
+        </div>
+    </div>
+    <!-- Botões -->
+  <div class="container">
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="button" class="btn btn-warning" (click)="resetar()">Reset</button>
+    <button type="button" class="btn btn-primary" (click)="setCargo()">Cargo</button>
+    <button type="button" class="btn btn-info" (click)="settecnologia()">tecnologia</button>
+  </div>
+
+</form>
