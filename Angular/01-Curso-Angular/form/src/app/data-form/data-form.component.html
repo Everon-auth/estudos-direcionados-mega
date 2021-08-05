@@ -9,6 +9,8 @@
         id="nome" placeholder="Nome">
      </div>
   </div>
+  <app-error-msg [control]="formulario.get('nome')" label="nome">
+  </app-error-msg>
   <!-- Email -->
   <div class="form-group">
     <div class="col-sm-12">
@@ -19,14 +21,25 @@
         id="email" placeholder="nome@email.com">     
     </div>
   </div>
+  <app-error-msg [control]="formulario.get('email')" label="email">
+  </app-error-msg>
+  <!-- Confirmar Email -->
+  <div class="form-group">
+    <div class="col-sm-12">
+      <label for="confirmarEmail" class="control-label">confirmar Email</label>
+    </div>
+    <div class="col-sm-12">
+      <input type="confirmarEmail" class="form-control" formControlName="confirmarEmail"
+        id="confirmarEmail" placeholder="nome@email.com">     
+    </div>
+  </div>
   <!-- Endereço -->
   <div formGroupName="endereco">
     <div class="form-group">
       <!-- CEP -->
       <div class="col-md-3">
         <label for="cep" class="control-label">CEP</label>
-        <input type="text" class="form-control" id="cep" formControlName="cep"
-        (blur)="consultar()">
+        <input type="text" class="form-control" id="cep" formControlName="cep">
       </div>
       <!-- Número -->
       <div class="col-md-3">
@@ -85,6 +98,36 @@
         </select>
         </div>
     </div>
+    <div class="form-group">
+      <div class="col-md-3">
+        <label for="newsletter" class="control-label">Newsletter</label>
+        <div id="newsletter" class="row">
+          <div class="col-sm-4" *ngFor="let option of newsletter">
+            <label for="" class="radio-inline">
+              <input type="radio" formControlName="newsletter" [value]="option.valor"> {{ option.desc }}
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+<div class="form-group">
+  <div class="col-md-3" style="margin-bottom: 20px; margin-top: 20px;">
+    <label for="framework" style="margin-bottom: 1px;">Framework</label>
+    <div id="framework" class="row">
+      <div class="checkbox col-sm-8" 
+      formArrayName="framework"
+      *ngFor=" let item of formulario.get('framework').value; let i = index">
+        <label for="" class="checkbox-inline">
+          <input type="checkbox" 
+          formControlName="frameworks" [formControlName]="i"> {{ frameworks[i] }}
+        </label>
+      </div>
+    </div>
+  </div>
+</div>
+
     <!-- Botões -->
   <div class="container">
     <button type="submit" class="btn btn-primary">Submit</button>
