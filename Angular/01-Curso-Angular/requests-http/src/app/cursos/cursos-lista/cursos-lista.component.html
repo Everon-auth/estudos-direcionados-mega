@@ -1,0 +1,36 @@
+<div class="container-md  card">
+  <div class="navbar">
+    <div class="container" style="display: flex; background-color: #ebf2fc; padding-top: 10px; padding-bottom: 10px; flex-direction: row;">
+      <li class="nav fs-4 fw-bolder">Cursos</li>
+      <li class="nav"><button class="btn btn-primary" [routerLink]="['/novo']">Novo Curso</button></li>
+    </div>
+  <div class="container-sm" style="padding-top:10px;">
+    <table class="table table-striped" *ngIf="cursos$ | async as cursos; else loading">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Curso</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let curso of cursos">
+          <th scope="row"> {{ curso.id }}</th>
+          <td> {{ curso.nome }} </td>
+          <td class="justify-content-end" style="display: flex;">
+            <button class="btn btn-success" style="margin-right: 10px;">Atualizar</button>
+            <button class="btn btn-danger">Remover</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <ng-template #loading style="display: flex; align-items: center;">
+      <div style="display: flex; justify-content: center; width: 100%;">
+        <div class="spinner-border text-primary" role="status">
+        </div>
+      </div>
+    </ng-template>
+  </div>
+  </div>
+</div>

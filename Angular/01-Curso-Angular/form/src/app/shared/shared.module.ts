@@ -21,12 +21,13 @@ import { InputFieldComponent } from './input-field/input-field.component';
     CampoControlErroComponent,
     ErrorMsgComponent,
     InputFieldComponent,
+
   ],
   exports:[
     FormDebugComponent,
     CampoControlErroComponent,
     ErrorMsgComponent,
-    InputFieldComponent
+    InputFieldComponent,
   ],
   providers:[
     DropdownService

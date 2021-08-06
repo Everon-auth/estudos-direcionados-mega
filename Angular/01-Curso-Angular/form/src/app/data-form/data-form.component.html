@@ -68,15 +68,21 @@
         <input type="text" class="form-control" id="bairro" formControlName="bairro">
       </div>
       <!-- Cidade -->
-      <div class="col-md-4">
+      <div class="col-md-5">
+        <label for="cidade" class="control-label">cidade</label>
+        <select type="text" class="form-control" id="cidade" formControlName="cidade"> 
+         <option *ngFor="let cidade of cidades" [value]="cidade.Nome"> {{ cidade.Nome }} </option>
+        </select>
+        </div>
+<!--       <div class="col-md-4">
         <label for="cidade" class="control-label">Cidade</label>
         <input type="text" class="form-control" id="cidade" formControlName="cidade">
-      </div>
+      </div> -->
       <!-- Estado -->
-      <div class="col-md-3">
+      <div class="col-md-4">
         <label for="estado" class="control-label">Estado</label>
         <select type="text" class="form-control" id="estado" formControlName="estado"> 
-         <option *ngFor="let estado of estados | async" [value]="estado.sigla"> {{ estado.nome }} </option>
+         <option *ngFor="let estado of estados" [value]="estado.id"> {{ estado.nome }} </option>
         </select>
         </div>
     </div>
