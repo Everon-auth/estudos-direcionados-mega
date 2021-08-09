@@ -9,7 +9,7 @@ import { CursosService } from '../cursos.service';
   templateUrl: './cursos-form.component.html',
   styleUrls: ['./cursos-form.component.scss']
 })
-export class CursosFormComponent implements OnInit, OnDestroy {
+export class CursosFormComponent implements OnInit {
 
   form: FormGroup;
   submitted: boolean = false
