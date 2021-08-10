@@ -10,6 +10,7 @@
         formControlName="nome"
         [ngClass]="{ 'is-invalid': submitted && hasError('nome') }"
       />
+      <input type="text" formControlName="id" style="display: none;">
       <div class="invalid-feedback"
       *ngIf="hasError('nome') && hasError('nome')['required'] ">
         Por favor informe um nome para o curso.

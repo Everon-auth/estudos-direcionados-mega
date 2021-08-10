@@ -1,7 +1,6 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
-import { delay, map, switchMap } from 'rxjs/operators';
 import { CursosService } from '../cursos.service';
 
 @Component({
@@ -23,22 +22,24 @@ export class CursosFormComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-
+/* 
     this.curso = this.route.params.pipe(
       map((params: any) => params['id']),
       switchMap(id => this.cursoData.loadByID(id))
     ).subscribe(curso => this.updateForm(curso))
-
+ */
+    const curso = this.route.snapshot.data['curso'];
     this.form = this.fb.group({
-      nome: [null, [Validators.required, Validators.minLength(3), Validators.maxLength(250)]]
+      id: [curso.id],
+      nome: [curso.nome, [Validators.required, Validators.minLength(3), Validators.maxLength(250)]]
     })
   }
-  updateForm(curso){
+/*   updateForm(curso){
     this.form.patchValue({
       nome: curso.nome,
       id: curso.id
     })
-  }
+  } */
   hasError(field: string) {
     return this.form.get(field).errors
   }
@@ -49,11 +50,12 @@ export class CursosFormComponent implements OnInit {
     this.submitted = true
     if (this.form.valid) {
       console.log(`Nome válido: ${this.form.value.nome}`);
-      const nome = this.form.value.nome;
-      this.cursoData.prepair({
-        id: this.cursoData.genID(),
-        nome: nome
-      }).subscribe(_ => this.router.navigate(['']))
+
+      this.cursoData.save(this.form.value).subscribe(
+        success =>{ alert(` Requisição feita com sucesso `)},
+        error => { alert(` Houve um erro inesperado, tente novamente `)},
+        () => this.router.navigate([''])
+      )
     }
 
   }

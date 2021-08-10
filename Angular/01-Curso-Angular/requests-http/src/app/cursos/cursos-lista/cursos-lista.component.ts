@@ -43,8 +43,15 @@ export class CursosListaComponent implements OnInit{
       })
     )
   }
-  onDelete(id){
-    console.log(id)
+  onDelete(curso:Curso){
+    const del = confirm(`Você tem certeza que deseja excluir o curso ${curso.nome}`)
+    if(del){
+      this.service.delete(curso).subscribe(
+        () => this.onRefresh()
+      )
+    }
+      
+    
   }
   onEdit(id){
     this.router.navigate(['editar',id],{relativeTo: this.route})

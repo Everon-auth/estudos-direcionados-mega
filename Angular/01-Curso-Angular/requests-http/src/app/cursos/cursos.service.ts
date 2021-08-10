@@ -20,7 +20,7 @@ export class CursosService {
       delay(1000),
       tap(console.log));
   }
-  prepair(data){
+  send(data){
     return this.http.post(this.API,data).pipe(take(1));
   }
   genID(){
@@ -30,5 +30,19 @@ export class CursosService {
   }
   loadByID(id){
     return this.http.get<Curso>(`${this.API}/${id}`).pipe(take(1));
+  }
+  update(curso){
+    return this.http.put(`${this.API}/${curso.id}`,curso).pipe(take(1));
+  }
+  save(curso){
+    if(curso.id){
+      return this.update(curso)
+    }
+    else{
+      return this.send(curso)
+    }
+  }
+  delete(curso:Curso){
+    return this.http.delete(`${this.API}/${curso.id}`).pipe(take(1));
   }
 }
