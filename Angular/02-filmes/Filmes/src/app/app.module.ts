@@ -3,18 +3,19 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
-import { LibSearchComponent } from './lib-search/lib-search.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AboutModule } from './about/about.module';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    SidebarComponent,
-    LibSearchComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    AboutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
