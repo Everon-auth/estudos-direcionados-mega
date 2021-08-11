@@ -1,0 +1,32 @@
+<div class=" container" style="display: flex; justify-content: flex-end; margin-top: 20px;">
+  <input style="width: 250px;" type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search" [formControl]="queryField">
+  <!-- <button type="button" class="btn btn-success" (click)="onSearch()">Pesquisar</button> -->
+</div>
+<div class="container">
+  <h3> {{ total }} de resultados encontrados </h3>
+  <table id="dtBasicExample" class="table table-striped table-bordered table-sm" cellspacing="0" width=" 100vw">
+    <thead>
+      <tr>
+        <th class="th-sm">Nome
+        </th>
+        <th class="th-sm">Versão
+        </th>
+        <th class="th-sm">Descrição
+        </th>
+        <th class="th-sm">Repositorio
+        </th>
+        <th class="th-sm">Site
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let result of results$ | async">
+        <td style="text-align: center; vertical-align: middle"> {{ result.name }} </td>
+        <td style="word-break: break-all;vertical-align: middle; text-align: center;"> {{ result.version }} </td>
+        <td style="word-break: break-all;vertical-align: middle; text-align: center;"> {{ result.description }} </td>
+        <td style="word-break: break-all;vertical-align: middle; text-align: center;"> <a [href]="result.homepage">{{ result.homepage }}</a></td>
+        <td style="word-break: break-all;vertical-align: middle; text-align: center;"> <a [href]="result.latest">{{ result.latest }}</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

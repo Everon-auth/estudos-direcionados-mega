@@ -16,16 +16,13 @@ export class CursosService {
 
   list(){
     return this.http.get<Curso[]>(this.API)
-    .pipe(
-      delay(1000),
-      tap(console.log));
   }
   send(data){
     return this.http.post(this.API,data).pipe(take(1));
   }
   genID(){
     let id:number;
-    this.list().subscribe(d =>id = d++);
+    this.list().subscribe((d:any) =>id = d++);
     return id;
   }
   loadByID(id){
