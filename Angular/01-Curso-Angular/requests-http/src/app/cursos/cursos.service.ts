@@ -1,13 +1,9 @@
-import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 import { Curso } from '../models/curso';
-import { delay, take, tap } from 'rxjs/operators'
+import { take } from 'rxjs/operators'
 import { environment } from 'src/environments/environment';
 
-@Injectable({
-  providedIn: 'root'
-})
 export class CursosService {
 
   constructor(private http: HttpClient) { }
