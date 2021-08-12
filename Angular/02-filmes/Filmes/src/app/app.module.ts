@@ -5,21 +5,24 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AboutModule } from './about/about.module';
-import { ModalComponent } from './shared/modal/modal.component';
-import { LoginComponent } from './shared/login/login.component';
-
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
+import { SharedModule } from './shared/shared.module';
+import { FilmesModule } from './filmes/filmes.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ModalComponent,
-    LoginComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    AboutModule
+    AboutModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    FilmesModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
