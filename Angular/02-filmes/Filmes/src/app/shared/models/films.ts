@@ -3,5 +3,6 @@ export interface Films {
   url: string,
   date: Date,
   descript: string,
+  type: string
 
 }

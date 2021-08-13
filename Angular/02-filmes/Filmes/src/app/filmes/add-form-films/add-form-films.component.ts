@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder } from '@angular/forms';
+import { FormBuilder, Validators } from '@angular/forms';
 
 import { Subscription } from 'rxjs';
+import { Films } from 'src/app/shared/models/films';
 import { CrudService } from 'src/app/shared/services/crud.service';
 
 @Component({
@@ -10,7 +11,7 @@ import { CrudService } from 'src/app/shared/services/crud.service';
   styleUrls: ['./add-form-films.component.scss']
 })
 export class AddFormFilmsComponent implements OnInit {
-  URL_API:string = 'http://localhost:3000/'
+  URL_API:string = 'http://localhost:3000'
   profileForm: any
   subscriber!: Subscription
   formDirectives: any
@@ -24,21 +25,24 @@ export class AddFormFilmsComponent implements OnInit {
     this.subscriber = this.http.returnList(`${this.URL_API}/FormInputs`).subscribe(data => this.formDirectives = data)
 
     this.profileForm = this.fb.group({
-      nome: [null],
-      url: [null],
-      date: [null],
-      descript: [null],
-      type: [null]
+      nome: [null,[Validators.required,Validators.minLength(3)]],
+      url: [null, [Validators.required,Validators.minLength(7)]],
+      date: [null,Validators.required],
+      descript: [null, Validators.required],
+      type: [null, Validators.required]
     })
   }
   onSend(){
-    this.http.addData(this.preparData,this.URL_API)
+    this.http.addData(this.preparData(this.profileForm),this.URL_API)
   }
-  preparData(){
+  preparData(values:Films){
     let data
     return data ={
-
+      name: values.name,
+      url: values.url,
+      date: values.date,
+      descript: values.descript,
+      type: values.type
     }
   }
-
 }
