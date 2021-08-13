@@ -9,11 +9,21 @@
       </span>
       <span class="d-flex flex-column btn-group me-2 align-items-center">
         <input class="form-check-input" type="checkbox">
-        <button type="button" class="btn btn-primary" style="margin-top: 10px;width: 100%;" (click)="onEdit(filme.id)">Editar</button>
-        <button type="button" class="btn btn-primary" style="margin-top: 10px;" (click)="onView(filme.id)">Vizualizar</button>
-        <button type="button" class="btn btn-danger" style="margin-top: 10px; width:100%;" (click)="showModal(filme.id)">Excluir</button>
+        <button type="button" class="btn btn-primary" style="margin-top: 10px;width: 100%;"
+          (click)="onEdit(filme.id)">Editar</button>
+        <button type="button" class="btn btn-primary" style="margin-top: 10px;"
+          (click)="onView(filme.id)">Vizualizar</button>
+        <button type="button" class="btn btn-danger" style="margin-top: 10px; width:100%;"
+          (click)="showModal(filme.id)">Excluir</button>
       </span>
     </div>
   </ul>
+</div>
+<div class="container card text-center flex justify-content-center" style="height: 80%;" *ngIf="!infoFilmes">
+  <h1>Oops!</h1>
+  <p>Não encontramos nenhum filme, Gostatia de inserir algum?</p>
+  <div class="container">
+    <button type="button" class="btn btn-outline-warning me-2">Adicionar Novo</button>
+  </div>
 </div>
 <router-outlet></router-outlet>

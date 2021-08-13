@@ -12,14 +12,14 @@ export class CrudService {
   constructor(
     private http: HttpClient,
   ) { }
-  returnList(){
-    return this.http.get(this.API_URL)
+  returnList(url:any = this.API_URL){
+    return this.http.get(url)
   }
-  addData(data: any){
-    return this.http.post(this.API_URL,data).pipe(take(1))
+  addData(data: any, url:any = this.API_URL){
+    return this.http.post(url,data).pipe(take(1))
   }
-  deleteData(data:string){
-    return this.http.delete(`${this.API_URL}${data}`).pipe(take(2));
+  deleteData(data:string, url:any = this.API_URL){
+    return this.http.delete(`${url}${data}`).pipe(take(1));
   }
 }
 

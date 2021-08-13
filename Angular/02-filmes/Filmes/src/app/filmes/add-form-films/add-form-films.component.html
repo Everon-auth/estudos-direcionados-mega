@@ -1,0 +1,28 @@
+<div class="d-flex flex-column align-items-center">
+  <div class="col-md-6 card " style="margin-top: 20px; padding: 10px;">
+    <form class="row g-3" [formGroup]="profileForm">
+      <div class="col-md-6" *ngFor="let form of formDirectives">
+        <label class="form-label"> {{ form.label }} </label>
+        <input [type]="form.tipo" class="form-control" [formControlName]="form.formNam">
+      </div>
+      <div class="form-floating">
+        <select class="form-select" formControlName="type" id="floatingSelect"
+          aria-label="Floating label select example">
+          <option> Selecione uma opção</option>
+          <option *ngFor="let option of selectDirectives"> {{ option }} </option>
+        </select>
+        <label for="floatingSelect">Tipo:</label>
+      </div>
+      <div class="col-12 d-flex flex-column align-items-center">
+        <div class="form-floating" style="width: 100%;">
+          <textarea class="form-control" style="height: 200px;" formControlName="descript"></textarea>
+          <label for="floatingTextarea2">Descrição</label>
+        </div>
+      </div>
+      <div class="col-12 d-flex justify-content-end">
+        <button class="btn btn-success" (click)="onSend()">Adicionar</button>
+        <button class="btn btn-danger" style="margin-left: 10px;">Cancelar</button>
+      </div>
+    </form>
+  </div>
+</div>

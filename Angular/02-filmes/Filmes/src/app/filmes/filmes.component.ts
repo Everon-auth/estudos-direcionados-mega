@@ -1,7 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { FormBuilder } from '@angular/forms';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { delay } from 'rxjs/operators';
+import { Subscription } from 'rxjs';
 import { CrudService } from '../shared/services/crud.service';
 
 @Component({
@@ -9,34 +8,36 @@ import { CrudService } from '../shared/services/crud.service';
   templateUrl: './filmes.component.html',
   styleUrls: ['./filmes.component.scss']
 })
-export class FilmesComponent implements OnInit {
+export class FilmesComponent implements OnInit, OnDestroy {
 
   // @Input()
 
-  @Input() isExclude: boolean = false;
   infoFilmes: any
-  rotaAtiva:any
+  rotaAtiva: any
+
   constructor(
     private http: CrudService,
-    private form: FormBuilder,
+/*     public subscription: Subscription, */
     private route: Router) { }
 
   ngOnInit(): void {
-    this.http.returnList().subscribe(value => {
-      this.infoFilmes = value
-    })
+    /* this.subscription =  */this.http.returnList().subscribe(value => this.infoFilmes = value)
+    /* console.log(this.subscription) */
   }
-  showModal(id: number){
-    this.changeRoute('exclude',id)
+  showModal(id: number) {
+    this.changeRoute('exclude', id)
   }
-  onView(id:number){
-    this.changeRoute('view',id)
+  onView(id: number) {
+    this.changeRoute('view', id)
   }
-  onEdit(id:number){
-    this.changeRoute('edit',id)
+  onEdit(id: number) {
+    this.changeRoute('edit', id)
   }
-  changeRoute(type:string,id:number){
+  changeRoute(type: string, id: number) {
     this.rotaAtiva = this.route.url
-    this.route.navigate([`${this.rotaAtiva}/${type}`,id])
+    this.route.navigate([`${this.rotaAtiva}/${type}`, id])
+  }
+  ngOnDestroy() {
+/*     this.subscription.unsubscribe() */
   }
 }
