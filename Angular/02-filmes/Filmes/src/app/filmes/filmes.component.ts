@@ -10,19 +10,17 @@ import { CrudService } from '../shared/services/crud.service';
 })
 export class FilmesComponent implements OnInit, OnDestroy {
 
-  // @Input()
-
   infoFilmes: any
   rotaAtiva: any
-
+  subscription!: Subscription;
+  datalog: string = `Carregando...`
+  dataStats: boolean = false
   constructor(
     private http: CrudService,
-/*     public subscription: Subscription, */
     private route: Router) { }
 
   ngOnInit(): void {
-    /* this.subscription =  */this.http.returnList().subscribe(value => this.infoFilmes = value)
-    /* console.log(this.subscription) */
+    this.onLoad()
   }
   showModal(id: number) {
     this.changeRoute('exclude', id)
@@ -38,6 +36,26 @@ export class FilmesComponent implements OnInit, OnDestroy {
     this.route.navigate([`${this.rotaAtiva}/${type}`, id])
   }
   ngOnDestroy() {
-/*     this.subscription.unsubscribe() */
+    this.subscription.unsubscribe();
+  }
+  onDelclick(value: any) {
+    console.log(value)
+  }
+  onLoad() {
+    this.subscription = this.http.returnList().subscribe(
+      success => {
+        this.infoFilmes = success
+        if (this.infoFilmes.length == 0) {
+          this.datalog = 'Não encontramos nenhum filme, Gostaria de inserir algum?'
+          this.dataStats = true
+        }
+      },
+      error => this.datalog = `
+      Ocorreu um Erro inesperado, tente novamente mais tarde!
+      ( Erro: ${error.statusText} )`)
+  }
+  reload() {
+    this.datalog = 'Carregando...'
+    this.onLoad()
   }
 }

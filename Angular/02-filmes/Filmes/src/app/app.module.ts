@@ -22,7 +22,7 @@ import { FilmesModule } from './filmes/filmes.module';
     HttpClientModule,
     ReactiveFormsModule,
     FilmesModule,
-    SharedModule
+    SharedModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
