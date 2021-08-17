@@ -9,7 +9,7 @@ export class CrudService {
 
   API_URL = 'http://localhost:3000/films/'
 
-  constructor(
+  private constructor(
     private http: HttpClient,
   ) { }
   returnList(url:any = this.API_URL){

@@ -1,26 +1,14 @@
-<header class="p-3 bg-dark text-white">
-  <div class="container">
-    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-      <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-        <li><a class="nav-link px-2 white-text" [routerLink]="['home']" routerLinkActive="text-secondary">Home</a></li>
-        <li><a class="nav-link px-2 white-text" [routerLink]="['/films']" routerLinkActive="text-secondary">Filmes</a>
-        </li>
-        <li><a class="nav-link px-2 white-text" [routerLink]="['/series']" routerLinkActive="text-secondary">Séries</a>
-        </li>
-        <li><a class="nav-link px-2 white-text" [routerLink]="['/about']" routerLinkActive="text-secondary">Sobre</a>
-        </li>
-        <li><a class="nav-link px-2 white-text" [routerLink]="['/community']" routerLinkActive="text-secondary">Comunidade</a></li>
-      </ul>
-
-      <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-        <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
-      </form>
-
-      <div class="text-end">
-        <button type="button" class="btn btn-outline-light me-2">Login</button>
-        <button type="button" class="btn btn-warning">Sign-up</button>
-      </div>
-    </div>
-  </div>
-</header>
+<mat-toolbar color="primary" class="nabvar">
+  <span>
+    <button mat-flat-button color="primary" [routerLink]="['home']" routerLinkActive="">Home</button>
+    <button mat-flat-button color="primary" [routerLink]="['/films']" routerLinkActive="">Filmes</button>
+    <button mat-flat-button color="primary" [routerLink]="['/series']" routerLinkActive="">Séries</button>
+    <button mat-flat-button color="primary" [routerLink]="['/about']" routerLinkActive="">Sobre</button>
+    <button mat-flat-button color="primary" [routerLink]="['/community']" routerLinkActive="">Comunidade</button>
+  </span>
+  <span>
+    <button mat-raised-button color="basic">Login</button>
+    <button mat-raised-button color="accent">Sign-up</button>
+  </span>
+</mat-toolbar>
 <router-outlet></router-outlet>

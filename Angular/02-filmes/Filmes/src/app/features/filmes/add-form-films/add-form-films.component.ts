@@ -32,7 +32,7 @@ export class AddFormFilmsComponent implements OnInit, OnDestroy {
 
     this.profileForm = this.fb.group({
       nome: [null,[Validators.required,Validators.minLength(3)]],
-      url: [null, [Validators.required,Validators.minLength(7)]],
+      img: [null, Validators.required],
       date: [null,Validators.required],
       descript: [null, Validators.required],
       type: [null, Validators.required]
@@ -45,7 +45,7 @@ export class AddFormFilmsComponent implements OnInit, OnDestroy {
     let data
     return data ={
       name: values.name,
-      url: values.url,
+      img: values.url,
       date: values.date,
       descript: values.descript,
       type: values.type

@@ -4,19 +4,19 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: 'films',
-    loadChildren: () => import('./filmes/filmes.module').then(m => m.FilmesModule)
+    loadChildren: () => import('./features/filmes/filmes.module').then(m => m.FilmesModule)
   },
   {
     path: 'community',
-    loadChildren: () => import('./community/community.module').then(m => m.CommunityModule)
+    loadChildren: () => import('./features/community/community.module').then(m => m.CommunityModule)
   },
   {
     path: 'series',
-    loadChildren: () => import('./series/series.module').then(m => m.SeriesModule)
+    loadChildren: () => import('./features/series/series.module').then(m => m.SeriesModule)
   },
   {
     path: 'about',
-    loadChildren: () => import('./about/about.module').then(m => m.AboutModule)
+    loadChildren: () => import('./features/about/about.module').then(m => m.AboutModule)
   },
   {
     path: 'error',
@@ -24,7 +24,7 @@ const routes: Routes = [
   },
   {
     path: 'home',
-    loadChildren: () => import('./home/home.module').then(m => m.HomeModule)
+    loadChildren: () => import('./features/home/home.module').then(m => m.HomeModule)
   },
   {
     path:'', pathMatch:'full',redirectTo:'home'

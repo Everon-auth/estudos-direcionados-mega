@@ -1,7 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
-import { CrudService } from '../shared/services/crud.service';
+import { CrudService } from '../../shared/services/crud.service';
 
 @Component({
   selector: 'app-filmes',

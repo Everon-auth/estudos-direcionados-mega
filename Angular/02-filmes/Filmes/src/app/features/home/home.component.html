@@ -1,0 +1,27 @@
+<div class="body-home">
+  <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-camera-reels-fill"
+    viewBox="0 0 16 16">
+    <path d="M6 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+    <path d="M9 6a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+    <path
+      d="M9 6h.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 7.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 16H2a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h7z" />
+  </svg>
+  <h1 class="display-5 fw-bold">Julgando Filmes</h1>
+
+  <p class="text">
+    Bem Vindo a nosso site de filmes onde falamos sobre qualquer filme, classificamos (Como o
+    <strong>RottenTomatoes</strong>).
+    Uma comunidade voltada aos cinéfilos de plantão e agora também voltada para os viciados em séries!!
+  </p>
+  <ul class="li-display">
+    <li class="unmarked">
+      <button mat-raised-button color="primary" [routerLink]="['/films']">Filmes</button>
+    </li>
+    <li class="unmarked">
+      <button mat-raised-button color="primary" [routerLink]="['/series']">Séries</button>
+    </li>
+  </ul>
+  <span class="center">
+    <button mat-stroked-button color="accent" [routerLink]="['/community']">Nossa Comunidade</button>
+  </span>
+</div>

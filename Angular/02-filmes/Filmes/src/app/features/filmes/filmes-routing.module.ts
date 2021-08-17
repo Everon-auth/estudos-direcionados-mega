@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ModalComponent } from '../shared/modal/modal.component';
+import { ModalComponent } from '../../shared/modal/modal.component';
 import { AddFormFilmsComponent } from './add-form-films/add-form-films.component';
 import { FilmesComponent } from './filmes.component';
 
