@@ -7,6 +7,7 @@ import { OptionPannelComponent } from '../../shared/option-pannel/option-pannel.
 import { SharedModule } from '../../shared/shared.module';
 import { AddFormFilmsComponent } from './add-form-films/add-form-films.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { FilmsListComponent } from './films-list/films-list.component';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     FilmesComponent,
     OptionPannelComponent,
     AddFormFilmsComponent,
+    FilmsListComponent,
 
   ],
   imports: [

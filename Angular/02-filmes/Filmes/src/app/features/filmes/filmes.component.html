@@ -1,38 +1,16 @@
-<app-option-pannel class="card bg-light"
-(clicked)="onDelclick($event)"></app-option-pannel>
-<div style="margin-top: 20px;">
+<app-option-pannel class="card bg-light" (clicked)="onDelclick($event)" *ngIf="infoFilmes"></app-option-pannel>
 
-</div>
-<div class="container card text-center flex justify-content-center" style="height: 80%;" *ngIf="!infoFilmes">
-  <h1 *ngIf="dataStats">Oops!</h1>
-  <p> {{ datalog }} </p>
-  <div class="container">
-    <button mat-raised-button color="primary" *ngIf="dataStats">Adicionar Novo</button>
-    <button mat-raised-button color="warn" *ngIf="!dataStats" (click)="reload()">Recarregar</button>
-  </div>
-</div>
+<mat-card fxLayout="column" fxLayoutAlign="center center">
 
-<mat-card>
-  <ul class="list-group card" *ngIf="infoFilmes">
-    <div class=" card d-flex flex-row align-items-center" *ngFor="let filme of infoFilmes">
-      <img [src]=" filme.url" style="width: 20%;" class="card-img-top" alt="...">
-      <span>
-        <h2 style="text-align: center;"> <strong> {{ filme.name }} </strong></h2>
-        <p style="box-sizing: border-box; padding:40px"> {{ filme.descript }} </p>
-      </span>
-      <span class="d-flex flex-column btn-group me-2 align-items-center">
-        <span class="d-flex" style="height: 100%; width: 100%;">
-          <input class="form-check-input" type="checkbox">
-        </span>
-        <button type="button" class="btn btn-primary" style="margin-top: 10px;width: 100%;"
-          (click)="onEdit(filme.id)">Editar</button>
-        <button type="button" class="btn btn-primary" style="margin-top: 10px;"
-          (click)="onView(filme.id)">Vizualizar</button>
-        <button type="button" class="btn btn-danger" style="margin-top: 10px; width:100%;"
-          (click)="showModal(filme.id)">Excluir</button>
-      </span>
+  <app-films-list [data]="infoFilmes" fxLayout="column" fxLayoutAlign="center center"></app-films-list>
+
+  <mat-progress-bar mode="indeterminate" *ngIf="showProgress && !infoFilmes"></mat-progress-bar>
+  <span *ngIf="!infoFilmes" style="width: 100%;" fxLayout="column" fxLayoutAlign="center center">
+    <h1 *ngIf="dataStats">Oops!</h1>
+    <p> {{ datalog }} </p>
+    <div class="container">
+      <button mat-raised-button color="primary" *ngIf="dataStats">Adicionar Novo</button>
+      <button mat-raised-button color="warn" *ngIf="!dataStats" (click)="reload()">Recarregar</button>
     </div>
-  </ul>
+  </span>
 </mat-card>
-
-<router-outlet></router-outlet>

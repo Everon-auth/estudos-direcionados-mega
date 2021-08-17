@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 
 @NgModule({
@@ -15,6 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
   exports:[
     ReactiveFormsModule,
     HttpClientModule,
+    FlexLayoutModule
   ],
 })
 export class AngularModulesModule { }
