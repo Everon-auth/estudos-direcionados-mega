@@ -7,14 +7,14 @@
   <!-- Card -->
   <mat-card [formGroup]="profileForm" class="form-Input-Card">
 
-    <span fxLayout="row" fxLayoutAlign="space-between center">
-    <!-- input de nome -->
-      <mat-form-field appearance="fill">
+    <span fxLayout="row" fxLayoutAlign="space-around center">
+      <!-- input de nome -->
+      <mat-form-field appearance="outline">
         <mat-label>Nome:</mat-label>
         <input matInput formControlName="nome">
       </mat-form-field>
       <!-- Input de data -->
-      <mat-form-field appearance="fill">
+      <mat-form-field appearance="outline">
         <mat-label>Data de Lançamento:</mat-label>
         <input matInput [matDatepicker]="picker" formControlName="date">
         <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
@@ -24,7 +24,7 @@
 
     <div>
       <!-- Input de tipo -->
-      <mat-form-field appearance="fill">
+      <mat-form-field appearance="outline">
         <mat-label>Tipo:</mat-label>
         <mat-select formControlName="type">
           <mat-option *ngFor="let option of selectDirectives" [value]="option">
@@ -33,25 +33,25 @@
         </mat-select>
       </mat-form-field>
     </div>
-
-    <div>
-      <!-- Input de Imagem -->
-      <input type="file" formControlName="img">
-      <!-- barra de progresso de upload de imagem -->
-      <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
-    </div>
     <div>
       <!-- Input de Descrição -->
-      <mat-form-field appearance="fill">
+      <mat-form-field appearance="outline" style="width: 100%;">
         <mat-label>Descrição:</mat-label>
         <textarea matInput formControlName="descript"></textarea>
       </mat-form-field>
     </div>
-
-    <div fxLayout="row" fxLayoutAlign="end center">
+    <span fxLayout="row" fxLayoutAlign="center center">
+      <span class="person-button">
+        <label for='selecao-arquivo' style="cursor: pointer;" matTooltip="Apênas imagens em JPEG, JPG ou PNG">Selecionar Imagem</label>
+        <input id='selecao-arquivo' type='file' style="display: none;">
+        <mat-progress-bar mode="determinate" value="40" *ngIf="isUploaded"></mat-progress-bar>
+      </span>
+    </span>
+    <div fxLayout="row" fxLayoutAlign="end center" style="margin-top: 20px;">
       <!-- Botões  -->
       <button mat-raised-button color="primary" (click)="onSend()">Adicionar</button>
       <button mat-raised-button color="warn" style="margin-left: 10px;" [routerLink]="['/films']">Cancelar</button>
     </div>
   </mat-card>
 </div>
+<app-error [error]="ErrorDialog" *ngIf="isError" (isErr)=catchEvent($event)></app-error>

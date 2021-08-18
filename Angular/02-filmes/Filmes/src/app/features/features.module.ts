@@ -19,6 +19,7 @@ import { LogInFormModule } from './log-in-form/log-in-form.module';
     HomeModule,
     SeriesModule,
     LogInFormModule
-  ]
+  ],
+  exports:[]
 })
 export class FeaturesModule { }

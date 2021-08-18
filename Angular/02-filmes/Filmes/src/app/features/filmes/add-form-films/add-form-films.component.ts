@@ -1,8 +1,8 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 import { Subscription } from 'rxjs';
-import { Films } from 'src/app/shared/models/films';
 import { CrudService } from 'src/app/shared/services/crud.service';
 
 @Component({
@@ -11,47 +11,58 @@ import { CrudService } from 'src/app/shared/services/crud.service';
   styleUrls: ['./add-form-films.component.scss']
 })
 export class AddFormFilmsComponent implements OnInit, OnDestroy {
-  URL_API:string = 'http://localhost:3000'
+  URL_API: string = 'http://localhost:3000'
   profileForm: any
   subscriber!: Subscription
-  formDirectives: any
   selectDirectives: any[] = ['Filme', 'Série']
-  directiveStats:boolean = false
+
+  directiveStats: boolean = false;
+
+  isError: boolean = false
+  ErrorDialog: any
+  isUploaded: boolean = false
+
   constructor(
     private http: CrudService,
-    private fb: FormBuilder
+    private fb: FormBuilder,
+    private route: Router
   ) { }
 
   ngOnInit(): void {
-    this.subscriber = this.http.returnList(`${this.URL_API}/FormInputs`).subscribe(
-      success =>{
-        this.directiveStats = true;
-        this.formDirectives = success
-      },
-      error => console.log(error))
-
     this.profileForm = this.fb.group({
-      nome: [null,[Validators.required,Validators.minLength(3)]],
-      img: [null, Validators.required],
-      date: [null,Validators.required],
+      nome: [null, [Validators.required, Validators.minLength(3)]],
+      img: [null],
+      date: [null, Validators.required],
       descript: [null, Validators.required],
       type: [null, Validators.required]
     })
+    this.directiveStats = true
+
+
   }
-  onSend(){
-    this.http.addData(this.preparData(this.profileForm),`${this.URL_API}/films`).subscribe()
-  }
-  preparData(values:Films){
-    let data
-    return data ={
-      name: values.name,
-      img: values.url,
-      date: values.date,
-      descript: values.descript,
-      type: values.type
+  onSend() {
+    if (this.profileForm.status != "INVALID") {
+      this.subscriber = this.http.addData(this.preparData(this.profileForm), `${this.URL_API}/films`).subscribe()
+      this.route.navigate(["/films"])
+    } else {
+      this.isError = true
+      this.ErrorDialog = `Alguns campos estão Inválidos, favor preencher todos corretamentes.`
     }
   }
-  ngOnDestroy(){
-    this.subscriber.unsubscribe();
+  preparData(values: any) {
+    let data
+    return data = {
+      name: values.value.name,
+      img: values.value.url,
+      date: values.value.date,
+      descript: values.value.descript,
+      type: values.value.type
+    }
+  }
+  ngOnDestroy() {
+    this.subscriber?.unsubscribe()
+  }
+  catchEvent(event: any) {
+    this.isError = event.value
   }
 }

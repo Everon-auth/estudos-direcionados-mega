@@ -8,10 +8,12 @@ import { SharedModule } from '../../shared/shared.module';
 import { AddFormFilmsComponent } from './add-form-films/add-form-films.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FilmsListComponent } from './films-list/films-list.component';
+import { ErrorComponent } from 'src/app/shared/error/error.component';
 
 
 @NgModule({
   declarations: [
+    ErrorComponent,
     FilmesComponent,
     OptionPannelComponent,
     AddFormFilmsComponent,
@@ -23,6 +25,9 @@ import { FilmsListComponent } from './films-list/films-list.component';
     FilmesRoutingModule,
     SharedModule,
     ReactiveFormsModule
+  ],
+  exports:[
+
   ]
 })
 export class FilmesModule { }

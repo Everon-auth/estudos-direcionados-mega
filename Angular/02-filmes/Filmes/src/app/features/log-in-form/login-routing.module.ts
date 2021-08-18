@@ -1,13 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ErrorComponent } from './error.component';
+import { LogInFormComponent } from './log-in-form.component';
 
 const routes: Routes = [
-  { path:'', component: ErrorComponent}
+  { path:'', component: LogInFormComponent }
+
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class ErrorRoutingModule { }
+export class LoginRoutingModule { }

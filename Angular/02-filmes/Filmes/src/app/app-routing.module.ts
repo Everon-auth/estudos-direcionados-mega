@@ -19,15 +19,15 @@ const routes: Routes = [
     loadChildren: () => import('./features/about/about.module').then(m => m.AboutModule)
   },
   {
-    path: 'error',
-    loadChildren: () => import('./shared/error/error.module').then(m => m.ErrorModule)
-  },
-  {
     path: 'home',
     loadChildren: () => import('./features/home/home.module').then(m => m.HomeModule)
   },
   {
-    path:'', pathMatch:'full',redirectTo:'home'
+    path:'login',
+    loadChildren: () => import('./features/log-in-form/log-in-form.module').then(m => m.LogInFormModule)
+  },
+  {
+    path:'', pathMatch:'full',redirectTo:'login'
   },
 ];
 

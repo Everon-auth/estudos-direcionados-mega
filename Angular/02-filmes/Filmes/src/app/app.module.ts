@@ -19,6 +19,7 @@ import { SharedModule } from './shared/shared.module';
     FeaturesModule,
     SharedModule
   ],
+  exports:[SharedModule],
   providers: [],
   bootstrap: [AppComponent]
 })

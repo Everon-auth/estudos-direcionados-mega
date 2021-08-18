@@ -1,1 +1,12 @@
-<p>error works!</p>
+<mat-card class="floating">
+  <mat-card-subtitle>
+    Oops, ocorreu um erro
+  </mat-card-subtitle>
+  <mat-card-content style="text-align: center;">
+    {{ error }}
+  </mat-card-content>
+  <mat-card-actions fxLayout="row" fxLayoutAlign="end center">
+    <button mat-raised-button color="warn" (click)="closeError()">OK</button>
+  </mat-card-actions>
+
+</mat-card>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-error',
@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ErrorComponent implements OnInit {
 
-  constructor() { }
+  @Input() error:any
+  @Output() isErr= new EventEmitter
+  constructor(
+  ) { }
 
   ngOnInit(): void {
+
   }
 
+  closeError(){
+    this.isErr.emit({value:false})
+  }
 }
