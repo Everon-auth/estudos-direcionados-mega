@@ -54,4 +54,7 @@ export class FilmesComponent implements OnInit, OnDestroy {
   onDelclick(value: any) {
     console.log(value)
   }
+  onPagination(event:any){
+    console.log(event)
+  }
 }

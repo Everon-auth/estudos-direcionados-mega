@@ -1,39 +1,57 @@
-<div class="d-flex flex-column align-items-center" *ngIf="directiveStats">
-  <div class="col-md-6 card " style="margin-top: 20px; padding: 10px;">
-    <form class="row g-3" [formGroup]="profileForm">
-      <div class="col-md-6" *ngFor="let form of formDirectives">
-        <label class="form-label"> {{ form.label }} </label>
-        <input [type]="form.tipo" class="form-control" [formControlName]="form.formNam">
-      </div>
-      <div>
-
-        <mat-form-field appearance="fill">
-          <mat-label>Tipo:</mat-label>
-          <mat-select formControlName="type">
-            <mat-option *ngFor="let option of selectDirectives">
-              {{ option }}
-            </mat-option>
-          </mat-select>
-        </mat-form-field>
-      </div>
-
-      <div>
-        <input type="file" formControlName="img">
-        <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
-      </div>
-      <div>
-        <mat-form-field class="example-full-width" appearance="fill">
-          <mat-label>Leave a comment</mat-label>
-          <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
-        </mat-form-field>
-      </div>
-      <div class="col-12 d-flex justify-content-end">
-        <button class="btn btn-success" (click)="onSend()">Adicionar</button>
-        <button class="btn btn-danger" style="margin-left: 10px;" [routerLink]="['/films']">Cancelar</button>
-      </div>
-    </form>
-  </div>
-</div>
-<div>
+<!-- Barra de progresso -->
+<div *ngIf="!directiveStats">
   <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+</div>
+<!-- Formulário de adição de filme -->
+<div *ngIf="directiveStats" fxLayout="row" fxLayoutAlign="center center">
+  <!-- Card -->
+  <mat-card [formGroup]="profileForm" class="form-Input-Card">
+
+    <span fxLayout="row" fxLayoutAlign="space-between center">
+    <!-- input de nome -->
+      <mat-form-field appearance="fill">
+        <mat-label>Nome:</mat-label>
+        <input matInput formControlName="nome">
+      </mat-form-field>
+      <!-- Input de data -->
+      <mat-form-field appearance="fill">
+        <mat-label>Data de Lançamento:</mat-label>
+        <input matInput [matDatepicker]="picker" formControlName="date">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+    </span>
+
+    <div>
+      <!-- Input de tipo -->
+      <mat-form-field appearance="fill">
+        <mat-label>Tipo:</mat-label>
+        <mat-select formControlName="type">
+          <mat-option *ngFor="let option of selectDirectives" [value]="option">
+            {{ option }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+
+    <div>
+      <!-- Input de Imagem -->
+      <input type="file" formControlName="img">
+      <!-- barra de progresso de upload de imagem -->
+      <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+    </div>
+    <div>
+      <!-- Input de Descrição -->
+      <mat-form-field appearance="fill">
+        <mat-label>Descrição:</mat-label>
+        <textarea matInput formControlName="descript"></textarea>
+      </mat-form-field>
+    </div>
+
+    <div fxLayout="row" fxLayoutAlign="end center">
+      <!-- Botões  -->
+      <button mat-raised-button color="primary" (click)="onSend()">Adicionar</button>
+      <button mat-raised-button color="warn" style="margin-left: 10px;" [routerLink]="['/films']">Cancelar</button>
+    </div>
+  </mat-card>
 </div>

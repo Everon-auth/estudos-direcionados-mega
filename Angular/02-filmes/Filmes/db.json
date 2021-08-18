@@ -67,13 +67,6 @@
       "formNam": "nome"
     },
     {
-      "label": "imagem:",
-      "tipo": "text",
-      "Required": true,
-      "Validators": "null",
-      "formNam": "url"
-    },
-    {
       "label": "Data de Lançamento:",
       "tipo": "date",
       "Required": true,
