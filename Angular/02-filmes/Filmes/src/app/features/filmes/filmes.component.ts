@@ -1,6 +1,8 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { PageEvent } from '@angular/material/paginator';
+
 import { Subscription } from 'rxjs';
+import { PaginationService } from 'src/app/shared/services/paginator/pagination.service';
 import { CrudService } from '../../shared/services/crud.service';
 
 @Component({
@@ -11,14 +13,20 @@ import { CrudService } from '../../shared/services/crud.service';
 export class FilmesComponent implements OnInit, OnDestroy {
 
   infoFilmes: any
-  rotaAtiva: any
   subscription!: Subscription;
   datalog: string = `Carregando...`
   dataStats: boolean = false
   showProgress: boolean = true
+  pIndex:any = 0
+
+  pageSizeOptions: number[] = [5, 10, 25, 100];
+  length: any;
+  pageSize = 10;
+  transmitFilms: any
+
   constructor(
     private http: CrudService,
-    private route: Router) { }
+    private paginatin: PaginationService) { }
 
   ngOnInit(): void {
     this.onLoad()
@@ -44,6 +52,10 @@ export class FilmesComponent implements OnInit, OnDestroy {
       ( Erro: ${error.statusText} )`
         this.showProgress = false
         throw new Error(`Não foi possível se conectar ao banco de dados.`)
+      },
+      () => {
+        this.length = Math.ceil(this.infoFilmes.length)
+        this.transmitFilms = this.paginatin.pagination(this.infoFilmes, this.pageSize,this.pIndex)
       })
   }
   reload() {
@@ -52,9 +64,10 @@ export class FilmesComponent implements OnInit, OnDestroy {
     this.onLoad()
   }
   onDelclick(value: any) {
-    console.log(value)
   }
-  onPagination(event:any){
-    console.log(event)
+  onPaginationEvent(event:PageEvent){
+    this.pageSize = event.pageSize
+    this.pIndex = event.pageIndex
+    this.onLoad()
   }
 }

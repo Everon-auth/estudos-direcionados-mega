@@ -2,7 +2,7 @@
 
 <mat-card fxLayout="column" fxLayoutAlign="center center">
 
-  <app-films-list [data]="infoFilmes" fxLayout="column" fxLayoutAlign="center center"></app-films-list>
+  <app-films-list [data]="transmitFilms" fxLayout="column" fxLayoutAlign="center center"></app-films-list>
 
   <mat-progress-bar mode="indeterminate" *ngIf="showProgress && !infoFilmes"></mat-progress-bar>
   <span *ngIf="!infoFilmes" style="width: 100%;" fxLayout="column" fxLayoutAlign="center center">
@@ -13,9 +13,10 @@
       <button mat-raised-button color="warn" *ngIf="!dataStats" (click)="reload()">Recarregar</button>
     </div>
   </span>
-<!--   <mat-paginator [length]="100"
-  [pageSize]="10"
-  [pageSizeOptions]="[5, 10, 25, 100]"
-  aria-label="Select page">
-  </mat-paginator> -->
+  <mat-paginator *ngIf="infoFilmes" [length]="length"
+  [pageSize]="pageSize"
+  [pageSizeOptions]="pageSizeOptions"
+  aria-label="Select page"
+  (page)="onPaginationEvent($event)">
+</mat-paginator>
 </mat-card>
