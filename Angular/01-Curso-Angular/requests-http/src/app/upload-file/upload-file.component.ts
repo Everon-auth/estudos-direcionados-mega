@@ -22,12 +22,9 @@ export class UploadFileComponent implements OnInit {
 
   onChange(event){
     const selectedFiles = <FileList>event.srcElement.files
-    const fileNames=[];
-
     for(let i =0; i < selectedFiles.length;i++){
       this.files.add(selectedFiles[i])
     }
-
   }
   onSubmit(){
     this.progress = 0;

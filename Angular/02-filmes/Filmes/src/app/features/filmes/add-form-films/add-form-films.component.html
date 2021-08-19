@@ -43,8 +43,8 @@
     <span fxLayout="row" fxLayoutAlign="center center">
       <span class="person-button">
         <label for='selecao-arquivo' style="cursor: pointer;" matTooltip="Apênas imagens em JPEG, JPG ou PNG">Selecionar Imagem</label>
-        <input id='selecao-arquivo' type='file' style="display: none;">
-        <mat-progress-bar mode="determinate" value="40" *ngIf="isUploaded"></mat-progress-bar>
+        <input id='selecao-arquivo' type='file' style="display: none;" (change)="onChange($event)">
+        <mat-progress-bar mode="indeterminate" [value]="progress" *ngIf="isUploaded"></mat-progress-bar>
       </span>
     </span>
     <div fxLayout="row" fxLayoutAlign="end center" style="margin-top: 20px;">

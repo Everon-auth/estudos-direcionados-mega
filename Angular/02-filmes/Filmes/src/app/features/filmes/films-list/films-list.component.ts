@@ -15,7 +15,6 @@ export class FilmsListComponent implements OnInit {
     private route:Router) { }
 
   ngOnInit(): void {
-    console.log(this.data)
   }
 
   showModal(id: number) {

@@ -1,16 +1,12 @@
 <app-shadow-modal></app-shadow-modal>
-<div class="modal-dialog dia" role="document">
-  <div class="modal-content rounded-4 shadow">
-    <div class="modal-body p-4 text-center">
-      <h5 class="mb-0">Excluir</h5>
-      <p class="mb-0">Você tem certeza que deseja excluir este filme?</p>
-    </div>
-    <div class="modal-footer flex-nowrap p-0">
-      <button type="button"
-        class="btn btn-lg btn-link fs-6 text-decoration-none col-6 m-0 rounded-0 border-right"
-        (click)="yes()"><strong>Sim</strong></button>
-      <button type="button" class="btn btn-lg btn-link fs-6 text-decoration-none col-6 m-0 rounded-0"
-        data-bs-dismiss="modal" (click)="redirect()">Cancelar</button>
+<div class="dia" fxLayout="column" fxLayoutAligh="center center" style="text-align: center;">
+  <h3>Excluir</h3>
+  <div mat-dialog-content>
+    <p>Você tem certeza que deseja excluir este filme?</p>
+    <div>
+      <button cdkfocusinitial="" class="mat-focus-indicator mat-button mat-button-base" (click)="yes()"><strong>Sim</strong></button>
+      <button cdkfocusinitial="" class="mat-focus-indicator mat-button mat-button-base" (click)="redirect()">Cancelar</button>
     </div>
   </div>
+
 </div>

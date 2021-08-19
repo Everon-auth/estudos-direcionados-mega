@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  API_URL: 'http://localhost:3000/films'
+  API: 'http://localhost:8000',
+  BASE_URL: '/api',
 };
 
 /*

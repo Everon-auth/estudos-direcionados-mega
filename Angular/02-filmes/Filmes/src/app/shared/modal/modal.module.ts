@@ -6,12 +6,14 @@ import { ShadowModalComponent } from './shadow-modal/shadow-modal.component';
 
 
 @NgModule({
-  declarations: [ModalComponent,
-  ShadowModalComponent],
-  imports: [
-    CommonModule
+  declarations: [
+    ModalComponent,
+    ShadowModalComponent
   ],
-  exports:[
+  imports: [
+    CommonModule,
+  ],
+  exports: [
     ModalComponent,
     ShadowModalComponent
   ]
