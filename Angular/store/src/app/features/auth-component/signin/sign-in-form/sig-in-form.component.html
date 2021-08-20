@@ -1,0 +1,28 @@
+<mat-card class="card">
+    <mat-form-field appearance="fill" class="example-full-width">
+      <mat-label>Nome completo:</mat-label>
+      <input matInput type="text">
+    </mat-form-field>
+    <mat-form-field appearance="fill" class="example-full-width">
+      <mat-label>Email:</mat-label>
+      <input matInput type="email">
+    </mat-form-field>
+  <span fxLayout="row">
+    <mat-form-field appearance="fill" class="example-full-width">
+      <mat-label>Crie uma Senha:</mat-label>
+      <input matInput type="text">
+    </mat-form-field>
+    <mat-form-field appearance="fill" class="example-full-width" style="margin-left: 20px;">
+      <mat-label>Repita sua senha:</mat-label>
+      <input matInput type="text">
+    </mat-form-field>
+  </span>
+  <span fxLayout="row" fxLayoutAlign="center center">
+    <mat-checkbox class="example-margin" [checked]="check" (click)="openDialog()">Eu aceito os</mat-checkbox>
+    <button mat-flat-button color="basic" (click)="openDialog()" style="margin-left: 20px;">Termos de Política e Privacidade</button>
+  </span>
+  <span fxLayout="row" fxLayoutAlign="end center" style="margin-top: 20px;">
+    <button mat-flat-button color="primary">Inscrever-se</button>
+    <button mat-flat-button color="warn" style="margin-left: 20px;">Cancelar</button>
+  </span>
+</mat-card>
