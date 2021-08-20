@@ -1,4 +1,4 @@
-<mat-drawer-container style="height: 100%;">
+<mat-drawer-container class="sidenav">
   <mat-drawer #drawer class="example-sidenav" mode="side">
     <mat-selection-list #shoes [multiple]="false">
       <mat-list-option *ngFor="let option of options" (click)="category(option.value)">

@@ -9,8 +9,11 @@ import { Subscription } from 'rxjs';
 export class SidenavComponent implements OnInit {
 
   @Input() showFiller = true;
-  options: any
-  subscription!: Subscription
+  options: any = [{
+    label: 'option1',
+    value: 'option'
+
+  }]
   constructor() { }
 
   ngOnInit(): void {
