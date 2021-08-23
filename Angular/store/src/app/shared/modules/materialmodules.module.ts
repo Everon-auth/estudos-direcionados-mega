@@ -12,7 +12,8 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatDialogModule } from '@angular/material/dialog';
 import { TextFieldModule } from '@angular/cdk/text-field';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import {MatMenuModule} from '@angular/material/menu';
+import { MatMenuModule } from '@angular/material/menu';
+import {MatBadgeModule} from '@angular/material/badge';
 
 @NgModule({
   declarations: [],
@@ -34,7 +35,8 @@ import {MatMenuModule} from '@angular/material/menu';
     MatDialogModule,
     TextFieldModule,
     MatToolbarModule,
-    MatMenuModule
+    MatMenuModule,
+    MatBadgeModule
   ],
 })
 export class MaterialModulesModule { }
