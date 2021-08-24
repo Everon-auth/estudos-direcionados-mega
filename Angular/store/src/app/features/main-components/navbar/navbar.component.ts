@@ -1,30 +1,43 @@
-import { Component, OnInit } from '@angular/core';
-import {MatDialog} from '@angular/material/dialog';
-import { FilterComponent } from '../filter/filter.component';
+import { Component, OnDestroy, OnInit } from '@angular/core';
+import { FilterComponent } from '../../../features/main-components/filter/filter.component';
+import { MatDialog } from '@angular/material/dialog';
+import { Subscriber, Subscription } from 'rxjs';
+import { ShoppingCartComponent } from '../../cart-components/container/shopping-cart.component';
 
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss']
 })
-export class NavbarComponent implements OnInit {
+export class NavbarComponent implements OnInit, OnDestroy {
 
-  itens!:number;
-  categorias:any = ['Eletrônicos'];
-  constructor(public dialog: MatDialog) { }
+  itens!: number;
+  categorias: any = ['Eletrônicos'];
+  filtro!: string[]
+  sub!: Subscription
+  constructor(private dialog: MatDialog) { }
 
   ngOnInit(): void {
     console.log()
   }
-  openDialog(): void {
+  openDialog() {
     const dialogRef = this.dialog.open(FilterComponent, {
-      width: '250px',
-      data: {name: this.name, animal: this.animal}
+      height: '800px',
+      width: '1200px',
     });
-    dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed');
-      this.animal = result;
-    });
+
+    this.sub = dialogRef.afterClosed().subscribe(result =>{
+      console.log(result)
+    })
+  }
+  openCart(){
+    const dialogRef = this.dialog.open(ShoppingCartComponent,{
+      height: '800px',
+      width: '1200px'
+    })
   }
 
+  ngOnDestroy() {
+    this.sub.unsubscribe();
+  }
 }

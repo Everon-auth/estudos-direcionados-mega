@@ -4,6 +4,8 @@ import { CommonModule } from '@angular/common';
 import { SharedRoutingModule } from './shared-routing.module';
 import { MaterialModulesModule } from './modules/materialmodules.module';
 import { SharedComponentsModule } from './components/shared-components.module';
+import { HttpClientModule } from '@angular/common/http';
+import { CepService } from './services/cep.service';
 
 
 @NgModule({
@@ -14,7 +16,9 @@ import { SharedComponentsModule } from './components/shared-components.module';
     SharedRoutingModule,
   ],exports:[
     MaterialModulesModule,
-    SharedComponentsModule
+    SharedComponentsModule,
+    HttpClientModule
   ],
+  providers:[CepService]
 })
 export class SharedModule { }

@@ -1,0 +1,8 @@
+<div fxLayout="column">
+    <app-navigation></app-navigation>
+    <span fxLayout="row" style="width: 100%;">
+        <app-new-adress *ngIf="nAddr" class="list-component"></app-new-adress>
+        <app-main-shopping class="list-component over" *ngIf="!nAddr"></app-main-shopping>
+        <app-payment style="width: 30%; height: 100%;"></app-payment>
+    </span>
+</div>

@@ -1,0 +1,48 @@
+<mat-card fxLayout="column" fxLayoutAlign="center center">
+    <mat-card-title>Pagamento</mat-card-title>
+    <span fxLayout="column" fxlayoutAlign="flex-start" style="width: 100%;">
+        <mat-card-content class="start-center">
+            <mat-form-field>
+                <mat-label>Formato de pagamento</mat-label>
+                <mat-select>
+                    <mat-option value="Boleto">
+                        Boleto
+                    </mat-option>
+                    <mat-option value="Cartão">
+                        Cartão
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </mat-card-content>
+        <mat-card-content>
+            <mat-form-field class="start-center">
+                <mat-label>Parcelas</mat-label>
+                <mat-select value="1x">
+                    <mat-option value="1x">
+                        1x
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+            <span class="start-center">
+                Endereço de entrega:
+                <mat-form-field>
+                    <mat-label>Endereço:</mat-label>
+                    <mat-select>
+                        <mat-option value="Novo Endereço">
+                            Novo Endereço
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </span>
+        </mat-card-content>
+        <mat-card-content fxLayout="column" fxLayoutAlign="center center">
+            <mat-card>
+                <h3>
+                    Valor total: R$ 1500,00
+                </h3>
+            </mat-card>
+            <button mat-raised-button color="accent" style="width: 100%; margin-top: 10px;" disabled>Finalizar
+                Compra</button>
+        </mat-card-content>
+    </span>
+</mat-card>

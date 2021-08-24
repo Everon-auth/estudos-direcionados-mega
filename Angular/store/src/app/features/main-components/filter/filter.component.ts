@@ -1,5 +1,6 @@
 import { Component, OnInit, Inject } from '@angular/core';
-import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
+import { FormBuilder, Validators } from '@angular/forms';
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-filter',
@@ -11,15 +12,20 @@ export class FilterComponent implements OnInit {
 
 
   constructor(
-    public dialogRef: MatDialogRef<FilterComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: DialogData) {}
+    private dialogRef: MatDialogRef<FilterComponent>,
+    @Inject(MAT_DIALOG_DATA) public data: any,
+    private formBuild: FormBuilder
+  ) { }
+
 
   ngOnInit(): void {
+    this.data = this.formBuild.group({
+      min: [null],
+      max: null
+    })
+  }
+  closeDialog(): void {
+    this.dialogRef.close(this.data.value);
   }
 
-  
-}
-interface DialogData {
-  animal: string;
-  name: string;
 }

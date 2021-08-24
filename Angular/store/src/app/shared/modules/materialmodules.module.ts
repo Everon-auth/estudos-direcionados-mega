@@ -13,7 +13,10 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { TextFieldModule } from '@angular/cdk/text-field';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatMenuModule } from '@angular/material/menu';
-import {MatBadgeModule} from '@angular/material/badge';
+import { MatBadgeModule } from '@angular/material/badge';
+import { MatCommonModule } from '@angular/material/core';
+import { MatSelectModule } from '@angular/material/select';
+import { MatTableModule } from '@angular/material/table';
 
 @NgModule({
   declarations: [],
@@ -36,7 +39,10 @@ import {MatBadgeModule} from '@angular/material/badge';
     TextFieldModule,
     MatToolbarModule,
     MatMenuModule,
-    MatBadgeModule
+    MatBadgeModule,
+    MatCommonModule,
+    MatSelectModule,
+    MatTableModule
   ],
 })
 export class MaterialModulesModule { }

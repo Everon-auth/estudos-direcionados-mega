@@ -17,11 +17,11 @@
       </mat-menu>
     </span>
     <span>
-      <button mat-button color="basic">Filtro</button>
+      <button mat-button color="basic" (click)="openDialog()">Filtro</button>
     </span>
     <span>
       <span>
-        <button mat-button color="basic">
+        <button mat-button color="basic" (click)="openCart()">
           <span class="material-icons" [matBadge]="itens" matBadgeColor="accent">local_grocery_store</span>
         </button>
         <button mat-button color="basic">
