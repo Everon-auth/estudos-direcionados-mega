@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ShoppingCartComponent implements OnInit {
   nAddr:boolean = true
-  constructor() { }
+  loading:boolean = false
+  constructor(
+
+  ) { }
 
   ngOnInit(): void {
-  }
 
+  }
+  a(evt:any){
+    console.log(evt)
+  }
 }

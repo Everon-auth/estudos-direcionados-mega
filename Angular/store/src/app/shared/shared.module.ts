@@ -6,6 +6,7 @@ import { MaterialModulesModule } from './modules/materialmodules.module';
 import { SharedComponentsModule } from './components/shared-components.module';
 import { HttpClientModule } from '@angular/common/http';
 import { CepService } from './services/cep.service';
+import { ComprasService } from './services/compras.service';
 
 
 @NgModule({
@@ -19,6 +20,9 @@ import { CepService } from './services/cep.service';
     SharedComponentsModule,
     HttpClientModule
   ],
-  providers:[CepService]
+  providers:[
+    CepService,
+    ComprasService
+  ]
 })
 export class SharedModule { }

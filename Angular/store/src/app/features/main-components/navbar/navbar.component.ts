@@ -1,7 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { FilterComponent } from '../../../features/main-components/filter/filter.component';
 import { MatDialog } from '@angular/material/dialog';
-import { Subscriber, Subscription } from 'rxjs';
+import { Subscription } from 'rxjs';
 import { ShoppingCartComponent } from '../../cart-components/container/shopping-cart.component';
 
 @Component({
@@ -33,7 +33,8 @@ export class NavbarComponent implements OnInit, OnDestroy {
   openCart(){
     const dialogRef = this.dialog.open(ShoppingCartComponent,{
       height: '800px',
-      width: '1200px'
+      width: '1200px',
+      panelClass: 'custom-dialog-container',
     })
   }
 

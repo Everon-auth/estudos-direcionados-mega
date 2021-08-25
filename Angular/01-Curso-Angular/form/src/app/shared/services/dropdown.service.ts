@@ -3,7 +3,6 @@ import { HttpClient } from '@angular/common/http';
 import { EstadoBR } from '../models/estado-br.model';
 import { Cidade } from '../models/cidade';
 import { map } from 'rxjs/operators';
-import { of } from 'rxjs';
 
 @Injectable()
 export class DropdownService {

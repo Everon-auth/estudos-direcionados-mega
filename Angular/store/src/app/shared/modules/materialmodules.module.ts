@@ -14,9 +14,9 @@ import { TextFieldModule } from '@angular/cdk/text-field';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatBadgeModule } from '@angular/material/badge';
-import { MatCommonModule } from '@angular/material/core';
 import { MatSelectModule } from '@angular/material/select';
 import { MatTableModule } from '@angular/material/table';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [],
@@ -40,9 +40,9 @@ import { MatTableModule } from '@angular/material/table';
     MatToolbarModule,
     MatMenuModule,
     MatBadgeModule,
-    MatCommonModule,
     MatSelectModule,
-    MatTableModule
+    MatTableModule,
+    MatSnackBarModule
   ],
 })
 export class MaterialModulesModule { }

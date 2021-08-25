@@ -31,6 +31,9 @@
                         <mat-option value="Novo Endereço">
                             Novo Endereço
                         </mat-option>
+                        <mat-option *ngFor="let endereco of end | async" [value]="endereco">
+                            {{ endereco.nome }}
+                        </mat-option>
                     </mat-select>
                 </mat-form-field>
             </span>
