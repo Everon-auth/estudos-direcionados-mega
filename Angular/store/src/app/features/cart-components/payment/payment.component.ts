@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Observable } from 'rxjs';
 import { ComprasService } from 'src/app/shared/services/compras.service';
 
@@ -9,6 +9,8 @@ import { ComprasService } from 'src/app/shared/services/compras.service';
 })
 export class PaymentComponent implements OnInit {
   end!:Observable<any>
+
+  @Output() newAddress = new EventEmitter;
   constructor(
     private service: ComprasService,
 
@@ -17,5 +19,7 @@ export class PaymentComponent implements OnInit {
   ngOnInit(): void {
     this.end = this.service.getSavedEnd()
   }
-
+  emitNewAddress(){
+    this.newAddress.emit({valor: true})
+  }
 }

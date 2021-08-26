@@ -7,6 +7,8 @@ import { SharedComponentsModule } from './components/shared-components.module';
 import { HttpClientModule } from '@angular/common/http';
 import { CepService } from './services/cep.service';
 import { ComprasService } from './services/compras.service';
+import { ReactiveFormsModule } from '@angular/forms';
+import { StorageLocalService } from './services/storage-local.service';
 
 
 @NgModule({
@@ -18,11 +20,13 @@ import { ComprasService } from './services/compras.service';
   ],exports:[
     MaterialModulesModule,
     SharedComponentsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers:[
     CepService,
-    ComprasService
+    ComprasService,
+    StorageLocalService
   ]
 })
 export class SharedModule { }
