@@ -6,7 +6,6 @@ import { MainShoppingComponent } from './main-shopping/main-shopping.component';
 import { PaymentComponent } from './payment/payment.component';
 import { ShoppingCartComponent } from './container/shopping-cart.component';
 import { NewAdressComponent } from './new-adress/new-adress.component';
-import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -21,7 +20,6 @@ import { ReactiveFormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     SharedModule,
-    ReactiveFormsModule,
   ]
 })
 export class CartComponentsModule { }

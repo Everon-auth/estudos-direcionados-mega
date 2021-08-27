@@ -1,14 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { SharedRoutingModule } from './shared-routing.module';
-import { MaterialModulesModule } from './modules/materialmodules.module';
 import { SharedComponentsModule } from './components/shared-components.module';
 import { HttpClientModule } from '@angular/common/http';
-import { CepService } from './services/cep.service';
-import { ComprasService } from './services/compras.service';
 import { ReactiveFormsModule } from '@angular/forms';
-import { StorageLocalService } from './services/storage-local.service';
+import { CoreModule } from '../core/core.module';
+import { RouterModule } from '@angular/router'
+import { MaterialModulesModule } from './modules/materialmodules.module';
+
 
 
 @NgModule({
@@ -16,17 +15,13 @@ import { StorageLocalService } from './services/storage-local.service';
   ],
   imports: [
     CommonModule,
-    SharedRoutingModule,
-  ],exports:[
-    MaterialModulesModule,
+  ], exports: [
     SharedComponentsModule,
     HttpClientModule,
-    ReactiveFormsModule
-  ],
-  providers:[
-    CepService,
-    ComprasService,
-    StorageLocalService
+    ReactiveFormsModule,
+    CoreModule,
+    RouterModule,
+    MaterialModulesModule
   ]
 })
 export class SharedModule { }

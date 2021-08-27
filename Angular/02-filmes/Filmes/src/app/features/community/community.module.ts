@@ -3,19 +3,20 @@ import { CommonModule } from '@angular/common';
 
 import { CommunityRoutingModule } from './community-routing.module';
 import { CommunityComponent } from './community.component';
-import { SidenavComponent } from './sidenav/sidenav.component';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { ChatModule } from './chat/chat.module';
 
 
 @NgModule({
   declarations: [
     CommunityComponent,
-    SidenavComponent
+
   ],
   imports: [
     CommonModule,
     CommunityRoutingModule,
-    SharedModule
+    SharedModule,
+    ChatModule
   ]
 })
 export class CommunityModule { }

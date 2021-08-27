@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  BASE_URL: '/'
+  BASE_URL: '/',
+  API_URL: 'http://localhost:8000/users'
 };
 
 /*

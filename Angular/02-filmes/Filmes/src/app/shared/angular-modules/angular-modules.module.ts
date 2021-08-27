@@ -15,7 +15,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
   exports:[
     ReactiveFormsModule,
     HttpClientModule,
-    FlexLayoutModule
+    FlexLayoutModule // Otimizar o flex Layout
   ],
 })
 export class AngularModulesModule { }

@@ -4,7 +4,6 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { MainComponent } from './container/main.component';
 import { FilterComponent } from './filter/filter.component';
-import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -16,7 +15,6 @@ import { ReactiveFormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     SharedModule,
-    ReactiveFormsModule
   ]
 })
 export class MainComponentsModule { }

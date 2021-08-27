@@ -1,6 +1,9 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-@Injectable()
+import { SharedModule } from '../shared.module';
+@Injectable({
+  providedIn: SharedModule
+})
 
 export class CepService {
   private API_URL = 'https://viacep.com.br/ws/'

@@ -5,6 +5,7 @@ import { FeaturesRoutingModule } from './features-routing.module';
 import { AuthComponentModule } from './auth-component/auth-component.module';
 import { MainComponentsModule } from './main-components/main-components.module';
 import { CartComponentsModule } from './cart-components/cart-components.module';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { CartComponentsModule } from './cart-components/cart-components.module';
     FeaturesRoutingModule,
     AuthComponentModule,
     MainComponentsModule,
-    CartComponentsModule
+    CartComponentsModule,
+    SharedModule
   ]
 })
 export class FeaturesModule { }

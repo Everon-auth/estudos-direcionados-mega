@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { AuthService } from 'src/app/core/auth/auth.service';
 
 @Component({
   selector: 'app-log-in-form',
@@ -12,6 +13,7 @@ export class LogInFormComponent implements OnInit {
   hide = true;
   constructor(
     private formbuilder: FormBuilder,
+    private api: AuthService,
 
   ) { }
 
@@ -22,6 +24,6 @@ export class LogInFormComponent implements OnInit {
     })
   }
   onSubmit(){
-    console.log(this.dataForm.value)
+    this.api.login(this.dataForm.value)
   }
 }

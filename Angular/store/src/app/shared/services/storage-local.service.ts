@@ -1,10 +1,13 @@
 import { Injectable } from '@angular/core';
+import { SharedModule } from '../shared.module';
 
-@Injectable()
+@Injectable({
+  providedIn: SharedModule
+})
 
 export class StorageLocalService {
-  storage:any
-  key:any
+  private storage:any
+  private key:any
   constructor() { }
 
   config(local:boolean, setKey:string){

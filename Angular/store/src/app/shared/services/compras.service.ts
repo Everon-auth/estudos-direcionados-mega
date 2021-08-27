@@ -2,7 +2,10 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { take } from 'rxjs/operators'
 import { Endereco } from '../models/endereco';
-@Injectable()
+import { SharedModule } from '../shared.module';
+@Injectable({
+  providedIn: SharedModule
+})
 export class ComprasService {
 
   private API_URL: string = "http://localhost:8000/"

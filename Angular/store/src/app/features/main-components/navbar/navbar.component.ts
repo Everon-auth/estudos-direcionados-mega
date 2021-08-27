@@ -26,12 +26,12 @@ export class NavbarComponent implements OnInit, OnDestroy {
       width: '1200px',
     });
 
-    this.sub = dialogRef.afterClosed().subscribe(result =>{
+    this.sub = dialogRef.afterClosed().subscribe(result => {
       console.log(result)
     })
   }
-  openCart(){
-    const dialogRef = this.dialog.open(ShoppingCartComponent,{
+  openCart() {
+    const dialogRef = this.dialog.open(ShoppingCartComponent, {
       height: '800px',
       width: '1200px',
       panelClass: 'custom-dialog-container',
@@ -39,6 +39,6 @@ export class NavbarComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() {
-    this.sub.unsubscribe();
+    this.sub?.unsubscribe();
   }
 }

@@ -15,5 +15,6 @@
     </mat-form-field>
     <mat-checkbox> Lembrar minha senha </mat-checkbox>
     <button mat-raised-button color="primary" (click)="onSubmit()" type="button">Entrar</button>
+    <p>Ainda não tem um usuário? <a [routerLink]="['/sign-in']"><strong>Inscreva-se</strong></a></p>
   </mat-card>
 </form>

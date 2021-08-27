@@ -1,0 +1,27 @@
+.chat {
+  padding: 0;
+  width: 450px;
+  height: 400px;
+}
+
+.nav {
+  height: 40px;
+}
+
+.lateral-bar {
+  width: 150px;
+  height: auto;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  height: 89%;
+}
+
+.img-circular {
+  border-radius: 50%;
+  margin: 2px solid;
+  width: 30px;
+  height: 30px;
+}

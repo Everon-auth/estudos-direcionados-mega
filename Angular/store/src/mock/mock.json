@@ -1,11 +1,26 @@
 {
   "users": [
     {
+      "id": 0,
       "nome": "Everton Auth",
       "enderecos": "",
       "email": "evertonauth@gmail.com",
       "senha": "KJKSZPJ",
-      "Infos":""
+      "Infos": ""
+    },
+    {
+      "nome": "Everton Auth",
+      "email": "everton.auth@outlook.com",
+      "senha": "KJKSZPJak@15",
+      "repSenha": "KJKSZPJak@15",
+      "id": 1
+    },
+    {
+      "nome": "Everton Auth",
+      "email": "everton.auth@outlook.com",
+      "senha": "ADSAKDLJsdkalda1564@#$",
+      "repSenha": "ADSAKDLJsdkalda1564@#$",
+      "id": 2
     }
   ]
 }
