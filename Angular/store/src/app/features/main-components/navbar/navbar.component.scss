@@ -1,7 +1,18 @@
-.search-input{
+.search-input {
   width: 50%;
   margin-top: 40px;
 }
-.navbar{
+
+.navbar {
   padding-top: 20px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.arr-cent{
+  justify-content: space-around;
+  align-items: center;
 }

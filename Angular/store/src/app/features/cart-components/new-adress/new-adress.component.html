@@ -1,5 +1,5 @@
 <h3 style="text-align: center;">Adicionar novo endereço:</h3>
-<form fxLayout="column" [formGroup]="formController">
+<form class="column" [formGroup]="formController">
     <span>
         <mat-form-field class="cepInput">
             <mat-label>CEP</mat-label>
@@ -14,7 +14,7 @@
             <input matInput formControlName="apto">
         </mat-form-field>
     </span>
-    <span fxLayout="row" fxLayoutAlign="space-between">
+    <span class="row bet">
         <mat-form-field class="selectform">
             <mat-label>Estado</mat-label>
             <input matInput formControlName="uf">
@@ -36,7 +36,7 @@
         <mat-label>Nome do Endereço:</mat-label>
         <input matInput formControlName="nomeEnd">
     </mat-form-field>
-    <span fxLayout="row" fxLayoutAlign="flex-end">
+    <span class="row end">
         <button mat-raised-button color="primary" (click)="onSend()">Adicionar Endereço</button>
         <button mat-raised-button style="margin-left: 10px;margin-right: 10px;" (click)="onCancel()">Cancelar</button>
     </span>

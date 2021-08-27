@@ -1,5 +1,5 @@
 <mat-toolbar color="basic" class="navbar">
-  <mat-toolbar-row fxLayout="row" fxLayoutAlign="space-around center">
+  <mat-toolbar-row class="row arr-cent" >
     <span>Logo</span>
     <span class="search-input">
       <mat-form-field style="width: 100%;" appearance="outline">
@@ -9,7 +9,7 @@
     </span>
     <span>Bem Vindo, &user!</span>
   </mat-toolbar-row>
-  <mat-toolbar-row fxLayout="row" fxLayoutAlign="space-around center" class="navbar">
+  <mat-toolbar-row class="row arr-cent navbar">
     <span>
       <button mat-button [matMenuTriggerFor]="category">Categorias</button>
       <mat-menu #category="matMenu">

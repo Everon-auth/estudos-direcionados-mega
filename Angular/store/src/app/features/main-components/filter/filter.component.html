@@ -1,8 +1,8 @@
-<div fxLayout="column" fxLayoutAlign="center center">
+<div class="column center">
     <h2 mat-dialog-title>Filtros</h2>
     <mat-dialog-content>
         <form [formGroup]="data">
-            <span fxLayout="column" fxLayoutAlign="center center">
+            <span class="column center">
                 <mat-label><h4>Valor (R$)</h4></mat-label>
             </span>
             <mat-form-field appearance="outline">
@@ -15,7 +15,7 @@
             </mat-form-field>
         </form>
     </mat-dialog-content>
-    <mat-dialog-actions fxLayout="row" fxLayoutAlign="flex-end center">
+    <mat-dialog-actions class="row end">
         <button mat-button (click)="closeDialog()">Confirmar</button>
         <button mat-button mat-dialog-close>cancelar</button>
     </mat-dialog-actions>

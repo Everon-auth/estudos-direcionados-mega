@@ -12,3 +12,16 @@
   min-width: 500px;
   padding: 20px;
 }
+
+.row{
+  display: flex;
+  flex-direction: row;
+}
+.center{
+  align-items: center;
+  justify-content: center;
+}
+.end{
+  align-items: center;
+  justify-content: flex-end;
+}

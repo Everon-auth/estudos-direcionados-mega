@@ -1,13 +1,39 @@
-.selectform{
-    width: 45%;
+.selectform {
+  width: 45%;
 }
-.nInput{
-    width: 10%;
-    margin-left: 5%;
+
+.nInput {
+  width: 10%;
+  margin-left: 5%;
 }
-.cepInput{
-    width: 50%;
+
+.cepInput {
+  width: 50%;
 }
-.inp90{
-    width: 90%;
+
+.inp90 {
+  width: 90%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.between {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.end {
+  justify-content: flex-end;
+}
+
+.bet {
+  justify-content: space-between;
 }
