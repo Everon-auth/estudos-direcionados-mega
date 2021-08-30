@@ -1,32 +1,38 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
-import { StorageLocalService } from 'src/app/shared/services/storage-local.service';
+import { AuthService } from 'src/app/core/auth/auth.service';
+import { UserLogin } from 'src/app/shared/models/UserLogin';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss']
+  styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent implements OnInit {
   hide = true;
   profileForm: any
+  progress:boolean = false
   constructor(
     private fb: FormBuilder,
-    private session: StorageLocalService) { }
+    private auth: AuthService
+  ) { }
 
   ngOnInit(): void {
+    this.auth.mostrarMenuEmitter.emit(false)
+    this.progress = false
     this.profileForm = this.fb.group({
-      email: null,
-      password: null,
-      remember: null
+      email: '',
+      password: '',
+      remember: false
     })
   }
   OnLogin() {
-    this.session.config(true, 'UserAccount')
-    let data ={
+    this.progress = true
+    let data: UserLogin = {
       email: this.profileForm.value.email,
-      password: this.profileForm.value.password
+      password: this.profileForm.value.password,
+      checked: this.profileForm.value.remember,
     }
-    this.session.sendMoreADate(data)
+    this.auth.login(data)
   }
 }

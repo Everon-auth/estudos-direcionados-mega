@@ -5,7 +5,6 @@ import { AngularModulesModule } from './angular-modules/angular-modules.module';
 import { MaterialModulesModule } from './angular-modules/material-modules.module';
 
 
-
 @NgModule({
   declarations: [
   ],

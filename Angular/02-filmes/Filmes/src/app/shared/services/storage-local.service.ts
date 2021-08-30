@@ -12,16 +12,15 @@ export class StorageLocalService {
     local? this.storage = sessionStorage : this.storage = localStorage
     this.key = setKey
   }
-  stringing(data:any){
-    return JSON.stringify(data)
-  }
   sendUniqueData(data:any){
+    data = JSON.stringify(data)
     this.storage.setItem(this.key,data)
   }
   sendMoreADate(data:any){
     let dados = JSON.parse(this.callJSON() || '[]')
     dados.push(data)
-    this.storage.setItem(this.key,this.stringing(dados))
+    dados = JSON.stringify(dados)
+    this.storage.setItem(this.key,dados)
   }
   callJSON(){
     return this.storage.getItem(this.key)

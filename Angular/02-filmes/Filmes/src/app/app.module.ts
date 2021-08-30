@@ -7,12 +7,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FeaturesModule } from './features/features.module';
 import { SharedModule } from './shared/shared.module';
 import { ChatComponent } from './features/community/chat/chat.component';
+import { NavbarComponent } from './features/navbar/navbar.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ChatComponent
+    ChatComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,23 @@
+.card {
+  width: auto;
+  padding: 80px;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center-center {
+  justify-content: center;
+  align-items: center;
+}

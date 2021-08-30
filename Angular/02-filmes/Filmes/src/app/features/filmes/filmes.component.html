@@ -1,22 +1,17 @@
 <app-option-pannel class="card bg-light" (clicked)="onDelclick($event)" *ngIf="infoFilmes"></app-option-pannel>
 
-<mat-card fxLayout="column" fxLayoutAlign="center center">
 
-  <app-films-list [data]="transmitFilms" fxLayout="column" fxLayoutAlign="center center"></app-films-list>
+<app-films-list [data]="transmitFilms" fxLayout="column" fxLayoutAlign="center center"></app-films-list>
 
-  <mat-progress-bar mode="indeterminate" *ngIf="showProgress && !infoFilmes"></mat-progress-bar>
-  <span *ngIf="!infoFilmes" style="width: 100%;" fxLayout="column" fxLayoutAlign="center center">
-    <h1 *ngIf="dataStats">Oops!</h1>
-    <p> {{ datalog }} </p>
-    <div class="container">
-      <button mat-raised-button color="primary" *ngIf="dataStats">Adicionar Novo</button>
-      <button mat-raised-button color="warn" *ngIf="!dataStats" (click)="reload()">Recarregar</button>
-    </div>
-  </span>
-  <mat-paginator *ngIf="infoFilmes" [length]="length"
-  [pageSize]="pageSize"
-  [pageSizeOptions]="pageSizeOptions"
-  aria-label="Select page"
-  (page)="onPaginationEvent($event)">
+<mat-progress-bar mode="indeterminate" *ngIf="showProgress && !infoFilmes"></mat-progress-bar>
+<span *ngIf="!infoFilmes" style="width: 100%;" fxLayout="column" fxLayoutAlign="center center">
+  <h1 *ngIf="dataStats">Oops!</h1>
+  <p> {{ datalog }} </p>
+  <div class="container">
+    <button mat-raised-button color="primary" *ngIf="dataStats">Adicionar Novo</button>
+    <button mat-raised-button color="warn" *ngIf="!dataStats" (click)="reload()">Recarregar</button>
+  </div>
+</span>
+<mat-paginator *ngIf="infoFilmes && infoFilmes > 10" [length]="length" [pageSize]="pageSize"
+  [pageSizeOptions]="pageSizeOptions" aria-label="Select page" (page)="onPaginationEvent($event)">
 </mat-paginator>
-</mat-card>

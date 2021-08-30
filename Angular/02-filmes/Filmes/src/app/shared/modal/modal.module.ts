@@ -8,14 +8,14 @@ import { ShadowModalComponent } from './shadow-modal/shadow-modal.component';
 @NgModule({
   declarations: [
     ModalComponent,
-    ShadowModalComponent
+    ShadowModalComponent,
   ],
   imports: [
     CommonModule,
   ],
   exports: [
     ModalComponent,
-    ShadowModalComponent
+    ShadowModalComponent,
   ]
 })
 export class ModalModule { }

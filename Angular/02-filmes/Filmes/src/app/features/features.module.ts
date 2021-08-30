@@ -6,11 +6,15 @@ import { FilmesModule } from './filmes/filmes.module';
 import { HomeModule } from './home/home.module';
 import { SeriesModule } from './series/series.module';
 import { LogInFormModule } from './log-in-form/log-in-form.module';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    NotFoundComponent
+  ],
   imports: [
     CommonModule,
     AboutModule,
@@ -18,7 +22,8 @@ import { LogInFormModule } from './log-in-form/log-in-form.module';
     FilmesModule,
     HomeModule,
     SeriesModule,
-    LogInFormModule
+    LogInFormModule,
+    SharedModule
   ],
   exports:[]
 })
