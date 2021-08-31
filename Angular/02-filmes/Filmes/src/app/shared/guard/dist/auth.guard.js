@@ -12,12 +12,16 @@ var AuthGuardService = /** @class */ (function () {
     function AuthGuardService(authService, router) {
         this.authService = authService;
         this.router = router;
+        this.loading = new core_1.EventEmitter();
     }
     AuthGuardService.prototype.canActivate = function (route, state) {
+        this.loading.emit(true);
         if (this.authService.userAuth()) {
+            this.loading.emit(false);
             return true;
         }
         else {
+            this.loading.emit(false);
             this.router.navigate(['/login']);
             return false;
         }

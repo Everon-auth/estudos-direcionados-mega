@@ -9,6 +9,7 @@ exports.__esModule = true;
 exports.AppRoutingModule = void 0;
 var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
+var signup_component_1 = require("./features/log-in-form/signup/signup.component");
 var not_found_component_1 = require("./features/not-found/not-found.component");
 var auth_guard_1 = require("./shared/guard/auth.guard");
 var routes = [
@@ -46,7 +47,12 @@ var routes = [
         path: 'login',
         loadChildren: function () { return Promise.resolve().then(function () { return require('./features/log-in-form/log-in-form.module'); }).then(function (m) { return m.LogInFormModule; }); }
     },
-    { path: '**', component: not_found_component_1.NotFoundComponent }
+    {
+        path: 'inscrever', component: signup_component_1.SignupComponent
+    },
+    {
+        path: '**', component: not_found_component_1.NotFoundComponent
+    },
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {

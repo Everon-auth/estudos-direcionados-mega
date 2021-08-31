@@ -13,21 +13,19 @@ export class AuthService {
   private usuarioAuth: boolean = false;
 
   mostrarMenuEmitter = new EventEmitter<boolean>();
+
   constructor(
     private router: Router,
     private storage: StorageLocalService,
-  ) {
-    let data = this.storage.config(true, 'UserAccount')
-    data == undefined ? this.login(JSON.parse(this.storage.callJSON())) : null
-  }
+  ) {}
 
   login(usuario: UserLogin) {
 
     if (usuario.email === '' && usuario.password === '') {
       usuario.checked ? this.userStorage(usuario) : null;
-      this.usuarioAuth = true
-      this.mostrarMenuEmitter.emit(true);
+      this.usuarioAuth = true;
       this.router.navigate(['']);
+      this.mostrarMenuEmitter.emit(true);
     }
     else {
       this.usuarioAuth = false;
@@ -39,7 +37,7 @@ export class AuthService {
   }
   userStorage(user: any) {
     this.storage.config(true, 'UserAccount');
-    this.storage.sendUniqueData(user)
+    this.storage.sendUniqueData(user);
   }
 
 }

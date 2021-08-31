@@ -1,10 +1,10 @@
 <app-option-pannel class="card bg-light" (clicked)="onDelclick($event)" *ngIf="infoFilmes"></app-option-pannel>
 
 
-<app-films-list [data]="transmitFilms" fxLayout="column" fxLayoutAlign="center center"></app-films-list>
+<app-films-list [data]="transmitFilms"class="flex-column center-center"></app-films-list>
 
 <mat-progress-bar mode="indeterminate" *ngIf="showProgress && !infoFilmes"></mat-progress-bar>
-<span *ngIf="!infoFilmes" style="width: 100%;" fxLayout="column" fxLayoutAlign="center center">
+<span *ngIf="!infoFilmes" style="width: 100%;"class="flex-column center-center">
   <h1 *ngIf="dataStats">Oops!</h1>
   <p> {{ datalog }} </p>
   <div class="container">

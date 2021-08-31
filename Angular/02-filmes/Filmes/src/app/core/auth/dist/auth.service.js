@@ -15,14 +15,17 @@ var AuthService = /** @class */ (function () {
         this.usuarioAuth = false;
         this.mostrarMenuEmitter = new core_1.EventEmitter();
         var data = this.storage.config(true, 'UserAccount');
-        data == undefined ? this.login(JSON.parse(this.storage.callJSON())) : null;
+        data = this.storage.callJSON();
+        if (data) {
+            this.login(JSON.parse(this.storage.callJSON()));
+        }
     }
     AuthService.prototype.login = function (usuario) {
         if (usuario.email === '' && usuario.password === '') {
             usuario.checked ? this.userStorage(usuario) : null;
             this.usuarioAuth = true;
-            this.mostrarMenuEmitter.emit(true);
             this.router.navigate(['']);
+            this.mostrarMenuEmitter.emit(true);
         }
         else {
             this.usuarioAuth = false;

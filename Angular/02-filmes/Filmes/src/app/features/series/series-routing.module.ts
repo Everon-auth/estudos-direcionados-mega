@@ -3,7 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { SeriesComponent } from './series.component';
 
 const routes: Routes = [
-  { path:'', component: SeriesComponent }
+  { path: '', component: SeriesComponent },
+  
 ];
 
 @NgModule({

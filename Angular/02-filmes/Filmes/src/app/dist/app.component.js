@@ -9,13 +9,18 @@ exports.__esModule = true;
 exports.AppComponent = void 0;
 var core_1 = require("@angular/core");
 var AppComponent = /** @class */ (function () {
-    function AppComponent(auth) {
+    function AppComponent(auth, guard) {
         this.auth = auth;
+        this.guard = guard;
         this.showMenu = false;
+        this.load = true;
     }
     AppComponent.prototype.ngOnInit = function () {
         var _this = this;
-        this.subscriber = this.auth.mostrarMenuEmitter.subscribe(function (success) { return _this.showMenu = success; });
+        this.subscriber = this.auth.mostrarMenuEmitter.subscribe(function (success) {
+            _this.showMenu = success;
+        });
+        this.guard.loading.subscribe(function (subs) { return _this.load = subs; });
     };
     AppComponent = __decorate([
         core_1.Component({

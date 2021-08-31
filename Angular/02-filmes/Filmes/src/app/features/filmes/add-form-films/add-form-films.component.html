@@ -3,11 +3,11 @@
   <mat-progress-bar mode="indeterminate"></mat-progress-bar>
 </div>
 <!-- Formulário de adição de filme -->
-<div *ngIf="directiveStats" fxLayout="row" fxLayoutAlign="center center">
+<div *ngIf="directiveStats" class="flex-row center-center" >
   <!-- Card -->
   <mat-card [formGroup]="profileForm" class="form-Input-Card">
 
-    <span fxLayout="row" fxLayoutAlign="space-around center">
+    <span class="flex-row spaceArround-center">
       <!-- input de nome -->
       <mat-form-field appearance="outline">
         <mat-label>Nome:</mat-label>
@@ -40,14 +40,14 @@
         <textarea matInput formControlName="descript"></textarea>
       </mat-form-field>
     </div>
-    <span fxLayout="row" fxLayoutAlign="center center">
+    <span class="flex-row center-center" >
       <span class="person-button">
         <label for='selecao-arquivo' style="cursor: pointer;" matTooltip="Apênas imagens em JPEG, JPG ou PNG">Selecionar Imagem</label>
         <input id='selecao-arquivo' type='file' style="display: none;" (change)="onChange($event)">
         <mat-progress-bar mode="indeterminate" [value]="progress" *ngIf="isUploaded"></mat-progress-bar>
       </span>
     </span>
-    <div fxLayout="row" fxLayoutAlign="end center" style="margin-top: 20px;">
+    <div class="flex-row end-center" style="margin-top: 20px;">
       <!-- Botões  -->
       <button mat-raised-button color="primary" (click)="onSend()">Adicionar</button>
       <button mat-raised-button color="warn" style="margin-left: 10px;" [routerLink]="['/films']">Cancelar</button>

@@ -3,7 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { CommunityComponent } from './community.component';
 
 const routes: Routes = [
-  { path:'', component: CommunityComponent }
+  { path:'', component: CommunityComponent },
+  
 ];
 
 @NgModule({

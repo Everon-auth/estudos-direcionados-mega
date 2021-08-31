@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { SignupComponent } from './features/log-in-form/signup/signup.component';
 import { NotFoundComponent } from './features/not-found/not-found.component';
 import { AuthGuardService } from './shared/guard/auth.guard';
+
 
 const routes: Routes = [
   {
@@ -38,7 +40,12 @@ const routes: Routes = [
     path: 'login',
     loadChildren: () => import('./features/log-in-form/log-in-form.module').then(m => m.LogInFormModule),
   },
-  {path: '**', component: NotFoundComponent}
+  {
+    path: 'inscrever', component: SignupComponent
+  },
+  {
+    path: '**', component: NotFoundComponent
+  },
 ];
 
 @NgModule({
