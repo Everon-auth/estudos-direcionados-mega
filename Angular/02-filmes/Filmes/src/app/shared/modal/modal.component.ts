@@ -1,6 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { CrudService } from '../services/crud.service';
+import { CrudService } from '../services/crud/crud.service';
 
 
 @Component({

@@ -3,7 +3,7 @@ import { PageEvent } from '@angular/material/paginator';
 
 import { Subscription } from 'rxjs';
 import { PaginationService } from 'src/app/shared/services/paginator/pagination.service';
-import { CrudService } from '../../shared/services/crud.service';
+import { CrudService } from '../../shared/services/crud/crud.service';
 
 @Component({
   selector: 'app-filmes',

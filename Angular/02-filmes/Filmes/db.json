@@ -45,5 +45,21 @@
       "Validators": "null",
       "formNam": "date"
     }
+  ],
+  "Users": [
+    {
+      "id": 0,
+      "nome": "Everton Auth",
+      "log": [],
+      "email": "evertonauth@gmail.com",
+      "senha": "joaosinho123"
+    },
+    {
+      "id": 1,
+      "nome": "Everton Auth",
+      "log": [],
+      "email": "aaa@gmail.com",
+      "senha": "joaosinho123"
+    }
   ]
 }

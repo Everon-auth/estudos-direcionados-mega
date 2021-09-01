@@ -3,8 +3,8 @@ import { FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
 import { Subscription } from 'rxjs';
-import { CrudService } from 'src/app/shared/services/crud.service';
-import { UploadServiceService } from 'src/app/shared/services/upload-service.service';
+import { CrudService } from 'src/app/shared/services/crud/crud.service';
+import { UploadServiceService } from 'src/app/shared/services/upload/upload-service.service';
 import { environment } from 'src/environments/environment';
 // import { filterResponse, uploadProgress } from '../../../shared/models/rxjs.operators'
 @Component({
