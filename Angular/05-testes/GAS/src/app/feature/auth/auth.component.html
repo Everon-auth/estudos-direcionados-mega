@@ -1,3 +1,17 @@
-<mat-card>
-    <button mat-raised-button color="primary">aaa</button>
-</mat-card>
+<div class="flex-column center-center c5 c100">
+    <mat-card class="flex-column c5">
+        <form class="flex-column center-center">
+            <mat-form-field appearance="outline" *ngFor="let item of form" class="c100 padding-inputs">
+                <mat-label> {{ item.label }}</mat-label>
+                <input matInput [placeholder]="item.placeholder" [type]="item.tipo">
+                <mat-error *ngFor="let erro of item.erro">
+                    {{ erro }}
+                </mat-error>
+            </mat-form-field>
+        </form>
+        <span class="flex-row end-center">
+            <button mat-button color="primary">Login</button>
+            <button mat-button color="accent">Cancelar</button>
+        </span>
+    </mat-card>
+</div>

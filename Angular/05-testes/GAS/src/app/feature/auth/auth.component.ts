@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormsModelsService } from 'src/app/shared/service/form-service/formsModels.service';
 
 @Component({
   selector: 'app-auth',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AuthComponent implements OnInit {
 
-  constructor() { }
+  form: any;
+
+  constructor(
+    private formInputs: FormsModelsService,
+  ) { }
 
   ngOnInit(): void {
+    this.form = this.formInputs.formLogin()
+    console.log(this.form)
   }
 
 }

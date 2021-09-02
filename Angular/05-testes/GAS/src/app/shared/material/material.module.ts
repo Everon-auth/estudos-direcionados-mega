@@ -12,6 +12,8 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import { MatInputModule } from '@angular/material/input';
+import { MatCommonModule } from '@angular/material/core';
 
 @NgModule({
   declarations: [],
@@ -30,7 +32,9 @@ import { MatAutocompleteModule } from '@angular/material/autocomplete';
     MatMenuModule,
     MatGridListModule,
     MatDividerModule,
-    MatAutocompleteModule
+    MatAutocompleteModule,
+    MatInputModule,
+    MatCommonModule
   ]
 })
 export class MaterialModule { }
