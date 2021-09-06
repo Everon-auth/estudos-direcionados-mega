@@ -1,0 +1,13 @@
+<div class="flex-row center-center background">
+    <mat-card class="flex-column" align="center">
+        <mat-card-title style="text-align: center;">Ocorreu um erro</mat-card-title>
+        <mat-card-content>
+            {{ message }}
+            <br>
+            Rota: <strong> {{ Rota }} </strong>
+        </mat-card-content>
+        <mat-card-actions align="end">
+            <button mat-button (click)="back()">Voltar</button>
+        </mat-card-actions>
+    </mat-card>
+</div>
