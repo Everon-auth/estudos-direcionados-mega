@@ -1,6 +1,7 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { take } from 'rxjs/operators';
 import { AuthguardService } from './shared/guards/auth.guard.service';
-import { HttpService } from './shared/services/httpService/http.service';
 
 @Component({
   selector: 'app-root',
@@ -13,14 +14,16 @@ export class AppComponent implements OnInit {
 
   constructor(
     private guard: AuthguardService,
-    private httpTest: HttpService,
+    private http: HttpClient,
   ) {
   }
 
   ngOnInit() {
+    this.http.get(`http://localhost:3000/tokenValidate/tjtnB0Qrt7BubkFX0SVxyu-oXq5zOHcqRpX2DBgeY38`).pipe(take(1)).subscribe(subs => console.log(subs))
     this.guard.sidenavEvent.subscribe(
       value => this.navShow = value
     )
-    this.httpTest.getdata("http://localhost:3000").unique().subscribe(value => console.log(value))
   }
 }
+
+
