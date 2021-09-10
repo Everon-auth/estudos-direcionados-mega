@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AuthguardService } from './shared/guards/auth.guard.service';
-import { teste } from './shared/models/resolver';
+
 
 const routes: Routes = [
   {
-    path:'',
-    pathMatch:'full',
+    path: '',
+    pathMatch: 'full',
     redirectTo: 'home'
   },
   {
@@ -19,7 +19,7 @@ const routes: Routes = [
   {
     path: 'login',
     loadChildren: () => import('./features/login/login.module').then(m => m.LoginModule),
-    resolve: [teste]
+
   },
   {
     path: '**',

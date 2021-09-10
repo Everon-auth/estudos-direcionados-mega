@@ -1,0 +1,224 @@
+/* Corpo do documento */
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-size: large;
+}
+body{
+    font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;
+    display: flex;
+    flex-direction:column;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+/* Painel Lateral*/
+
+aside{
+    color: white;
+    width: 15vw;
+    min-width: 200px;
+    background-color: #404040;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+}
+.links{
+    width: 15vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icons{
+    width: 15px;
+}
+.linked{
+    margin-top: 20px;
+    display: flex;
+    list-style: none;
+    cursor: pointer;
+}
+.linked:hover{
+    text-decoration: underline;
+
+}
+div ul{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+/* Botões da barra lateral */
+.btnlat{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: inherit;
+    background-color: #404040;
+    width: 15vw;
+    min-width: 200px;
+    border: none;
+    color: white;
+    height: 40px;
+}
+.btnlat:hover{
+    background-color: #242424;
+}
+.btnlat:focus{
+    border: none;
+}
+.btnlat2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: inherit;
+    background-color: #5a5a5a;
+    width: 15vw;
+    min-width: 200px;
+    color: white;
+    height: 40px;
+    border: none;
+    text-align:center;
+    box-sizing: border-box;
+    padding-left: 50%;
+
+}
+.btnlat2:hover{
+    background-color: #242424;
+}
+/* Icone do usuário */
+.user{
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer ;
+    width: 5vw;
+    border-radius: 50%;
+}
+#username{
+    margin-bottom: 20px;
+}
+/* Ícones da barra lateral feitos com CSS*/
+.botao{
+    margin: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    padding: 5px;
+    cursor: pointer;
+}
+.botao:hover{
+    background-color:lightcyan ;
+    border-radius: 50%;
+}
+.tr{
+    background-color: rgb(54, 54, 54);
+    width: 3px;
+    height: 3px;
+    margin: 2px;
+    border-radius: 50%;
+}
+.X{
+    font-size: 15px;
+    color: white;
+}
+.X::before{
+    content: "X";
+}
+.direction-row{
+    display: none;
+    flex-direction: row;
+}
+
+/* Painel Superior*/
+header{
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 173, 204);
+    width: 100vw;
+    height: 100px;
+}
+.header1{
+    width: 15vw;
+    min-width: 200px;
+    height:100px ;
+    background-color: rgb(0, 133, 156);
+}
+#logo{
+    width: 100%;
+}
+/* Parte principal do conteúdo*/
+main{
+    width: 85vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.history{
+    width: 100%;
+}
+main span span{
+    align-items: center;
+}
+.esp{
+    margin-left: 10px;
+}
+span output{
+    margin-left: 10px;
+
+}
+.separacao{
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: gray;
+    width: 2px;
+    height: 40px;
+}
+main div span{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 15vw;
+}
+main div{
+    display: flex;
+    flex-direction: row;
+    
+}
+span h4{
+    text-align: center;
+    background-color: seagreen;
+    color: white;
+}
+.subida{
+    margin-left: 20px;
+    margin-right: 20px;
+    color: green;
+    transform: rotate(90deg);
+    font-weight: 900;
+}
+.subida:before{
+    content: "<";
+
+}
+.descida{
+    margin-left: 20px;
+    margin-right: 20px;
+    color: red;
+    transform: rotate(90deg);
+    font-weight: 900;
+}
+.descida:before{
+    content: "<";
+
+}
