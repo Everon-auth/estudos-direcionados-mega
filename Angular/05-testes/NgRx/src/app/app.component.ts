@@ -23,6 +23,8 @@ export class AppComponent implements OnInit {
     this.guard.sidenavEvent.subscribe(
       value => this.navShow = value
     )
+    document.cookie = 'nome= John'
+    document.cookie = 'sobrenome= Doe'
   }
 }
 

@@ -40,7 +40,7 @@ function GenToken(head = header) {
             return signatureUrl;
         },
         verify: (token) => {
-            crypto.verify(config.header.alg,token)
+            crypto
         }
 
     }
@@ -58,7 +58,7 @@ app.get('/token/:nome/:id', (req, res, next) => {
 app.get('/tokenValidate/:token', (req, res, next) => {
     _CORS_Header(res);
     console.log(req.params.token)
-     GenToken().verify(req.params.token)
+    GenToken().verify(req.params.token)
 })
 const server = http.createServer(app);
 server.listen(config.porta);
