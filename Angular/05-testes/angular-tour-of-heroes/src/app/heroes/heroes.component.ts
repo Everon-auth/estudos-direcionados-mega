@@ -1,5 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { Subscriber, Subscription } from 'rxjs';
+import { Subscription } from 'rxjs';
+
+import { take } from 'rxjs/operators';
 import { HeroService } from '../hero.service';
 import { MessageService } from '../message.service';
 import { Hero } from './hero';
@@ -20,14 +22,32 @@ export class HeroesComponent implements OnInit, OnDestroy {
   ) { }
 
   ngOnInit(): void {
-    this.subs = this.heroService.getHeroes().subscribe(hero => this.hero = hero);
-  }
-  ngOnDestroy() {
-    this.subs.unsubscribe();
+    this.getHeroes();
   }
 
   onSelect(hero: Hero): void {
     this.selectedHero = hero;
     this.msg.add(`HeroesComponent: Selected hero id=${hero.id}`);
+  }
+  add(name: string) {
+    name = name.trim();
+    if (!name) return;
+    this.heroService.newHero({ name } as Hero).pipe(take(1)).subscribe(_ => this.getHeroes())
+  }
+  delete(hero: Hero) {
+    if (hero) {
+      this.heroService.delHero(hero.id).pipe(take(1)).subscribe(_ => this.getHeroes())
+    }
+  }
+  ngOnDestroy() {
+    this.subs.unsubscribe();
+  }
+  private getHeroes() {
+    this.subs = this.heroService.getHeroes().subscribe(
+      hero => {
+        this.hero = hero
+        console.log('a')
+      }
+    )
   }
 }
