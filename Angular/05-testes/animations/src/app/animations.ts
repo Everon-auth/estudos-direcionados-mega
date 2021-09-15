@@ -1,11 +1,9 @@
-import { Component } from "@angular/core";
-
 import {
     trigger,
     state,
     style,
     animate,
-    transition
+    transition,
 } from "@angular/animations";
 
 export const animations = () => {
@@ -33,6 +31,30 @@ export const animations = () => {
                 })),
                 transition('show => hide', animate('600ms ease-out')),
                 transition('hide => show', animate('1000ms ease-in'))
+            ]),
+
+        girar: (rotate: string, time: string) =>
+            trigger('turning', [
+                state('turn180', style({
+                    transform: `rotate(${rotate}deg)`
+                })),
+                state('back', style({
+                    transform: `rotate(-${rotate}deg)`
+                })),
+                transition('turn180 => back', animate(`${time}ms ease-out`)),
+                transition('back => turn180', animate(`${time}ms ease-in`)),
+            ]),
+        mover: (moved: string, time: string) =>
+            trigger('moved', [
+                state('moving', style({
+                    transform: `translateX(${moved}px)`
+                })),
+                state('back', style({
+                    transform: `translateX(-${moved}px)`
+                })),
+                transition('moving => back', animate(`${time}ms ease-out`)),
+                transition('back => moving', animate(`${time}ms ease-in`)),
             ])
     };
+
 }
