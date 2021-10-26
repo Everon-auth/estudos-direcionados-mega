@@ -1,0 +1,6 @@
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\1-PrimeiroProjeto\3-CriandovariaveisPontoFlutuante\bin\Debug\3-CriandovariaveisPontoFlutuante.exe.config
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\1-PrimeiroProjeto\3-CriandovariaveisPontoFlutuante\bin\Debug\3-CriandovariaveisPontoFlutuante.exe
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\1-PrimeiroProjeto\3-CriandovariaveisPontoFlutuante\bin\Debug\3-CriandovariaveisPontoFlutuante.pdb
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\1-PrimeiroProjeto\3-CriandovariaveisPontoFlutuante\obj\Debug\3-CriandovariaveisPontoFlutuante.csproj.CoreCompileInputs.cache
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\1-PrimeiroProjeto\3-CriandovariaveisPontoFlutuante\obj\Debug\3-CriandovariaveisPontoFlutuante.exe
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\1-PrimeiroProjeto\3-CriandovariaveisPontoFlutuante\obj\Debug\3-CriandovariaveisPontoFlutuante.pdb

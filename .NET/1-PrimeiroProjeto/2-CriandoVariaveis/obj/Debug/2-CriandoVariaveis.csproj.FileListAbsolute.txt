@@ -1,0 +1,6 @@
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\1-PrimeiroProjeto\2-CriandoVariaveis\bin\Debug\2-CriandoVariaveis.exe.config
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\1-PrimeiroProjeto\2-CriandoVariaveis\bin\Debug\2-CriandoVariaveis.exe
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\1-PrimeiroProjeto\2-CriandoVariaveis\bin\Debug\2-CriandoVariaveis.pdb
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\1-PrimeiroProjeto\2-CriandoVariaveis\obj\Debug\2-CriandoVariaveis.csproj.CoreCompileInputs.cache
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\1-PrimeiroProjeto\2-CriandoVariaveis\obj\Debug\2-CriandoVariaveis.exe
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\1-PrimeiroProjeto\2-CriandoVariaveis\obj\Debug\2-CriandoVariaveis.pdb
