@@ -21,3 +21,6 @@ string | textos/frases
 double | números quebrados
 float | números quebrados
 long | Variáveis de tamanhos grandes
+
+
+/* aula 09
