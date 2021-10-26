@@ -1,0 +1,15 @@
+<dx-button
+    text="Click me"
+    (onClick)="helloWorld()">
+</dx-button>
+
+<dx-autocomplete
+    [dataSource]="autocompleteData"
+    placeholder="Type country name...">
+</dx-autocomplete>
+
+<img id="someImage" src="https://angular.io/assets/images/logos/angular/logo-nav@2x.png">
+<dx-context-menu
+    [items]="contextMenuItems"
+    target="#someImage">
+</dx-context-menu>
