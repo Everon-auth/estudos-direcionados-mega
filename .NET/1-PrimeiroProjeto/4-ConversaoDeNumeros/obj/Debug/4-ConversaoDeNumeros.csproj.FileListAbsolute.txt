@@ -1,0 +1,7 @@
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\1-PrimeiroProjeto\4-ConversaoDeNumeros\bin\Debug\4-ConversaoDeNumeros.exe.config
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\1-PrimeiroProjeto\4-ConversaoDeNumeros\bin\Debug\4-ConversaoDeNumeros.exe
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\1-PrimeiroProjeto\4-ConversaoDeNumeros\bin\Debug\4-ConversaoDeNumeros.pdb
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\1-PrimeiroProjeto\4-ConversaoDeNumeros\obj\Debug\4-ConversaoDeNumeros.csproj.AssemblyReference.cache
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\1-PrimeiroProjeto\4-ConversaoDeNumeros\obj\Debug\4-ConversaoDeNumeros.csproj.CoreCompileInputs.cache
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\1-PrimeiroProjeto\4-ConversaoDeNumeros\obj\Debug\4-ConversaoDeNumeros.exe
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\1-PrimeiroProjeto\4-ConversaoDeNumeros\obj\Debug\4-ConversaoDeNumeros.pdb

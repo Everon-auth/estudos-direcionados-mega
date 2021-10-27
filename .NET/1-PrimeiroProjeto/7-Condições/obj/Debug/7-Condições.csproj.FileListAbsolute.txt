@@ -1,0 +1,7 @@
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\1-PrimeiroProjeto\7-Condições\bin\Debug\7-Condições.exe.config
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\1-PrimeiroProjeto\7-Condições\bin\Debug\7-Condições.exe
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\1-PrimeiroProjeto\7-Condições\bin\Debug\7-Condições.pdb
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\1-PrimeiroProjeto\7-Condições\obj\Debug\7-Condições.csproj.CoreCompileInputs.cache
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\1-PrimeiroProjeto\7-Condições\obj\Debug\7-Condições.exe
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\1-PrimeiroProjeto\7-Condições\obj\Debug\7-Condições.pdb
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\1-PrimeiroProjeto\7-Condições\obj\Debug\7-Condições.csproj.AssemblyReference.cache

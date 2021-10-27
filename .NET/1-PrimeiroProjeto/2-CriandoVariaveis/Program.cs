@@ -16,8 +16,8 @@ namespace _2_CriandoVariaveis
              int idade = 32;
             // texto
             string frase = "oá mundo!";
+            Console.WriteLine(frase);
 
-            Console.WriteLine(idade);
             Console.WriteLine("Sua idade é " + idade);
 
             Console.WriteLine("Execução Finalizada. Tecle enter para sair...");

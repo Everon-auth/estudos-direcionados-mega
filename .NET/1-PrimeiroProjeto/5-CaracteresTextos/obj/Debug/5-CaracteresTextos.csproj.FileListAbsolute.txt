@@ -1,0 +1,6 @@
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\1-PrimeiroProjeto\5-CaracteresTextos\bin\Debug\5-CaracteresTextos.exe.config
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\1-PrimeiroProjeto\5-CaracteresTextos\bin\Debug\5-CaracteresTextos.exe
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\1-PrimeiroProjeto\5-CaracteresTextos\bin\Debug\5-CaracteresTextos.pdb
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\1-PrimeiroProjeto\5-CaracteresTextos\obj\Debug\5-CaracteresTextos.csproj.CoreCompileInputs.cache
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\1-PrimeiroProjeto\5-CaracteresTextos\obj\Debug\5-CaracteresTextos.exe
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\1-PrimeiroProjeto\5-CaracteresTextos\obj\Debug\5-CaracteresTextos.pdb
