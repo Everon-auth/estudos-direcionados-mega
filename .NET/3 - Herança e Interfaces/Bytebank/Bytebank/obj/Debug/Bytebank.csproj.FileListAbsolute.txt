@@ -1,0 +1,7 @@
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\3 - Herança e Interfaces\Bytebank\Bytebank\obj\Debug\Bytebank.csproj.AssemblyReference.cache
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\3 - Herança e Interfaces\Bytebank\Bytebank\obj\Debug\Bytebank.csproj.CoreCompileInputs.cache
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\3 - Herança e Interfaces\Bytebank\Bytebank\bin\Debug\Bytebank.exe.config
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\3 - Herança e Interfaces\Bytebank\Bytebank\bin\Debug\Bytebank.exe
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\3 - Herança e Interfaces\Bytebank\Bytebank\bin\Debug\Bytebank.pdb
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\3 - Herança e Interfaces\Bytebank\Bytebank\obj\Debug\Bytebank.exe
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\3 - Herança e Interfaces\Bytebank\Bytebank\obj\Debug\Bytebank.pdb
