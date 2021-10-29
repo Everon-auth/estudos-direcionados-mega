@@ -4,34 +4,42 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using Bytebank.Sistemas;
+using Bytebank.Funcionarios;
+
 namespace Bytebank {
     class Program {
         static void Main( string[] args ) {
 
-            GerenciadorBonificacao Gerenciador = new GerenciadorBonificacao();
+            usarSistema();
 
-            Diretor Everton = new Diretor();
-            Everton.Nome = "Everton Auth";
-            Everton.CPF = "000.000.000-14";
-            Everton.Salario = 12000;
-            Everton.ValorBonificacao= 25;
 
-            Peao Joao = new Peao();
-            Joao.Nome = "Everton Auth";
-            Joao.CPF = "000.000.000-14";
-            Joao.Salario = 500;
+            Console.ReadLine();
+        }
+        public static void usarSistema() {
 
-            Gerenciador.Registrar( Joao );
+            SistemaInterno sistemainterno = new SistemaInterno();
 
-            Gerenciador.Registrar( Everton );
+            Diretor roberta = new Diretor( "255.255.255-25" );
+            roberta.Nome = "Roberta";
+            roberta.Senha = "123";
 
-            Console.WriteLine( "Valor total de Bonificação Paga: " + Gerenciador.GetTotalBonificacao() );
+            sistemainterno.Logar( roberta , "123" );
+
             Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine( "Funcionário:\n Nome: " + Everton.Nome + "\n CPF: "+Everton.CPF+"\n Salário:"+Everton.Salario+"\n Bonificação mensal: "+Everton.Bonificacao() );
-            Console.WriteLine();
-            Console.WriteLine( "Funcionário:\n Nome: " + Joao.Nome + "\n CPF: "+Joao.CPF+"\n Salário:"+Joao.Salario+"\n Bonificação mensal: "+Joao.Bonificacao() );
-            //Console.ReadLine();
+
+            GerenteDeConta camila = new GerenteDeConta( "326.985.628-89" );
+            camila.Nome = "Camila";
+            sistemainterno.Logar( camila , "abc" );
+
+
+        }
+
+        public static void CalcularBonificacao() {
+            GerenciadorBonificacao gerenciadorbonificacao = new GerenciadorBonificacao();
+
+            Funcionario pedro = new Diretor( "000.000.005-26" );
         }
     }
+
 }

@@ -6,7 +6,7 @@
  * as variáveis devem ser sempre tipadas.
  * Funções sempre com letra maiúscula.
  * Tem como usar dois metodos iguais, mas com parametros diferentes.
- * 
+ * Herança múltipla não existe em CSharp 
 
 comando | Objetivo
 :----: | :----:
@@ -60,3 +60,212 @@ Usados para os métodos que envolvem uma propriedade privada para recuperar os s
         public int Agencia { get; set; }
 
 ~~~~
+
+## Overryde method
+
+é usado para sobredefinir um **MÉTODO HERDADO** de uma classe, caso ele possa ser **SOBREDEFINIDA** e oque define ela poder ser substituida é o fato do método de herança seja **VIRTUAL**.
+
+~~~~CSharp
+class TestOverride
+{
+
+    public class Employee
+    {
+        public string Name { get; }
+
+        // Basepay is defined as protected, so that it may be
+        // accessed only by this class and derived classes.
+        protected decimal _basepay;
+
+        // Constructor to set the name and basepay values.
+        public Employee(string name, decimal basepay)
+        {
+            Name = name;
+            _basepay = basepay;
+        }
+
+        // Declared virtual so it can be overridden.
+        public virtual decimal CalculatePay()
+        {
+            return _basepay;
+        }
+    }
+
+    // Derive a new class from Employee.
+    public class SalesEmployee : Employee
+    {
+        // New field that will affect the base pay.
+        private decimal _salesbonus;
+
+        // The constructor calls the base-class version, and
+        // initializes the salesbonus field.
+        public SalesEmployee(string name, decimal basepay, decimal salesbonus)
+            : base(name, basepay)
+        {
+            _salesbonus = salesbonus;
+        }
+
+        // Override the CalculatePay method
+        // to take bonus into account.
+        public override decimal CalculatePay()
+        {
+            return _basepay + _salesbonus;
+        }
+    }
+
+    static void Main()
+    {
+        // Create some new employees.
+        var employee1 = new SalesEmployee("Alice", 1000, 500);
+        var employee2 = new Employee("Bob", 1200);
+
+        Console.WriteLine($"Employee1 {employee1.Name} earned: {employee1.CalculatePay()}");
+        Console.WriteLine($"Employee2 {employee2.Name} earned: {employee2.CalculatePay()}");
+    }
+
+}
+/*
+
+    Output:
+    Employee1 Alice earned: 1500
+    Employee2 Bob earned: 1200
+
+*/
+~~~~
+
+## readonly 
+
+Cria uma variável inutável, ou seja, não tem como alterar o seu valor, apênas ler.
+
+> OBS: Um tipo visível externamente que contém um campo somente leitura visível externamente que é um tipo de referência mutável pode ser uma vulnerabilidade de segurança e pode disparar o aviso CA2104: "Não declarar tipos de referência mutáveis somente leitura".
+
+~~~~CSharp
+public class SamplePoint
+{
+
+    public int x;
+    // Initialize a readonly field
+    public readonly int y = 25;
+    public readonly int z;
+
+    public SamplePoint()
+    {
+        // Initialize a readonly instance field
+        z = 24;
+    }
+
+    public SamplePoint(int p1, int p2, int p3)
+    {
+        x = p1;
+        y = p2;
+        z = p3;
+    }
+
+    public static void Main()
+    {
+        SamplePoint p1 = new SamplePoint(11, 21, 32);   // OK
+        Console.WriteLine($"p1: x={p1.x}, y={p1.y}, z={p1.z}");
+        SamplePoint p2 = new SamplePoint();
+        p2.x = 55;   // OK
+        Console.WriteLine($"p2: x={p2.x}, y={p2.y}, z={p2.z}");
+    }
+    /*
+     Output:
+        p1: x=11, y=21, z=32
+        p2: x=55, y=25, z=24
+    */
+
+}
+~~~~
+
+## abstract
+
+Cria uma classe abstrata que não é diretamente instanciada.
+Métodos abstratos só podem ser instanciados em classes abstratas.
+
+~~~~CSharp
+abstract class Shape
+{
+
+    public abstract int GetArea();
+
+}
+
+class Square : Shape
+{
+
+    private int _side;
+
+    public Square(int n) => _side = n;
+
+    // GetArea method is required to avoid a compile-time error.
+    public override int GetArea() => _side * _side;
+
+    static void Main()
+    {
+        var sq = new Square(12);
+        Console.WriteLine($"Area of the square = {sq.GetArea()}");
+    }
+
+}
+// Output: Area of the square = 144
+~~~~
+
+## public class
+
+Um(a) classe/variavel/método pública pode ser acessada por qualquer escopo da aplicação, desde que a classe seja iniciada.
+
+~~~~CSharp
+abstract class Funcionario {
+
+        public static int TotalDeFuncionarios { get; private set; }
+
+        public string Nome { get; set; }
+        public string CPF { get; set; }
+        public double Salario { get; set; }
+        public string Senha { get; set; }
+
+        public Funcionario( double salario , string cpf ) {
+            Console.WriteLine( "Criando Funcionario..." );
+
+            CPF = cpf;
+            Salario = salario;
+            TotalDeFuncionarios++;
+        }
+
+        public virtual void AumentarSalario() {
+            Console.WriteLine( "Atenção, não esquecer de sobescrevereste método" );
+        }
+        public virtual double GetBonificacao() {
+            Console.WriteLine( "Atenção, não esquecer de sobescrevereste método" );
+            return 0;
+        }
+
+        public bool Autenticar( string senha ) {
+            return this.Senha == senha;
+        }
+    }
+
+~~~~
+
+## protected
+
+um(a) classe/variavel/método protegido que pode ser acessado por qualquer classe que esteja extendendo a classe onde se situa o protected.
+
+~~~~CSharp
+
+~~~~
+
+
+## private
+
+um(a) classe/variavel/método
+
+
+~~~~CSharp
+
+ ~~~~
+
+
+
+módulo 2 - submódulo 1 -> video 5.

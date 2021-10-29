@@ -3,36 +3,57 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using _ByteBank.Transacao;
 
 namespace _ByteBank {
     class Program {
         static void Main( string[] args ) {
-            ContaCorrente contaGabriela = new ContaCorrente(187,35415514);
-            ContaCorrente contaGab = new ContaCorrente(187, 35415515 );
 
+            InciarContas();
+
+
+
+
+            Console.ReadLine();
+        }
+
+
+
+        static void InciarContas() {
+
+            ContaCorrente contaGabriela = new ContaCorrente( 187 , 35415514 );
+            //ContaCorrente a = new ContaCorrente( 187 , 35415514 );
+            //ContaCorrente b = new ContaCorrente( 187 , 35415514 );
+            //ContaCorrente contaGab = new ContaCorrente( 187 , 35415515 );
+
+            contaGabriela.Titular.Nome = "Gabriela";
             contaGabriela.Titular.CPF = "000.000.000-20";
             contaGabriela.Titular.Profissao = "TI - Tristeza e Insegurança";
-            //contaGabriela.Agencia = 187;
-            //contaGabriela.Numero = 35415514;
+            contaGabriela.Agencia = 187;
+            contaGabriela.Numero = 35415514;
             contaGabriela.Saldo = 12000;
 
-            contaGab.Titular.Nome = "Gabriel";
-            contaGab.Titular.CPF = "000.000.000-21";
-            contaGab.Titular.Profissao = "IT - A Coisa";
+
+
+            contaGabriela.dividir( 42 , 2 );
+            contaGabriela.dividir( 1 , 0 );
+
+            //contaGab.Titular.Nome = "Gabriel";
+            //contaGab.Titular.CPF = "000.000.000-21";
+            //contaGab.Titular.Profissao = "IT - A Coisa";
             //contaGab.Agencia = 187;
             //contaGab.Numero = 35415515;
-            contaGab.Saldo = 150;   
+            //contaGab.Saldo = 150;
 
 
-            Console.WriteLine( "Saldo atual: R$" + contaGabriela.Saldo );
-            contaGabriela.Sacar( 10000 );
-            contaGabriela.Depositar( 250 );
-            contaGabriela.transferir( 300 , contaGab );
+            //Console.WriteLine( "Saldo atual: R$" + contaGabriela.Saldo );
+            //contaGabriela.Sacar( 10000 );
+            //contaGabriela.Depositar( 250 );
+            //contaGabriela.transferir( 300 , contaGab );
 
-            Console.WriteLine( "Dados do Cliente: \n Nome: " + contaGabriela.Titular.Nome + "\n CPF: " + contaGabriela.Titular.CPF + "\n Profissão: " + contaGabriela.Titular.Profissao );
-            Console.WriteLine("");
-            Console.WriteLine("Total de contas criadas: "+ ContaCorrente.TotalContasCriadas);
-            Console.ReadLine();
+            //Console.WriteLine( "Dados do Cliente: \n Nome: " + contaGabriela.Titular.Nome + "\n CPF: " + contaGabriela.Titular.CPF + "\n Profissão: " + contaGabriela.Titular.Profissao );
+            //Console.WriteLine( "" );
+            //Console.WriteLine( "Total de contas criadas: " + ContaCorrente.TotalContasCriadas );
         }
     }
 }
