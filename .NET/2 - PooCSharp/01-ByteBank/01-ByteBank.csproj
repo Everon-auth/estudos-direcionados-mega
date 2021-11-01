@@ -44,6 +44,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cliente.cs" />
+    <Compile Include="Exeptions\SaldoInsuficienteExeption.cs" />
+    <Compile Include="Exeptions\SaqueNaoPermitidoException.cs" />
     <Compile Include="Movimentacoes\ContaCorr.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

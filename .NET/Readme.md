@@ -7,6 +7,10 @@
  * Funções sempre com letra maiúscula.
  * Tem como usar dois metodos iguais, mas com parametros diferentes.
  * Herança múltipla não existe em CSharp 
+ * o StackTrace me mostra qual pilha do código que eu devo seguir para encontrar o erro proposital ou não proposital. 
+ * Tem como usar um erro personalizado para chamar outro erro e informar o caminho do erro.
+ 
+
 
 comando | Objetivo
 :----: | :----:
@@ -256,16 +260,10 @@ um(a) classe/variavel/método protegido que pode ser acessado por qualquer class
 
 ~~~~
 
-
 ## private
 
-um(a) classe/variavel/método
-
+um(a) classe/variavel/método privada apênas ao escopo onde foi criada, não é possível acessar ela em outro escopo sem criar uma classe que controle isso.
 
 ~~~~CSharp
 
  ~~~~
-
-
-
-módulo 2 - submódulo 1 -> video 5.

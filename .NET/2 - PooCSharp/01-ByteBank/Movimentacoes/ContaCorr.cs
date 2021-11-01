@@ -1,21 +1,30 @@
 ﻿using System;
+using _01_ByteBank.Exeptions;
 
 namespace _ByteBank.Transacao {
 
     public class ContaCorrente {
         public static int TotalContasCriadas { get; private set; }
         public static double TaxaOperacao { get; private set; }
+        public static int ContadorSaquesNaoPermitidos { get; private set; }
+        public static int ContadorTransferenciasNaoPermitidas { get; private set; }
 
         public Cliente Titular { get; set; }
         public double Saldo { get; set; }
-        public int Agencia { get; set; }
-        public int Numero { get; set; }
+        public int Numero { get; }
         public int Resultado { get; set; }
+        public int Agencia { get; set; }
 
         // Construtor da conta corrente
-        public ContaCorrente( int agencia , int numero ) {
-            Agencia = agencia;
-            Numero = numero;
+        public ContaCorrente( int numeroAgencia , int numeroConta ) {
+
+            if( numeroAgencia <= 0 ) {
+                throw new ArgumentException( "o numero da agencia não pode ser zero ou menor que zero." , nameof( numeroAgencia ) );
+            }
+
+
+            Agencia = numeroAgencia;
+            Numero = numeroConta;
             Titular = new Cliente();
             TotalContasCriadas++;
             TaxaOperacao = 20 / ( TotalContasCriadas / Math.PI );
@@ -34,7 +43,8 @@ namespace _ByteBank.Transacao {
                 Saldo -= valor;
                 Console.WriteLine( "Valor Restante: R$" + Saldo );
             } else {
-                Console.WriteLine( "Você não pode sacar este valor pois sua conta não tem esse valor" );
+                ContadorSaquesNaoPermitidos++;
+                throw new SaqueNaoPermitidoException();
 
             }
         }
@@ -45,17 +55,17 @@ namespace _ByteBank.Transacao {
         }
 
         public void transferir( double valor , ContaCorrente contaDestino ) {
-            if( Saldo < valor )
-                Console.WriteLine( "Não foi possível fazer a transferencia por falta de saldo em sua conta." );
-            else {
-                //Saldo -= valor;
+            if( Saldo < valor ) {
+                ContadorTransferenciasNaoPermitidas++;
+                throw new SaldoInsuficienteExeption( "Você não tem saldo suficiente para fazer essa transação." );
+            } else {
+                Saldo -= valor;
                 contaDestino.Depositar( valor );
                 Console.WriteLine( "Transferencia concluída com sucesso!" );
                 Console.WriteLine( "Saldo aual: R$" + Saldo );
 
             }
         }
-
         public void dividir( int num1 , int num2 ) {
             try {
                 Resultado = num1 / num2;
