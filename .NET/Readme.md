@@ -9,8 +9,6 @@
  * Herança múltipla não existe em CSharp 
  * o StackTrace me mostra qual pilha do código que eu devo seguir para encontrar o erro proposital ou não proposital. 
  * Tem como usar um erro personalizado para chamar outro erro e informar o caminho do erro.
- 
-
 
 comando | Objetivo
 :----: | :----:
@@ -265,5 +263,34 @@ um(a) classe/variavel/método protegido que pode ser acessado por qualquer class
 um(a) classe/variavel/método privada apênas ao escopo onde foi criada, não é possível acessar ela em outro escopo sem criar uma classe que controle isso.
 
 ~~~~CSharp
+
+ ~~~~
+
+ ## Finally
+
+é um bloco de código de código que sempre vai ser executado, não importa oque aconteça.
+
+~~~~CSharp
+
+    LeitorDeArquivo leitor = new LeitorDeArquivo( "contas.txt" ); 
+
+        try {
+    leitor. LerProximaLinha(); 
+    leitor. LerProximaLinha(); 
+    leitor. LerProximaLinha(); 
+    leitor. LerProximaLinha(); 
+    leitor. LerProximaLinha(); 
+    leitor. LerProximaLinha(); 
+    leitor. LerProximaLinha(); 
+    leitor. LerProximaLinha(); 
+    } catch( IOException ) {
+
+        Console.WriteLine( "Excessão do tipo IOException capturada e tratada" );
+
+    } finally {
+
+        leitor.Fechar();
+
+    }
 
  ~~~~

@@ -3,20 +3,59 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 using _ByteBank.Transacao;
+using _01_ByteBank.Simulacao;
 
 namespace _ByteBank {
     class Program {
         static void Main( string[] args ) {
 
-            InciarContas();
+            //InciarContas();
 
-
+            CarregarContas();
 
 
             Console.ReadLine();
         }
 
+        static void CarregarContas() {
+
+            using( LeitorDeArquivo leitor = new LeitorDeArquivo( "Teste.txt" ) ) {
+                leitor.LerProximaLinha();
+            }
+
+
+
+
+
+
+
+
+
+            //LeitorDeArquivo leitor = null;
+
+            //try {
+            //    leitor = new LeitorDeArquivo( "contas.txt" );
+            //    leitor.LerProximaLinha();
+            //    leitor.LerProximaLinha();
+            //    leitor.LerProximaLinha();
+            //    leitor.LerProximaLinha();
+            //    leitor.LerProximaLinha();
+            //    leitor.LerProximaLinha();
+            //    leitor.LerProximaLinha();
+            //    leitor.LerProximaLinha();
+            //    leitor.Fechar();
+
+            //} catch( IOException ) {
+            //    Console.WriteLine( "Excessão do tipo IOException capturada e tratada" );
+            //} finally {
+            //    if( leitor != null ) {
+            //        leitor.Fechar();
+            //    }
+            //}
+
+        }
 
 
         static void InciarContas() {
