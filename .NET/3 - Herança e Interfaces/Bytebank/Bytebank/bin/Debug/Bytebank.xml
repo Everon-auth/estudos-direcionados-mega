@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Bytebank</name>
+    </assembly>
+    <members>
+        <member name="M:Bytebank.Funcionarios.Diretor.#ctor(System.String)">
+            <summary>
+            Cria um novo funcionário com a função de diretor.
+            </summary>
+            <param name="cpf"> Define o CPF da pessoa cadastrada. </param>
+        </member>
+        <member name="M:Bytebank.Funcionarios.Diretor.AumentarSalario">
+            <summary>
+            Aumenta o salário do funcionário em questão em 15%;
+            </summary>
+        </member>
+    </members>
+</doc>

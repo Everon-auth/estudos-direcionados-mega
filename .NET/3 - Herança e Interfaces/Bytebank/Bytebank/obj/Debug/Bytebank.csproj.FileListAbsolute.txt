@@ -5,3 +5,7 @@ C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\3 - Herança e 
 C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\3 - Herança e Interfaces\Bytebank\Bytebank\bin\Debug\Bytebank.pdb
 C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\3 - Herança e Interfaces\Bytebank\Bytebank\obj\Debug\Bytebank.exe
 C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\3 - Herança e Interfaces\Bytebank\Bytebank\obj\Debug\Bytebank.pdb
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\3 - Herança e Interfaces\Bytebank\Bytebank\bin\Debug\Bytebank.xml
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\3 - Herança e Interfaces\Bytebank\Bytebank\bin\Debug\Humanizer.dll
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\3 - Herança e Interfaces\Bytebank\Bytebank\bin\Debug\Humanizer.xml
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\3 - Herança e Interfaces\Bytebank\Bytebank\obj\Debug\Bytebank.csproj.CopyComplete

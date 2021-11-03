@@ -9,6 +9,9 @@
 // variáveis com o '_' são variáveis locais
 //função pai
 export function database(key,session){
+
+    
+
     const _key = key
     const _session = session ? sessionStorage : localStorage    
     let _storage = new Array

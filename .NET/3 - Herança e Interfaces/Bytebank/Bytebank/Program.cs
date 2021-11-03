@@ -11,18 +11,20 @@ namespace Bytebank {
     class Program {
         static void Main( string[] args ) {
 
-            usarSistema();
-
+            UsarSistema();
 
             Console.ReadLine();
+
         }
-        public static void usarSistema() {
+        public static void UsarSistema() {
 
             SistemaInterno sistemainterno = new SistemaInterno();
 
-            Diretor roberta = new Diretor( "255.255.255-25" );
+            Diretor _init_diretor = new Diretor( "255.255.255-25" );
+            Diretor roberta = _init_diretor;
             roberta.Nome = "Roberta";
             roberta.Senha = "123";
+            roberta.AumentarSalario();
 
             sistemainterno.Logar( roberta , "123" );
 
@@ -35,11 +37,11 @@ namespace Bytebank {
 
         }
 
-        public static void CalcularBonificacao() {
-            GerenciadorBonificacao gerenciadorbonificacao = new GerenciadorBonificacao();
+        //public static void CalcularBonificacao() {
+        //    GerenciadorBonificacao gerenciadorbonificacao = new GerenciadorBonificacao();
 
-            Funcionario pedro = new Diretor( "000.000.005-26" );
-        }
+        //    Funcionario pedro = new Diretor( "000.000.005-26" );
+        //}
     }
 
 }

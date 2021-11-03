@@ -45,7 +45,7 @@ Usados para os métodos que envolvem uma propriedade privada para recuperar os s
             }
             set
             {
-                if(value < 0)
+                if(value <param 0)
                 {
                     return;
                 }
@@ -91,6 +91,7 @@ class TestOverride
         {
             return _basepay;
         }
+
     }
 
     // Derive a new class from Employee.
@@ -113,6 +114,7 @@ class TestOverride
         {
             return _basepay + _salesbonus;
         }
+
     }
 
     static void Main()
@@ -123,6 +125,7 @@ class TestOverride
 
         Console.WriteLine($"Employee1 {employee1.Name} earned: {employee1.CalculatePay()}");
         Console.WriteLine($"Employee2 {employee2.Name} earned: {employee2.CalculatePay()}");
+
     }
 
 }
@@ -154,6 +157,7 @@ public class SamplePoint
     {
         // Initialize a readonly instance field
         z = 24;
+
     }
 
     public SamplePoint(int p1, int p2, int p3)
@@ -161,6 +165,7 @@ public class SamplePoint
         x = p1;
         y = p2;
         z = p3;
+
     }
 
     public static void Main()
@@ -170,7 +175,9 @@ public class SamplePoint
         SamplePoint p2 = new SamplePoint();
         p2.x = 55;   // OK
         Console.WriteLine($"p2: x={p2.x}, y={p2.y}, z={p2.z}");
+
     }
+
     /*
      Output:
         p1: x=11, y=21, z=32
@@ -207,6 +214,7 @@ class Square : Shape
     {
         var sq = new Square(12);
         Console.WriteLine($"Area of the square = {sq.GetArea()}");
+
     }
 
 }
@@ -246,6 +254,7 @@ abstract class Funcionario {
         public bool Autenticar( string senha ) {
             return this.Senha == senha;
         }
+
     }
 
 ~~~~
@@ -294,3 +303,56 @@ um(a) classe/variavel/método privada apênas ao escopo onde foi criada, não é
     }
 
  ~~~~
+
+## internal
+
+é uma propriedade que seta a classe como usar apênas dentro do projeto onde foi criado.
+
+~~~~CSharp
+
+namespace Bytebank.Sistemas {
+
+    internal class AuthHelper {
+
+        public bool CompararSenha( string senhaverdadeira , string senhatestada ) {
+            return senhaverdadeira == senhatestada;
+        }
+
+    }
+
+}
+
+~~~~
+
+## Documentando biblioteca para melhor entendimento do que faz tal função.
+
+Cria um comentário que demonstra oque a função, classe... faz, escrito pelo desenvolvedor.
+
+~~~~CSharp
+// Resume a classes
+/// <summary>
+/// Comenta aqui.
+/// </summary>
+// Define a documentação de exessões possiveis
+/// <exception cref="ArgumentException"> Excessão lançada quando um valor negativo é usado indevidamente. </exception>
+// usado pra definir para que a variavel definida é usada.
+/// <param name="numero"> Representa o valor da propriedade <see cref="Agencia"></param>
+///
+~~~~
+## gerenciador de pacotes nugget
+
+É o gerenciador de pacotes do visual studio 2019.
+para encontrar ele vá em ferramentas -> Gerenciador de pacotes do NuGet
+
+##
+
+
+~~~~Chsarp
+
+~~~~
+
+# Desafio
+
+## Comunicação Angular e C# (.NET Core) via socket
+
+to do list.

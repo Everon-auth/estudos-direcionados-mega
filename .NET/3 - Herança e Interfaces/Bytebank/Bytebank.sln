@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bytebank", "Bytebank\Bytebank.csproj", "{FA76CE36-A7A2-4804-813C-E7957BF3BAC2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bytebank.SistemaAgencia", "Bytebank.SistemaAgencia\Bytebank.SistemaAgencia.csproj", "{379D375A-328E-430F-8647-167B4B131564}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{FA76CE36-A7A2-4804-813C-E7957BF3BAC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA76CE36-A7A2-4804-813C-E7957BF3BAC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA76CE36-A7A2-4804-813C-E7957BF3BAC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{379D375A-328E-430F-8647-167B4B131564}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{379D375A-328E-430F-8647-167B4B131564}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{379D375A-328E-430F-8647-167B4B131564}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{379D375A-328E-430F-8647-167B4B131564}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

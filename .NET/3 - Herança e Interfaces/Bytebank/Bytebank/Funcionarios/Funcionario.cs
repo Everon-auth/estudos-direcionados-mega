@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Bytebank.Funcionarios {
     abstract class Funcionario  {
-
+         
         public static int TotalDeFuncionarios { get; private set; }
 
         public string Nome { get; set; }
@@ -23,10 +23,7 @@ namespace Bytebank.Funcionarios {
         public virtual void AumentarSalario() {
             Console.WriteLine( "Atenção, não esquecer de sobescrevereste método" );
         }
-        public virtual double GetBonificacao() {
-            Console.WriteLine( "Atenção, não esquecer de sobescrevereste método" );
-            return 0;
-        }
+        internal protected abstract double GetBonificacao();
     }
-
+    
 }

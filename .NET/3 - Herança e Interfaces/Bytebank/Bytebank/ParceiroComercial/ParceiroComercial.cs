@@ -11,10 +11,12 @@ namespace Bytebank {
 
     class ParceiroComercial : IAutenticavel {
 
+        private AuthHelper _auth = new AuthHelper();
+
         public string Senha { get; set; }
         // Implementa o método da interface.
         public bool Autenticar( string senha ) {
-            return Senha == senha;
+            return _auth.CompararSenha( Senha , senha );
         }
     }
 }
