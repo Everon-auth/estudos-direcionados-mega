@@ -310,7 +310,7 @@ um(a) classe/variavel/método privada apênas ao escopo onde foi criada, não é
 
 ~~~~CSharp
 
-namespace Bytebank.Sistemas {
+namespace Bytebank. Sistemas {
 
     internal class AuthHelper {
 
@@ -339,20 +339,138 @@ Cria um comentário que demonstra oque a função, classe... faz, escrito pelo d
 /// <param name="numero"> Representa o valor da propriedade <see cref="Agencia"></param>
 ///
 ~~~~
+
 ## gerenciador de pacotes nugget
 
 É o gerenciador de pacotes do visual studio 2019.
 para encontrar ele vá em ferramentas -> Gerenciador de pacotes do NuGet
 
-##
+## ctor 
+
+Snippet de criar o construtor do CSharp
+
+## prop
+
+Snippet de criar o get e set de algum argumento
+
+## isNullOrEmpty
+
+veririca se a string é nula ou vazia e retorna um booleano
+
+~~~~CSharp
+
+string url = null; 
+Console. WriteLine( string.isNullOrEmpty(url)); 
+
+~~~~
+
+## indexOf 
+
+informa o indice do termo procurado numa string
+
+~~~~CSharp
+string _URL = "https://github.com/everton-auth?tab=repositories"; 
+string Argumento = "tab";
+int indice = _URL. IndexOf( Argumento ); 
+~~~~
 
 
-~~~~Chsarp
+## ToUpper
 
+Deixa todas as letras da string em caixa alta
+
+~~~~CSharp
+string _URL = "https://github.com/everton-auth?tab=repositories";
+_URL = _URL.ToUpper();
+
+~~~~
+
+## ToLower
+Deixa todas as letras ada string em caixa baixa
+
+~~~~CSharp
+string _URL = "https://github.com/everton-auth?tab=repositories";
+_URL = _URL.ToLower();
+~~~~
+
+
+## StartsWith
+
+Verifica se a string começa com tais caracteres e retorna um booleano.
+
+~~~~CSharp
+string _URL = "https://github.com/everton-auth?tab=repositories";
+_URL = _URL.StartsWith("https://github.com/")
+~~~~
+
+
+## EndsWith
+
+Verifica se a string termina com tais caracteres e retorna um booleano.
+
+~~~~CSharp
+string _URL = "https://github.com/everton-auth?tab=repositories";
+_URL = _URL.EndsWith("tab=repositories")
+~~~~
+
+## Contains
+
+Verifica a string contenha o texto inserido no texto
+
+~~~~CSharp
+string _URL = "https://github.com/everton-auth?tab=repositories";
+_URL = _URL.Contains("everton-auth")
+~~~~
+
+
+## Biblioteca RegularExpressions (Regex)
+
+Biblioteca responsável por procurar padões dentro de uma string
+
+~~~~CSharp
+string _URL = "https://github.com/everton-auth?tab=repositories";
+_URL = _URL.Contains("everton-auth")
+~~~~
+
+## isMatch
+
+veirifica se existe o padrão em algum lugar da string e retorna um booleano;
+
+~~~~CSharp
+using System.Text.RegularExpressions;
+
+    string padrao = "[0-9]{4}-?[0-9]{4}";
+
+    string texto_teste = "Meu nome é Guilherme, me ligue em 4002-8922";
+    Console.WriteLine(Regex.isMatch(texto_teste, padrao));
+~~~~
+
+## Match
+
+veirifica se existe o padrão em algum lugar da string e retorna o valor;
+
+~~~~CSharp
+using System.Text.RegularExpressions;
+
+    string padrao = "[0-9]{4,5}-?[0-9]{4}";
+
+    string texto_teste = "Meu nome é Guilherme, me ligue em 4002-8922";
+    Console.WriteLine(Regex.Match(texto_teste, padrao));
 ~~~~
 
 # Desafio
 
-## Comunicação Angular e C# (.NET Core) via socket
+## Comunicação Angular e C# (. NET Core) via socket
 
 to do list.
+ 
+
+
+##
+
+~~~~CSharp
+
+~~~~
+
+
+video 12 -> classes e objetos.

@@ -1,0 +1,9 @@
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\3 - Herança e Interfaces\Bytebank\Bytebank.SistemaAgencia\bin\Release\Bytebank.SistemaAgencia.exe.config
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\3 - Herança e Interfaces\Bytebank\Bytebank.SistemaAgencia\bin\Release\Bytebank.SistemaAgencia.exe
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\3 - Herança e Interfaces\Bytebank\Bytebank.SistemaAgencia\bin\Release\Bytebank.SistemaAgencia.pdb
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\3 - Herança e Interfaces\Bytebank\Bytebank.SistemaAgencia\bin\Release\Humanizer.dll
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\3 - Herança e Interfaces\Bytebank\Bytebank.SistemaAgencia\bin\Release\Humanizer.xml
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\3 - Herança e Interfaces\Bytebank\Bytebank.SistemaAgencia\obj\Release\Bytebank.SistemaAgencia.csproj.AssemblyReference.cache
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\3 - Herança e Interfaces\Bytebank\Bytebank.SistemaAgencia\obj\Release\Bytebank.SistemaAgencia.csproj.CoreCompileInputs.cache
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\3 - Herança e Interfaces\Bytebank\Bytebank.SistemaAgencia\obj\Release\Bytebank.SistemaAgencia.exe
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\3 - Herança e Interfaces\Bytebank\Bytebank.SistemaAgencia\obj\Release\Bytebank.SistemaAgencia.pdb
