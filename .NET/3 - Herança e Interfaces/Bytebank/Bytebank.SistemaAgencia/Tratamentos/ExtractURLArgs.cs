@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Bytebank.SistemaAgencia {
+namespace Bytebank.SistemaAgencia.Tratamentos {
     /// <summary>
     /// Classe com métodos para separar um ou mais valores ou argumentos da url
     /// </summary>
@@ -36,6 +36,5 @@ namespace Bytebank.SistemaAgencia {
                 return valor;
             }
         }
-
     }
 }

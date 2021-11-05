@@ -9,6 +9,10 @@
  * Herança múltipla não existe em CSharp 
  * o StackTrace me mostra qual pilha do código que eu devo seguir para encontrar o erro proposital ou não proposital. 
  * Tem como usar um erro personalizado para chamar outro erro e informar o caminho do erro.
+ * Pode existir mais de um construtor para as classes, modificando sua construção.
+ * Uma classe é derivada do tipo object indiretamente.
+ * Concatenação moderna de strings -> o $ e as {} são essenciais.
+ * string = $"Número {Numero}, Agência {Agencia}, Saldo {Saldo}"; 
 
 comando | Objetivo
 :----: | :----:
@@ -63,7 +67,7 @@ Usados para os métodos que envolvem uma propriedade privada para recuperar os s
 
 ~~~~
 
-## Overryde method
+## Override method
 
 é usado para sobredefinir um **MÉTODO HERDADO** de uma classe, caso ele possa ser **SOBREDEFINIDA** e oque define ela poder ser substituida é o fato do método de herança seja **VIRTUAL**.
 
@@ -370,47 +374,45 @@ informa o indice do termo procurado numa string
 
 ~~~~CSharp
 string _URL = "https://github.com/everton-auth?tab=repositories"; 
-string Argumento = "tab";
+string Argumento = "tab"; 
 int indice = _URL. IndexOf( Argumento ); 
 ~~~~
-
 
 ## ToUpper
 
 Deixa todas as letras da string em caixa alta
 
 ~~~~CSharp
-string _URL = "https://github.com/everton-auth?tab=repositories";
-_URL = _URL.ToUpper();
+string _URL = "https://github.com/everton-auth?tab=repositories"; 
+_URL = _URL. ToUpper(); 
 
 ~~~~
 
 ## ToLower
+
 Deixa todas as letras ada string em caixa baixa
 
 ~~~~CSharp
-string _URL = "https://github.com/everton-auth?tab=repositories";
-_URL = _URL.ToLower();
+string _URL = "https://github.com/everton-auth?tab=repositories"; 
+_URL = _URL. ToLower(); 
 ~~~~
-
 
 ## StartsWith
 
 Verifica se a string começa com tais caracteres e retorna um booleano.
 
 ~~~~CSharp
-string _URL = "https://github.com/everton-auth?tab=repositories";
-_URL = _URL.StartsWith("https://github.com/")
+string _URL = "https://github.com/everton-auth?tab=repositories"; 
+_URL = _URL. StartsWith("https://github.com/")
 ~~~~
-
 
 ## EndsWith
 
 Verifica se a string termina com tais caracteres e retorna um booleano.
 
 ~~~~CSharp
-string _URL = "https://github.com/everton-auth?tab=repositories";
-_URL = _URL.EndsWith("tab=repositories")
+string _URL = "https://github.com/everton-auth?tab=repositories"; 
+_URL = _URL. EndsWith("tab=repositories")
 ~~~~
 
 ## Contains
@@ -418,45 +420,146 @@ _URL = _URL.EndsWith("tab=repositories")
 Verifica a string contenha o texto inserido no texto
 
 ~~~~CSharp
-string _URL = "https://github.com/everton-auth?tab=repositories";
-_URL = _URL.Contains("everton-auth")
+string _URL = "https://github.com/everton-auth?tab=repositories"; 
+_URL = _URL. Contains("everton-auth")
 ~~~~
-
 
 ## Biblioteca RegularExpressions (Regex)
 
 Biblioteca responsável por procurar padões dentro de uma string
 
 ~~~~CSharp
-string _URL = "https://github.com/everton-auth?tab=repositories";
-_URL = _URL.Contains("everton-auth")
+string _URL = "https://github.com/everton-auth?tab=repositories"; 
+_URL = _URL. Contains("everton-auth")
 ~~~~
 
 ## isMatch
 
-veirifica se existe o padrão em algum lugar da string e retorna um booleano;
+veirifica se existe o padrão em algum lugar da string e retorna um booleano; 
 
 ~~~~CSharp
-using System.Text.RegularExpressions;
+using System. Text. RegularExpressions; 
 
     string padrao = "[0-9]{4}-?[0-9]{4}";
 
     string texto_teste = "Meu nome é Guilherme, me ligue em 4002-8922";
     Console.WriteLine(Regex.isMatch(texto_teste, padrao));
+
 ~~~~
 
 ## Match
 
-veirifica se existe o padrão em algum lugar da string e retorna o valor;
+veirifica se existe o padrão em algum lugar da string e retorna o valor; 
 
 ~~~~CSharp
-using System.Text.RegularExpressions;
+using System. Text. RegularExpressions; 
 
     string padrao = "[0-9]{4,5}-?[0-9]{4}";
 
     string texto_teste = "Meu nome é Guilherme, me ligue em 4002-8922";
     Console.WriteLine(Regex.Match(texto_teste, padrao));
+
 ~~~~
+
+## DateTime
+
+É a classe responsável por controlar a data e a hora, suas transformações e capturar a data e hora.
+
+~~~~CSharp
+
+DateTime dataFimPagamento = new DateTime( 2018 , 6 , 30 ); 
+DateTime dataCorrente = DateTime. Now; 
+
+~~~~
+
+## ToString
+
+Converte um valor em string
+
+~~~~CSharp
+
+    int numero = 22; 
+    numero. ToString(); 
+
+~~~~
+
+## Equals
+
+compara algo para ver se são iguais e retorna um booleano.
+
+~~~~CSharp
+
+    string s1 = "ProGeek 2.0";
+    string s2 = "ProGeek 2.0";
+    Console.WriteLine(s1.Equals(s2));
+
+~~~~
+
+## Criando Arrays
+
+para criar um Array, deve se atribuir os colchetes com o tipo da variavel e iniciar a variavel como um array do tipo da variavel e o seu tamanho máximo.
+
+~~~~CSharp
+
+    int[] idade = new int[ 20 ]; 
+
+~~~~
+
+## Formas de inicializar um array
+
+~~~~CSharp
+// Primeira forma
+ContaCorrente[] contas = new ContaCorrente[]{
+
+    new ContaCorrente(874, 5464524),
+    new ContaCorrente(874, 5465464),
+    new ContaCorrente(874, 5646454),
+    new ContaCorrente(874, 3546854),
+
+}
+// Segunda forma
+ContaCorrente[] contas = new ContaCorrente[24]; 
+
+~~~~
+
+## Definindo valor padrão para um método ou classe
+
+~~~~CSharp
+
+public ListaDeContas(int capacidadeincial = 5) {
+    _itens = new ContaCorrente[ capacidadeincial ];
+}
+~~~~ 
+
+## passando apenas um argumento para a classe ou método
+
+~~~~CSharp
+
+Lista.MeuMetodo(numero:10);
+
+// o método meuMetodo que tem a sobrecarga numero, ele tem outro parametro mas quando chamamos dessa forma acima, ele apenas seta o número necessitado pelo método.
+~~~~
+
+## break
+
+Quebra o fluxo de execussão onde foi instanciado.
+
+~~~~CSharp
+if(itemAtual.Equals(item)){
+    indiceItem = i;
+    break;
+}
+~~~~
+
+##
+
+
+~~~~CSharp
+
+
+
+~~~~
+
 
 # Desafio
 
@@ -464,13 +567,3 @@ using System.Text.RegularExpressions;
 
 to do list.
  
-
-
-##
-
-~~~~CSharp
-
-~~~~
-
-
-video 12 -> classes e objetos.

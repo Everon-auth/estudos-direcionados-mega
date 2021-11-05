@@ -7,3 +7,6 @@ C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\3 - Herança e 
 C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\3 - Herança e Interfaces\Bytebank\Bytebank.SistemaAgencia\obj\Debug\Bytebank.SistemaAgencia.pdb
 C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\3 - Herança e Interfaces\Bytebank\Bytebank.SistemaAgencia\bin\Debug\Humanizer.dll
 C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\3 - Herança e Interfaces\Bytebank\Bytebank.SistemaAgencia\bin\Debug\Humanizer.xml
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\3 - Herança e Interfaces\Bytebank\Bytebank.SistemaAgencia\bin\Debug\01-ByteBank.exe
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\3 - Herança e Interfaces\Bytebank\Bytebank.SistemaAgencia\bin\Debug\01-ByteBank.pdb
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\3 - Herança e Interfaces\Bytebank\Bytebank.SistemaAgencia\bin\Debug\01-ByteBank.exe.config
