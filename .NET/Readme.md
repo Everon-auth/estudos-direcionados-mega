@@ -13,7 +13,7 @@
  * Uma classe é derivada do tipo object indiretamente.
  * Concatenação moderna de strings -> o $ e as {} são essenciais.
  * string = $"Número {Numero}, Agência {Agencia}, Saldo {Saldo}"; 
-
+ * Crtl + . -> atalho para renomear o nome do método em todos os lugares onde está sendo usado.
 comando | Objetivo
 :----: | :----:
 Console. WriteLine("string") | printa um valor em uma linha
@@ -527,7 +527,9 @@ ContaCorrente[] contas = new ContaCorrente[24];
 ~~~~CSharp
 
 public ListaDeContas(int capacidadeincial = 5) {
+
     _itens = new ContaCorrente[ capacidadeincial ];
+
 }
 ~~~~ 
 
@@ -535,7 +537,7 @@ public ListaDeContas(int capacidadeincial = 5) {
 
 ~~~~CSharp
 
-Lista.MeuMetodo(numero:10);
+Lista. MeuMetodo(numero:10); 
 
 // o método meuMetodo que tem a sobrecarga numero, ele tem outro parametro mas quando chamamos dessa forma acima, ele apenas seta o número necessitado pelo método.
 ~~~~
@@ -545,21 +547,34 @@ Lista.MeuMetodo(numero:10);
 Quebra o fluxo de execussão onde foi instanciado.
 
 ~~~~CSharp
-if(itemAtual.Equals(item)){
+if(itemAtual. Equals(item)){
+
     indiceItem = i;
     break;
+
 }
 ~~~~
 
-##
+## Get e Set diferentes 
 
+Define a usabilidade da classe como a usabilidade de um array, podendo ser usado o mesmo método de acesso da classe de Arrays
 
 ~~~~CSharp
 
-
+    public ContaCorrente this[int indice] {
+        get {
+            return GetItemNoIndice( indice );
+        }
+    }
 
 ~~~~
 
+
+## 
+
+~~~~CSharp
+
+~~~~
 
 # Desafio
 
