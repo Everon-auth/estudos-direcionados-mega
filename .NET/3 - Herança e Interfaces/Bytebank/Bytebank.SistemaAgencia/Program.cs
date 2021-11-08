@@ -5,41 +5,16 @@ namespace Bytebank.SistemaAgencia {
     class Program {
         static void Main( string[] args ) {
 
-            ListaDeContas Lista = new ListaDeContas();
 
-            ContaCorrente contaEverton = new ContaCorrente( 545 , 5254845 );
+            Lista<int> ListaIdades = new Lista<int>();
+            ListaIdades.AdicionarVarios( 12 , 16 , 80 , 42 );
+            for( int i = 0 ; i < ListaIdades.Tamanho ; i++ ) {
+                int idade = ListaIdades[ i ];
+                Console.WriteLine( $"Idade no indice {i}: {idade}" );
+            }
 
-            Lista.adicionar( contaEverton );
-            Lista.adicionar( new ContaCorrente( 841 , 255642645 ) );
-            Lista.adicionar( new ContaCorrente( 841 , 255642645 ) );
-            Lista.adicionar( new ContaCorrente( 841 , 255642645 ) );
-            Lista.adicionar( new ContaCorrente( 841 , 255642645 ) );
-            Lista.adicionar( new ContaCorrente( 841 , 255642645 ) );
-            Lista.adicionar( new ContaCorrente( 841 , 255642645 ) );
-            Lista.adicionar( new ContaCorrente( 841 , 255642645 ) );
-            Lista.adicionar( new ContaCorrente( 841 , 255642645 ) );
-            Lista.adicionar( new ContaCorrente( 841 , 255642645 ) );
-            Lista.adicionar( new ContaCorrente( 841 , 255642645 ) );
-            Lista.adicionar( new ContaCorrente( 841 , 255642645 ) );
-            Lista.adicionar( new ContaCorrente( 841 , 255642645 ) );
-            Lista.adicionar( new ContaCorrente( 841 , 255642645 ) );
-            Lista.adicionar( new ContaCorrente( 841 , 255642645 ) );
-            Lista.adicionar( new ContaCorrente( 841 , 255642645 ) );
-            Lista.adicionar( new ContaCorrente( 841 , 255642645 ) );
-            Lista.adicionar( new ContaCorrente( 841 , 255642645 ) );
-            Lista.adicionar( new ContaCorrente( 841 , 255642645 ) );
-            Lista.adicionar( new ContaCorrente( 841 , 255642645 ) );
-            Lista.adicionar( new ContaCorrente( 841 , 255642645 ) );
-            Lista.adicionar( new ContaCorrente( 841 , 255642645 ) );
-            Lista.adicionar( new ContaCorrente( 841 , 255642645 ) );
-            Lista.adicionar( new ContaCorrente( 841 , 255642645 ) );
-            Lista.adicionar( new ContaCorrente( 841 , 255642645 ) );
-            Lista.adicionar( new ContaCorrente( 841 , 255642645 ) );
 
-            Lista.ExibirLista();
-            Lista.Remover(contaEverton);
-            Console.WriteLine( "Após Remover" );
-            Lista.ExibirLista();
+
             Console.ReadLine();
         }
 
@@ -55,11 +30,31 @@ namespace Bytebank.SistemaAgencia {
 
 
 
+        static void listaObject() {
+            ListaDeObject ListaIdades = new ListaDeObject();
+            ListaIdades.AdicionarVarios( 12 , 16 , 80 , 42 );
+            for( int i = 0 ; i < ListaIdades.Tamanho ; i++ ) {
+                int idade = ( int ) ListaIdades[ i ];
+                Console.WriteLine( $"Idade no indice {i}: {idade}" );
+            }
+        }
 
+        static void listaContas() {
 
+            ListaDeContas Lista = new ListaDeContas();
 
+            ContaCorrente contaEverton = new ContaCorrente( 545 , 5254845 );
 
-
+            Lista.AdicionarVarios(
+                contaEverton ,
+                new ContaCorrente( 525 , 5262554 ) ,
+                new ContaCorrente( 525 , 5262554 ) ,
+                new ContaCorrente( 525 , 5262554 ) ,
+                new ContaCorrente( 525 , 5262554 ) ,
+                new ContaCorrente( 525 , 5262554 ) ,
+                new ContaCorrente( 525 , 5262554 )
+                );
+        }
 
         static void loopInfinito() {
             for( int i = 0 ; i >= -1 ; i++ ) {

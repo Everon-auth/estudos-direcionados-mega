@@ -555,7 +555,7 @@ if(itemAtual. Equals(item)){
 }
 ~~~~
 
-## Get e Set diferentes 
+## Get diferente 
 
 Define a usabilidade da classe como a usabilidade de um array, podendo ser usado o mesmo método de acesso da classe de Arrays
 
@@ -563,16 +563,58 @@ Define a usabilidade da classe como a usabilidade de um array, podendo ser usado
 
     public ContaCorrente this[int indice] {
         get {
-            return GetItemNoIndice( indice );
+            return GetItemNoIndice( indice ); 
         }
+
     }
 
 ~~~~
 
+## params
 
-## 
+Define o método com vários argumentos do mesmo tipo
 
 ~~~~CSharp
+
+    public void AdicionarVarios( params object[] itens ) {
+        foreach( object conta in itens ) {
+            adicionar( conta ); 
+        }
+
+    }
+
+~~~~
+
+## Tipo de classe genérica
+
+~~~~CSharp
+
+class Lista<Tipo>{ // por Convenção usa-se o T no lugar do Tipo  
+
+    private ContaCorrente _itens;
+    private int _proximaPosicao;
+
+    public Lista( int capacidadeInicial = 5 ) {
+        _itens = new Tipo[ capacidadeInicial ]; // usa o tipo definido na instancia da classe
+        _proximaPosicao = 0; 
+
+    }
+
+} 
+
+class Program {
+    static void Main( string[] args ) {
+        Lista<int> ListaGen = new Lista<int>; 
+        Console. ReadLine(); 
+    }
+
+}
+
+~~~~
+
+##
+
+~~~~Csharp
 
 ~~~~
 
