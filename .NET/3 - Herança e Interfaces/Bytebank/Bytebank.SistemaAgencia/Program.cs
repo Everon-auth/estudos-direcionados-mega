@@ -1,19 +1,20 @@
 ﻿using System;
+using System.Collections.Generic;
 using Bytebank.SistemaAgencia.Tratamentos;
+using Bytebank.SistemaAgencia.Extensoes;
 using _ByteBank.Transacao;
+
 namespace Bytebank.SistemaAgencia {
     class Program {
         static void Main( string[] args ) {
 
-
-            Lista<int> ListaIdades = new Lista<int>();
+            List<int> ListaIdades = new List<int>();
             ListaIdades.AdicionarVarios( 12 , 16 , 80 , 42 );
-            for( int i = 0 ; i < ListaIdades.Tamanho ; i++ ) {
+
+            for( int i = 0 ; i < ListaIdades.Count ; i++ ) {
                 int idade = ListaIdades[ i ];
                 Console.WriteLine( $"Idade no indice {i}: {idade}" );
             }
-
-
 
             Console.ReadLine();
         }
@@ -30,6 +31,18 @@ namespace Bytebank.SistemaAgencia {
 
 
 
+
+
+
+        static void MinhalistaGen() {
+            Lista<int> ListaIdades = new Lista<int>();
+            ListaIdades.AdicionarVarios( 12 , 16 , 80 , 42 );
+            for( int i = 0 ; i < ListaIdades.Tamanho ; i++ ) {
+                int idade = ListaIdades[ i ];
+                Console.WriteLine( $"Idade no indice {i}: {idade}" );
+            }
+
+        }
         static void listaObject() {
             ListaDeObject ListaIdades = new ListaDeObject();
             ListaIdades.AdicionarVarios( 12 , 16 , 80 , 42 );

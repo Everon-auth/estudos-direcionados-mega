@@ -33,6 +33,7 @@ float | Variável de números quebrados com precisão curta (poucas casas decima
 char | Variável de caractere (16 bits)
 bool | variavel booleana de true ou false
 static | Variavel correspondente a classe
+var | variavel sem atribuição de tipo diretamente, pelo seu valor inserido após a declaração, ela define o tipo.
 
 ## método GET e SET
 
@@ -603,20 +604,71 @@ class Lista<Tipo>{ // por Convenção usa-se o T no lugar do Tipo
 } 
 
 class Program {
+
     static void Main( string[] args ) {
         Lista<int> ListaGen = new Lista<int>; 
-        Console. ReadLine(); 
+        Console.ReadLine(); 
+
     }
 
 }
 
 ~~~~
 
-##
+## Sort
 
-~~~~Csharp
+usado para reordenar os itens de uma lista
+
+> Existem Interfeces para comprar objetos, são aplicadas para criar uma logica personalizada de reordenação da tabela. (IComparable, IComparer)
+
+~~~~CSharp
+
+List<int> idades = new List<int>(); 
+
+idades. Add(15); 
+idades. Add(5415); 
+idades. Add(541); 
+idades. Add(54656); 
+idades. Add(5657); 
+idades. Add(54165); 
+idades. Add(653); 
+
+idades. Sort(); 
+
+foreach(int item in idades){
+
+    Console.Writeline(item);
+
+}
+~~~~
+
+## CompareTo
+
+Compara os valores das duas memórias/variaveis definidas
+
+~~~~CSharp
+
+string a = "olá"; 
+string b = "olha"; 
+
+a. CompareTo(b); 
 
 ~~~~
+
+## OrderBy
+
+Usado para reordenar listas, retornando o valor reordenado.
+
+~~~~CSharp
+IOrderedEnumerable<ContaCorrente> contasOrdenadas =
+contas. OrderBy(conta => conta. Numero); 
+~~~~
+
+## Classes úteis
+
+### Classe List
+
+Classe genérica de criar e gerenciar listas no DotNet Framework
 
 # Desafio
 
@@ -624,3 +676,5 @@ class Program {
 
 to do list.
  
+
+Módulo 3 ---> submódulo 2 -->  video 11 -> minuto 8
