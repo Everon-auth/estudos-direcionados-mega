@@ -21,9 +21,9 @@ namespace _ByteBank {
 
         static void CarregarContas() {
 
-            using( LeitorDeArquivo leitor = new LeitorDeArquivo( "Teste.txt" ) ) {
-                leitor.LerProximaLinha();
-            }
+            //using( LeitorDeArquivo leitor = new LeitorDeArquivo( "Teste.txt" ) ) {
+            //    leitor.LerProximaLinha();
+
 
 
 

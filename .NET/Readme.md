@@ -14,6 +14,9 @@
  * Concatenação moderna de strings -> o $ e as {} são essenciais.
  * string = $"Número {Numero}, Agência {Agencia}, Saldo {Saldo}"; 
  * Crtl + . -> atalho para renomear o nome do método em todos os lugares onde está sendo usado.
+ * System.IO -> Biblioteca importante do CSharp, usada para Inputs e Outputs. 
+ * \n Significa uma quebra de linha.
+
 comando | Objetivo
 :----: | :----:
 Console. WriteLine("string") | printa um valor em uma linha
@@ -22,7 +25,7 @@ Console. ReadLine() | Espera um caractere ou um enter.
 @"texto" | quebra as linhas conforme os textos; 
 \n | quebra de linha em texto
 
-tipos de variáveis | objetivo
+tipos de variáveis/definição | objetivo
 :----: | :----:
 int | Números inteiros (32 bits)
 string | textos/frases
@@ -34,6 +37,7 @@ char | Variável de caractere (16 bits)
 bool | variavel booleana de true ou false
 static | Variavel correspondente a classe
 var | variavel sem atribuição de tipo diretamente, pelo seu valor inserido após a declaração, ela define o tipo.
+partial | Define que a classe continua neste arquivo.
 
 ## método GET e SET
 
@@ -685,6 +689,18 @@ contas.OrderBy(conta => conta.Numero)
 ### Classe List
 
 Classe genérica de criar e gerenciar listas no DotNet Framework
+
+### UTF8Encoding
+
+classe responsável por métodos de conversão de bytes em outros formatos.
+
+### FileStream
+
+Classe responsável por manipulação de arquivos.
+
+### StreamReader
+
+
 
 # Desafio
 

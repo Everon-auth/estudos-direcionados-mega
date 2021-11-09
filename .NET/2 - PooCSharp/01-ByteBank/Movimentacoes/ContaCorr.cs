@@ -28,8 +28,6 @@ namespace _ByteBank.Transacao {
             Titular = new Cliente();
             TotalContasCriadas++;
             TaxaOperacao = 20 / ( TotalContasCriadas / Math.PI );
-
-            Console.WriteLine( "Valor atual da Taxa: " + TaxaOperacao );
         }
 
         private bool _PossoSacar( double valor ) {
