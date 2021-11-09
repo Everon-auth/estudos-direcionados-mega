@@ -664,6 +664,22 @@ IOrderedEnumerable<ContaCorrente> contasOrdenadas =
 contas. OrderBy(conta => conta. Numero); 
 ~~~~
 
+## Expressão Lambda
+
+A expressão lambda diminui o tamanho da expressão da função, elas se comportam como atalhos para definir a expressão.
+
+~~~~CSharp
+// conta => conta.Numero
+contas.OrderBy(conta => conta.Numero)
+~~~~
+
+## 
+
+~~~~CSharp
+
+~~~~
+
+
 ## Classes úteis
 
 ### Classe List
@@ -677,4 +693,3 @@ Classe genérica de criar e gerenciar listas no DotNet Framework
 to do list.
  
 
-Módulo 3 ---> submódulo 2 -->  video 11 -> minuto 8

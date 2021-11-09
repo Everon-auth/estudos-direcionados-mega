@@ -52,7 +52,7 @@
     <Compile Include="Lista.cs" />
     <Compile Include="ListaDeContas.cs" />
     <Compile Include="ListaDeObject.cs" />
-    <Compile Include="LitsExtends.cs" />
+    <Compile Include="Extensoes\LitsExtends.cs" />
     <Compile Include="Tratamentos\ExtractURLArgs.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

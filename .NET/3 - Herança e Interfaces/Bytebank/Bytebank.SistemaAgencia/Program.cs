@@ -8,13 +8,6 @@ namespace Bytebank.SistemaAgencia {
     class Program {
         static void Main( string[] args ) {
 
-            List<int> ListaIdades = new List<int>();
-            ListaIdades.AdicionarVarios( 12 , 16 , 80 , 42 );
-
-            for( int i = 0 ; i < ListaIdades.Count ; i++ ) {
-                int idade = ListaIdades[ i ];
-                Console.WriteLine( $"Idade no indice {i}: {idade}" );
-            }
 
             Console.ReadLine();
         }
@@ -29,11 +22,16 @@ namespace Bytebank.SistemaAgencia {
 
 
 
+        static void ClasseList() {
+            List<int> ListaIdades = new List<int>();
+            ListaIdades.AdicionarVarios( 12 , 16 , 80 , 42 );
 
+            for( int i = 0 ; i < ListaIdades.Count ; i++ ) {
+                int idade = ListaIdades[ i ];
+                Console.WriteLine( $"Idade no indice {i}: {idade}" );
+            }
 
-
-
-
+        }
         static void MinhalistaGen() {
             Lista<int> ListaIdades = new Lista<int>();
             ListaIdades.AdicionarVarios( 12 , 16 , 80 , 42 );
@@ -51,7 +49,6 @@ namespace Bytebank.SistemaAgencia {
                 Console.WriteLine( $"Idade no indice {i}: {idade}" );
             }
         }
-
         static void listaContas() {
 
             ListaDeContas Lista = new ListaDeContas();
@@ -68,14 +65,12 @@ namespace Bytebank.SistemaAgencia {
                 new ContaCorrente( 525 , 5262554 )
                 );
         }
-
         static void loopInfinito() {
             for( int i = 0 ; i >= -1 ; i++ ) {
                 Console.WriteLine( i );
             }
             Console.ReadLine();
         }
-
         static void urlTestes() {
             string url = "https://github.com/everton-auth?tab=repositories";
             ExtractURLArgs extrator = new ExtractURLArgs( url );
