@@ -48,8 +48,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Files\FileMannage.cs" />
+    <Compile Include="Partials\CriarArquivo.cs" />
+    <Compile Include="Partials\EntradaDaConsole.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="Program\LidandoComFileStreamDiretamente.cs" />
+    <Compile Include="Partials\LidandoComFileStreamDiretamente.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

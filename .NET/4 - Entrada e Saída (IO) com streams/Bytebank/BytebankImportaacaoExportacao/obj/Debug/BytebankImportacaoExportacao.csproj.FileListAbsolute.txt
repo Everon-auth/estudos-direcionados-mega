@@ -8,3 +8,4 @@ C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\4 - Entrada e S
 C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\4 - Entrada e Saída (IO) com streams\Bytebank\BytebankImportaacaoExportacao\obj\Debug\BytebankImportacaoExportacao.csproj.CoreCompileInputs.cache
 C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\4 - Entrada e Saída (IO) com streams\Bytebank\BytebankImportaacaoExportacao\obj\Debug\BytebankImportaacaoExportacao.exe
 C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\4 - Entrada e Saída (IO) com streams\Bytebank\BytebankImportaacaoExportacao\obj\Debug\BytebankImportaacaoExportacao.pdb
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\4 - Entrada e Saída (IO) com streams\Bytebank\BytebankImportaacaoExportacao\obj\Debug\BytebankImportacaoExportacao.csproj.CopyComplete

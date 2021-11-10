@@ -14,7 +14,7 @@
  * Concatenação moderna de strings -> o $ e as {} são essenciais.
  * string = $"Número {Numero}, Agência {Agencia}, Saldo {Saldo}"; 
  * Crtl + . -> atalho para renomear o nome do método em todos os lugares onde está sendo usado.
- * System.IO -> Biblioteca importante do CSharp, usada para Inputs e Outputs. 
+ * System. IO -> Biblioteca importante do CSharp, usada para Inputs e Outputs. 
  * \n Significa uma quebra de linha.
 
 comando | Objetivo
@@ -673,8 +673,8 @@ contas. OrderBy(conta => conta. Numero);
 A expressão lambda diminui o tamanho da expressão da função, elas se comportam como atalhos para definir a expressão.
 
 ~~~~CSharp
-// conta => conta.Numero
-contas.OrderBy(conta => conta.Numero)
+// conta => conta. Numero
+contas. OrderBy(conta => conta. Numero)
 ~~~~
 
 ## 
@@ -682,7 +682,6 @@ contas.OrderBy(conta => conta.Numero)
 ~~~~CSharp
 
 ~~~~
-
 
 ## Classes úteis
 
@@ -700,7 +699,17 @@ Classe responsável por manipulação de arquivos.
 
 ### StreamReader
 
+Classe responsável por ler arquivos sem se preocupar com as bytes necessárias do buffer.
 
+### StreamWrite
+
+Classe responsável por escrever em arquivos sem se preocupar com as bytes necessárias do buffer.
+
+> Flush dessa classe libera o buffer e escreve imediatamente no arquivo
+
+### Classe File
+
+Classe auxiliar para trabalhar com arquivos.
 
 # Desafio
 
