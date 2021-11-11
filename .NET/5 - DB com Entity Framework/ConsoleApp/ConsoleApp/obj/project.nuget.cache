@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "2DHMLNPJmWS3UnCOG5VphZWCv5ZiEEfsLskU+gtK66pyjC6Kc7Xi3jAMQgNlgm7O9fbkOWN5n8xmfapfiOpMIA==",
+  "dgSpecHash": "muJr2IaRE0kva90nQ+FgCMW4Na758hqte4PhUL1lF8PmV1PAMQZL3qCk6iRDoRJZW78QSiQSf4XmdLS8Av89mA==",
   "success": true,
   "projectFilePath": "C:\\Users\\everton.auth\\Workstation\\estudos-direcionados-mega\\.NET\\5 - DB com Entity Framework\\ConsoleApp\\ConsoleApp\\ConsoleApp.csproj",
   "expectedPackageFiles": [
@@ -97,7 +97,11 @@
     "C:\\Users\\everton.auth\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\everton.auth\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\everton.auth\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\everton.auth\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    "C:\\Users\\everton.auth\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
+    "C:\\Users\\everton.auth\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.12\\microsoft.netcore.app.host.win-x64.5.0.12.nupkg.sha512",
+    "C:\\Users\\everton.auth\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\everton.auth\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\everton.auth\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

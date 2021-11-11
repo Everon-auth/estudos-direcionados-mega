@@ -683,7 +683,137 @@ contas. OrderBy(conta => conta. Numero)
 
 ~~~~
 
+## Entity Framework
+
+Framework que substitui o uso do ADO. NET, dominuindo o tamanho de código.
+
+Crud com Entity:
+~~~~CSharp
+using System; 
+using System. Collections. Generic; 
+using System. Linq; 
+using System. Text; 
+using System. Threading. Tasks; 
+using Microsoft. EntityFrameworkCore; 
+
+using ConsoleApp. Recipes; 
+
+namespace ConsoleApp. Recipes {
+
+    class Produto {
+        public int Id { get; internal set; }
+        public string Nome { get; internal set; }
+        public string Categoria { get; internal set; }
+        public double Preco { get; internal set; }
+
+    }
+
+}
+
+namespace ConsoleApp. Contexts {
+
+    class LojaContext : DbContext {
+        public DbSet<Produto> Produtos { get; set; }
+
+        protected override void OnConfiguring( DbContextOptionsBuilder optionsBuilder ) {
+            if( !optionsBuilder. IsConfigured ) {
+                optionsBuilder. UseSqlServer( "Server=(localdb)\\mssqllocaldb; Database=LojaDB; Trusted_Connection=true; " ); 
+            }
+        }
+
+    }
+
+}
+
+namespace ConsoleApp. Interfaces {
+
+    interface IProdutoDAO<T> {
+        void Adicionar( T p ); 
+        void Remover( T p ); 
+        void Atualizar( T p ); 
+        Produto Recuperar( T p ); 
+
+    }
+
+}
+
+namespace ConsoleApp. Contexts {
+
+    class ProdutoDAOEntity : IProdutoDAO<Produto> {
+        public void Adicionar( Produto p ) {
+            using( var Contexto = new LojaContext() ) {
+                Contexto.Add( p );
+                Contexto.SaveChanges();
+            }
+        }
+
+        public void AdicionarConsole() {
+            Produto p = new Produto();
+            Console.WriteLine( "Digite o nome do produto" );
+            p.Nome = Console.ReadLine();
+            Console.WriteLine( "Digite a categoria do produto" );
+            p.Categoria = Console.ReadLine();
+            Console.WriteLine( "Digite o preço do produto" );
+            p.Preco = float.Parse( Console.ReadLine() );
+            try {
+
+                using( var Contexto = new LojaContext() ) {
+                    Contexto.Add( p );
+                    Contexto.SaveChanges();
+                }
+            } catch( Exception e ) {
+                Console.WriteLine( $"Erro: {e.Message}" );
+            }
+        }
+
+        public void Atualizar( Produto p ) {
+            try {
+
+                using( var Contexto = new LojaContext() ) {
+                    Contexto.Produtos.Update( Contexto.Produtos.Find( p.Id ) );
+                    Contexto.SaveChanges();
+                }
+            } catch( Exception e ) {
+                Console.WriteLine( $"Erro: {e.Message}" );
+            }
+        }
+
+        public Produto Recuperar( Produto p ) {
+            try {
+                using( var Contexto = new LojaContext() ) {
+                    Produto db_archive = Contexto.Produtos.Find( p.Id );
+                    return db_archive;
+                }
+            } catch( Exception e ) {
+                Console.WriteLine( $"Erro: {e.Message}" );
+                return null;
+            }
+        }
+
+        public void Remover( Produto p ) {
+            try {
+                using( var Context = new LojaContext() ) {
+                    Context. Produtos. Remove( p ); 
+                    Context. SaveChanges(); 
+                    Console. WriteLine( "Produto removido com sucesso!" ); 
+                }
+            } catch( Exception e ) {
+                Console. WriteLine( $"Erro: {e. Message}" ); 
+            }
+        }
+
+    }
+
+}
+~~~~
+
+
+
 ## Classes úteis
+
+## ModelBuilder
+
+Classe gerenciadora de classes.
 
 ### Classe List
 
@@ -717,5 +847,3 @@ Classe auxiliar para trabalhar com arquivos.
 
 to do list.
  
-
-video 10 -> criando CSV
