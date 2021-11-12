@@ -38,6 +38,7 @@ bool | variavel booleana de true ou false
 static | Variavel correspondente a classe
 var | variavel sem atribuição de tipo diretamente, pelo seu valor inserido após a declaração, ela define o tipo.
 partial | Define que a classe continua neste arquivo.
+decimal | Define o valor como decimal. (Necessita de uma letra no final do número -> 19.99m)
 
 ## método GET e SET
 
@@ -807,8 +808,6 @@ namespace ConsoleApp. Contexts {
 }
 ~~~~
 
-
-
 ## Classes úteis
 
 ## ModelBuilder
@@ -847,3 +846,16 @@ Classe auxiliar para trabalhar com arquivos.
 
 to do list.
  
+
+## DotNetCore -> Criando aplicação
+
+pelo prompt de comando, navegar até uma pasta vazia determinada para o projeto, e dar o comando -> dotnet new (Tipo de aplicação.)
+
+> C:/Users/everton.auth/Workstation/estudos-direcionados-mega/. NET/web>dotnet new web
+
+(Trocar as "/" -> "\\\")
+
+## DotnetCore -> Rodando a aplicação
+
+pelo cmd, acessar a pasta raiz onde foi criado o projeto e executar o comando -> dotnet run
+
