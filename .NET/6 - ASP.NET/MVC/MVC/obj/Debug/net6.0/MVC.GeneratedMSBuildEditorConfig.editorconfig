@@ -15,12 +15,20 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\6 - ASP.NET\MVC\MVC
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/everton.auth/Workstation/estudos-direcionados-mega/.NET/6 - ASP.NET/MVC/MVC/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[C:/Users/everton.auth/Workstation/estudos-direcionados-mega/.NET/6 - ASP.NET/MVC/MVC/Views/Pedido/Cadastro.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkaWRvXENhZGFzdHJvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/everton.auth/Workstation/estudos-direcionados-mega/.NET/6 - ASP.NET/MVC/MVC/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[C:/Users/everton.auth/Workstation/estudos-direcionados-mega/.NET/6 - ASP.NET/MVC/MVC/Views/Pedido/Carrinho.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkaWRvXENhcnJpbmhvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/everton.auth/Workstation/estudos-direcionados-mega/.NET/6 - ASP.NET/MVC/MVC/Views/Pedido/Carrossel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkaWRvXENhcnJvc3NlbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/everton.auth/Workstation/estudos-direcionados-mega/.NET/6 - ASP.NET/MVC/MVC/Views/Pedido/Resumo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkaWRvXFJlc3Vtby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/everton.auth/Workstation/estudos-direcionados-mega/.NET/6 - ASP.NET/MVC/MVC/Views/Shared/Error.cshtml]

@@ -1,0 +1,730 @@
+﻿++Solução 'MVC' ‎(1 de 1 projeto)
+i:{00000000-0000-0000-0000-000000000000}:MVC.sln
+++MVC
+++Connected Services 
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:>301
+++Dependências
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:>300
+++Properties
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\properties\
+++wwwroot
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\
+++css
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\css\
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\bootstrap\dist\css\
+++site.css
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\css\site.css
+++js
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\js\
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\bootstrap\dist\js\
+++lib
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\
+++favicon.ico
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\favicon.ico
+++Controllers
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\controllers\
+++HomeController.cs
+++Models
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\models\
+++Views
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\views\
+++Home
+++Index.cshtml
+++Privacy.cshtml
+++Shared
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\views\shared\
+++_Layout.cshtml
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\views\shared\_layout.cshtml
+++_ValidationScriptsPartial.cshtml
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\views\shared\_validationscriptspartial.cshtml
+++Error.cshtml
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\views\shared\error.cshtml
+++_ViewImports.cshtml
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\views\_viewimports.cshtml
+++_ViewStart.cshtml
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\views\_viewstart.cshtml
+++appsettings.json
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\appsettings.json
+++Program.cs
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\program.cs
+++Nenhuma dependência de serviço descoberta
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:>302
+++Analisadores
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:analisadores
+++Estruturas
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:estruturas
+++launchSettings.json
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\properties\launchsettings.json
+++site.js
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\js\site.js
+++bootstrap
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\bootstrap\
+++jquery
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\jquery\
+++jquery-validation
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\jquery-validation\
+++jquery-validation-unobtrusive
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\jquery-validation-unobtrusive\
+++ErrorViewModel.cs
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\models\errorviewmodel.cs
+++_Layout.cshtml.css
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\views\shared\_layout.cshtml.css
+++appsettings.Development.json
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\appsettings.development.json
+++Microsoft.AspNetCore.Analyzers
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
+++Microsoft.AspNetCore.App.Analyzers
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+++Microsoft.AspNetCore.App.CodeFixes
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+++Microsoft.AspNetCore.Components.Analyzers
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
+++Microsoft.AspNetCore.Mvc.Analyzers
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
+++Microsoft.AspNetCore.Razor.Internal.SourceGenerator.Transport
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk.razor\source-generators\microsoft.aspnetcore.razor.internal.sourcegenerator.transport.dll
+++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+++Microsoft.CodeAnalysis.NetAnalyzers
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+++Microsoft.Extensions.Logging.Generators
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+++Microsoft.NET.Sdk.Razor.SourceGenerators
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk.razor\source-generators\microsoft.net.sdk.razor.sourcegenerators.dll
+++System.Text.Json.SourceGeneration
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.0\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+++Microsoft.AspNetCore.App
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\microsoft.aspnetcore.app
+++Microsoft.NETCore.App
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\microsoft.netcore.app
+++dist
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\bootstrap\dist\
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\jquery\dist\
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\jquery-validation\dist\
+++LICENSE
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\bootstrap\license
+++LICENSE.txt
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\jquery\license.txt
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\jquery-validation-unobtrusive\license.txt
+++LICENSE.md
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\jquery-validation\license.md
+++jquery.validate.unobtrusive.js
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
+++jquery.js
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\jquery\dist\jquery.js
+++additional-methods.js
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\jquery-validation\dist\additional-methods.js
+++jquery.validate.js
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\jquery-validation\dist\jquery.validate.js
+++jquery.validate.unobtrusive.min.js
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
+++bootstrap.css
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\bootstrap\dist\css\bootstrap.css
+++bootstrap-grid.css
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+++bootstrap-reboot.css
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+++bootstrap-utilities.css
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
+++bootstrap.js
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\bootstrap\dist\js\bootstrap.js
+++jquery.min.js
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\jquery\dist\jquery.min.js
+++additional-methods.min.js
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+++jquery.validate.min.js
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+++bootstrap.css.map
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+++bootstrap.min.css
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+++bootstrap.rtl.css
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
+++bootstrap-grid.css.map
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+++bootstrap-grid.min.css
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+++bootstrap-grid.rtl.css
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
+++bootstrap-reboot.css.map
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+++bootstrap-reboot.min.css
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+++bootstrap-reboot.rtl.css
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
+++bootstrap-utilities.css.map
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
+++bootstrap-utilities.min.css
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
+++bootstrap-utilities.rtl.css
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
+++bootstrap.bundle.js
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+++bootstrap.esm.js
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
+++bootstrap.js.map
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+++bootstrap.min.js
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+++jquery.min.map
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\jquery\dist\jquery.min.map
+++bootstrap.min.css.map
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+++bootstrap.rtl.css.map
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
+++bootstrap.rtl.min.css
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
+++bootstrap-grid.min.css.map
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+++bootstrap-grid.rtl.css.map
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
+++bootstrap-grid.rtl.min.css
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
+++bootstrap-reboot.min.css.map
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+++bootstrap-reboot.rtl.css.map
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
+++bootstrap-reboot.rtl.min.css
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
+++bootstrap-utilities.min.css.map
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
+++bootstrap-utilities.rtl.css.map
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
+++bootstrap-utilities.rtl.min.css
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
+++bootstrap.bundle.js.map
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+++bootstrap.bundle.min.js
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+++bootstrap.esm.js.map
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
+++bootstrap.esm.min.js
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
+++bootstrap.min.js.map
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+++bootstrap.rtl.min.css.map
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
+++bootstrap-grid.rtl.min.css.map
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
+++bootstrap-reboot.rtl.min.css.map
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+++bootstrap-utilities.rtl.min.css.map
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
+++bootstrap.bundle.min.js.map
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+++bootstrap.esm.min.js.map
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
+++Documentos de Script
+++VM5
+++aspnetcore-browser-refresh.js
+++browserLink
+++chromewebdata
+++VM12
+++VM13
+++VM14
+++VM15
+++VM16
+++VM17
+++VM18
+++VM19
+++VM20
+++VM21
+++VM22
+++VM23
+++VM24
+++VM25
+++VM26
+++VM27
+++VM28
+++VM29
+++VM30
+++VM31
+++VM32
+++VM33
+++VM34
+++VM35
+++VM36
+++VM37
+++VM38
+++VM39
+++VM40
+++teste.cshtml
+++Cadastro.cshtml
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\views\pedido\cadastro.cshtml
+++Carrinho.cshtml
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\views\pedido\carrinho.cshtml
+++Carrossel.cshtml
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\views\pedido\carrossel.cshtml
+++Resumo.cshtml
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\views\pedido\resumo.cshtml
+++Produto
+++NovaPasta
+++Images
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\
+++products
+++large_001.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_001.jpg
+++large_002.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_002.jpg
+++large_003.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_003.jpg
+++large_004.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_004.jpg
+++large_005.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_005.jpg
+++large_006.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_006.jpg
+++large_007.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_007.jpg
+++large_008.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_008.jpg
+++large_009.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_009.jpg
+++large_010.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_010.jpg
+++large_011.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_011.jpg
+++large_012.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_012.jpg
+++large_013.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_013.jpg
+++large_014.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_014.jpg
+++large_015.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_015.jpg
+++large_016.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_016.jpg
+++large_017.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_017.jpg
+++large_018.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_018.jpg
+++large_019.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_019.jpg
+++large_020.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_020.jpg
+++large_021.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_021.jpg
+++large_022.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_022.jpg
+++large_023.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_023.jpg
+++large_024.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_024.jpg
+++large_025.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_025.jpg
+++large_026.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_026.jpg
+++large_027.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_027.jpg
+++large_028.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_028.jpg
+++large_029.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_029.jpg
+++large_030.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_030.jpg
+++large_031.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_031.jpg
+++large_032.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_032.jpg
+++large_033.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_033.jpg
+++large_034.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_034.jpg
+++large_035.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_035.jpg
+++large_036.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_036.jpg
+++large_037.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_037.jpg
+++large_038.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_038.jpg
+++large_039.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_039.jpg
+++large_040.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_040.jpg
+++large_041.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_041.jpg
+++large_042.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_042.jpg
+++large_043.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_043.jpg
+++large_044.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_044.jpg
+++large_045.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_045.jpg
+++large_046.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_046.jpg
+++large_047.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_047.jpg
+++large_048.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_048.jpg
+++large_049.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_049.jpg
+++large_050.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_050.jpg
+++large_051.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_051.jpg
+++large_052.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_052.jpg
+++large_053.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_053.jpg
+++large_054.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_054.jpg
+++large_055.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_055.jpg
+++large_056.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_056.jpg
+++large_057.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_057.jpg
+++large_058.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_058.jpg
+++large_059.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_059.jpg
+++large_060.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_060.jpg
+++large_061.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_061.jpg
+++large_062.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_062.jpg
+++large_063.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_063.jpg
+++large_064.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_064.jpg
+++large_065.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_065.jpg
+++large_066.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_066.jpg
+++large_067.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_067.jpg
+++large_068.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_068.jpg
+++large_069.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_069.jpg
+++large_070.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_070.jpg
+++large_071.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_071.jpg
+++large_072.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_072.jpg
+++large_073.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_073.jpg
+++large_074.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_074.jpg
+++large_075.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_075.jpg
+++large_076.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_076.jpg
+++large_077.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_077.jpg
+++large_078.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_078.jpg
+++large_079.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_079.jpg
+++large_080.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_080.jpg
+++large_081.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_081.jpg
+++large_082.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_082.jpg
+++large_083.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_083.jpg
+++large_084.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_084.jpg
+++large_085.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_085.jpg
+++large_086.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_086.jpg
+++large_087.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_087.jpg
+++large_088.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_088.jpg
+++large_089.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_089.jpg
+++large_090.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_090.jpg
+++large_091.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_091.jpg
+++large_092.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_092.jpg
+++large_093.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_093.jpg
+++large_094.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_094.jpg
+++large_095.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_095.jpg
+++large_096.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_096.jpg
+++large_097.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_097.jpg
+++large_098.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_098.jpg
+++large_099.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_099.jpg
+++large_100.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_100.jpg
+++large_101.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_101.jpg
+++large_102.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_102.jpg
+++large_103.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_103.jpg
+++large_104.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_104.jpg
+++large_105.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_105.jpg
+++large_106.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_106.jpg
+++large_107.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_107.jpg
+++large_108.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_108.jpg
+++large_109.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_109.jpg
+++large_110.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_110.jpg
+++large_111.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_111.jpg
+++large_112.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_112.jpg
+++large_113.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_113.jpg
+++large_114.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_114.jpg
+++large_115.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_115.jpg
+++large_116.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_116.jpg
+++large_117.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_117.jpg
+++large_118.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_118.jpg
+++large_119.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_119.jpg
+++large_120.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_120.jpg
+++large_121.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_121.jpg
+++large_122.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_122.jpg
+++large_123.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_123.jpg
+++large_124.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_124.jpg
+++large_125.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_125.jpg
+++large_126.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_126.jpg
+++large_127.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_127.jpg
+++large_128.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_128.jpg
+++large_129.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_129.jpg
+++large_130.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_130.jpg
+++large_131.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_131.jpg
+++large_132.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_132.jpg
+++large_133.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_133.jpg
+++large_134.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_134.jpg
+++large_135.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_135.jpg
+++large_136.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_136.jpg
+++large_137.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_137.jpg
+++large_138.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_138.jpg
+++large_139.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_139.jpg
+++large_140.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_140.jpg
+++large_141.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_141.jpg
+++large_142.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_142.jpg
+++large_143.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_143.jpg
+++large_144.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_144.jpg
+++large_145.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_145.jpg
+++large_146.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_146.jpg
+++large_147.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_147.jpg
+++large_148.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_148.jpg
+++large_149.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_149.jpg
+++large_150.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_150.jpg
+++large_151.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_151.jpg
+++large_152.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_152.jpg
+++large_153.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_153.jpg
+++large_154.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_154.jpg
+++large_155.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_155.jpg
+++large_156.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_156.jpg
+++large_157.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_157.jpg
+++large_158.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_158.jpg
+++large_159.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_159.jpg
+++large_160.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_160.jpg
+++large_161.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_161.jpg
+++large_162.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_162.jpg
+++large_163.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_163.jpg
+++large_164.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_164.jpg
+++large_165.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_165.jpg
+++large_166.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_166.jpg
+++large_167.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_167.jpg
+++large_168.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_168.jpg
+++large_169.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_169.jpg
+++large_170.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_170.jpg
+++large_171.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_171.jpg
+++large_172.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_172.jpg
+++large_173.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_173.jpg
+++large_174.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_174.jpg
+++large_175.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_175.jpg
+++large_176.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_176.jpg
+++large_177.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_177.jpg
+++large_178.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_178.jpg
+++large_179.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_179.jpg
+++large_180.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_180.jpg
+++large_181.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_181.jpg
+++large_182.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_182.jpg
+++large_183.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_183.jpg
+++large_184.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_184.jpg
+++large_185.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_185.jpg
+++large_186.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_186.jpg
+++large_187.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_187.jpg
+++large_188.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_188.jpg
+++large_189.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_189.jpg
+++large_190.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_190.jpg
+++large_191.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_191.jpg
+++large_192.jpg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\large_192.jpg
+++livros.txt
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\livros.txt
+++logo.png
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\logo.png
+++banner1.svg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\banner1.svg
+++banner2.svg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\banner2.svg
+++banner3.svg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\banner3.svg
+++banner4.svg
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\banner4.svg
+++Pedido
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\views\pedido\
+++PedidoController.cs
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\controllers\pedidocontroller.cs
+++produtos
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\wwwroot\images\produtos\
+++VM48
+++VM49
+++VM50
+++VM51
+++VM52
+++VM53
+++VM54
+++VM55
+++VM56
+++VM57
+++VM58
+++VM59
+++VM60
+++VM61
+++VM62
+++VM63
+++VM64
+++VM65
+++VM66
+++VM67
+++VM68
+++VM69
+++VM70
+++VM71
+++VM72
+++VM73
+++VM74
+++VM75
+++VM76
+++Classes
+++_Classes
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\_classes\
+++Cadastro.cd
+++Cadastro.cs
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\_classes\cadastro.cs
+++Pedido.cs
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\_classes\pedido.cs
+++itemPedido.cs
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\_classes\itempedido.cs
+++Produto.cs
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\_classes\produto.cs
+++_Interface
+++IBaseModel.cs
+++BaseModel.cs
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\_classes\basemodel.cs
+++_Database
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\_database\
+++ApplicationContext.cs
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\_database\applicationcontext.cs
+++Pacotes
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:pacotes
+++Microsoft.EntityFrameworkCore (6.0.0)
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:>1090
+++Microsoft.EntityFrameworkCore.Analyzers
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.0\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+++Microsoft.EntityFrameworkCore.SqlServer (6.0.0)
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:>986
+++MainServices.cs
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:c:\users\everton.auth\workstation\estudos-direcionados-mega\.net\6 - asp.net\mvc\mvc\_classes\mainservices.cs
+++localhost:44322
+++EntityFramework (6.4.4)
+i:{d1e148ec-8328-4e68-b8a0-32f39397cb71}:>1091
+++CasaDoCodigo
+i:{00000000-0000-0000-0000-000000000000}:CasaDoCodigo
