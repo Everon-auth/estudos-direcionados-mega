@@ -10,7 +10,7 @@ public class Relatorio : IRelatorio{
     }
 
     async public Task Imprimir( HttpContext context ) {
-        await context.Response.WriteAsync( catalogo.GetLivros() );
+        await context.Response.WriteAsync( catalogo.GetLivros()[0] );
         /*       foreach( var livro in catalogo ) {
                   Console.WriteLine( $"Livro: {livro}" );
                   await context.Response.WriteAsync( $" {livro}\n" );

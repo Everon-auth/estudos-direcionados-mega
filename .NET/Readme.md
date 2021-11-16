@@ -858,4 +858,3 @@ pelo prompt de comando, navegar até uma pasta vazia determinada para o projeto,
 ## DotnetCore -> Rodando a aplicação
 
 pelo cmd, acessar a pasta raiz onde foi criado o projeto e executar o comando -> dotnet run
-
