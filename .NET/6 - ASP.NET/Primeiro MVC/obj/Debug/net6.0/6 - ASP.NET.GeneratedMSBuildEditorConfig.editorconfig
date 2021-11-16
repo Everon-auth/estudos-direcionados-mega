@@ -1,0 +1,44 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = _6___ASP.NET
+build_property.RootNamespace = _6___ASP.NET
+build_property.ProjectDir = C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\6 - ASP.NET\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\6 - ASP.NET
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/everton.auth/Workstation/estudos-direcionados-mega/.NET/6 - ASP.NET/Primeiro MVC/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UHJpbWVpcm8gTVZDXFZpZXdzXEhvbWVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/everton.auth/Workstation/estudos-direcionados-mega/.NET/6 - ASP.NET/Primeiro MVC/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UHJpbWVpcm8gTVZDXFZpZXdzXEhvbWVcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/everton.auth/Workstation/estudos-direcionados-mega/.NET/6 - ASP.NET/Primeiro MVC/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UHJpbWVpcm8gTVZDXFZpZXdzXFNoYXJlZFxFcnJvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/everton.auth/Workstation/estudos-direcionados-mega/.NET/6 - ASP.NET/Primeiro MVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UHJpbWVpcm8gTVZDXFZpZXdzXFNoYXJlZFxfVmFsaWRhdGlvblNjcmlwdHNQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/everton.auth/Workstation/estudos-direcionados-mega/.NET/6 - ASP.NET/Primeiro MVC/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UHJpbWVpcm8gTVZDXFZpZXdzXF9WaWV3SW1wb3J0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/everton.auth/Workstation/estudos-direcionados-mega/.NET/6 - ASP.NET/Primeiro MVC/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UHJpbWVpcm8gTVZDXFZpZXdzXF9WaWV3U3RhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/everton.auth/Workstation/estudos-direcionados-mega/.NET/6 - ASP.NET/Primeiro MVC/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UHJpbWVpcm8gTVZDXFZpZXdzXFNoYXJlZFxfTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-rst7sjsja6

@@ -840,6 +840,22 @@ Classe responsável por escrever em arquivos sem se preocupar com as bytes neces
 
 Classe auxiliar para trabalhar com arquivos.
 
+### HttpContext
+
+Classe responsável pela parte do HTTP, sessão, tokens...
+
+### Projeto em ASP. NET CORE v6 com MVC
+
+MVC -> ModelViewController
+
+Controller -> Controla a View.
+Model -> Dados para a View.
+View -> Design de vizualização dos dados (HTML).
+
+cmd -> dotnet new mvc
+
+
+
 # Desafio
 
 ## Comunicação Angular e C# (. NET Core) via socket

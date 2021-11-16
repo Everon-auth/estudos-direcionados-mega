@@ -1,0 +1,26 @@
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\6 - ASP.NET\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\6 - ASP.NET\bin\Debug\net6.0\appsettings.json
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\6 - ASP.NET\bin\Debug\net6.0\6 - ASP.NET.staticwebassets.runtime.json
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\6 - ASP.NET\bin\Debug\net6.0\6 - ASP.NET.exe
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\6 - ASP.NET\bin\Debug\net6.0\6 - ASP.NET.deps.json
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\6 - ASP.NET\bin\Debug\net6.0\6 - ASP.NET.runtimeconfig.json
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\6 - ASP.NET\bin\Debug\net6.0\6 - ASP.NET.dll
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\6 - ASP.NET\bin\Debug\net6.0\ref\6 - ASP.NET.dll
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\6 - ASP.NET\bin\Debug\net6.0\6 - ASP.NET.pdb
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\6 - ASP.NET\obj\Debug\net6.0\6 - ASP.NET.csproj.AssemblyReference.cache
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\6 - ASP.NET\obj\Debug\net6.0\6 - ASP.NET.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\6 - ASP.NET\obj\Debug\net6.0\6 - ASP.NET.AssemblyInfoInputs.cache
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\6 - ASP.NET\obj\Debug\net6.0\6 - ASP.NET.AssemblyInfo.cs
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\6 - ASP.NET\obj\Debug\net6.0\6 - ASP.NET.csproj.CoreCompileInputs.cache
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\6 - ASP.NET\obj\Debug\net6.0\6 - ASP.NET.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\6 - ASP.NET\obj\Debug\net6.0\6 - ASP.NET.RazorAssemblyInfo.cache
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\6 - ASP.NET\obj\Debug\net6.0\6 - ASP.NET.RazorAssemblyInfo.cs
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\6 - ASP.NET\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\6 - ASP.NET\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\6 - ASP.NET\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\6 - ASP.NET\obj\Debug\net6.0\scopedcss\bundle\6 - ASP.NET.styles.css
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\6 - ASP.NET\obj\Debug\net6.0\scopedcss\projectbundle\6 - ASP.NET.bundle.scp.css
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\6 - ASP.NET\obj\Debug\net6.0\6 - ASP.NET.dll
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\6 - ASP.NET\obj\Debug\net6.0\ref\6 - ASP.NET.dll
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\6 - ASP.NET\obj\Debug\net6.0\6 - ASP.NET.pdb
+C:\Users\everton.auth\Workstation\estudos-direcionados-mega\.NET\6 - ASP.NET\obj\Debug\net6.0\6 - ASP.NET.genruntimeconfig.cache

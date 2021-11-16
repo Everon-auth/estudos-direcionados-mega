@@ -2,7 +2,7 @@
 using web.Interfaces;
 using web.Recipes;
 
-public class Relatorio : IRelatorio{
+public class Relatorio : IRelatorio {
     private ICatalogo catalogo;
 
     public Relatorio( ICatalogo _catalogo ) {
@@ -10,11 +10,9 @@ public class Relatorio : IRelatorio{
     }
 
     async public Task Imprimir( HttpContext context ) {
-        await context.Response.WriteAsync( catalogo.GetLivros()[0] );
-        /*       foreach( var livro in catalogo ) {
-                  Console.WriteLine( $"Livro: {livro}" );
-                  await context.Response.WriteAsync( $" {livro}\n" );
-              } */
+        foreach( var livro in catalogo.GetLivros() ) {
+            await context.Response.WriteAsync( $"ID: {livro.Id};    Nome: {livro.Nome};     Preco: {livro.Preco}\n" );
+        }
     }
 
 }
