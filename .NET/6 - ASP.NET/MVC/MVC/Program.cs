@@ -1,5 +1,4 @@
-using System;
-using System.Collections.Generic;
+using MVC;
 using System.Text.Json;
 
 var builder = WebApplication.CreateBuilder( args );
@@ -23,12 +22,12 @@ using( var scope = app.Services.CreateScope() ) {
     try {
         var context = services.GetRequiredService<ApplicationContext>();
         context.Database.EnsureCreated();
+        var repo = new ProdutoRepository( context );
+        repo.SaveProdutos( app );
 
-        var json = File.ReadAllText( "livros.json" );
-        
     } catch( Exception ex ) {
         var logger = services.GetRequiredService<ILogger<Program>>();
-        logger.LogError( ex , "An error occurred while seeding the database." );
+        logger.LogError( ex.Message );
     }
 }
 

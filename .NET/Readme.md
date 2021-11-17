@@ -914,4 +914,4 @@ pelo prompt de comando, navegar até uma pasta vazia determinada para o projeto,
 
 pelo cmd, acessar a pasta raiz onde foi criado o projeto e executar o comando -> dotnet run
 
-vide 21 min 3
+videoaula 25 min 0.

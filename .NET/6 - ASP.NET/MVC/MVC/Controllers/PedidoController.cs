@@ -2,12 +2,20 @@
 
 namespace MVC.Controllers {
     public class PedidoController : Controller {
+
+
+        private IProdutoRepository _produtoRepository;
+
+        public PedidoController( IProdutoRepository produtoRepository ) {
+            this._produtoRepository = produtoRepository;
+        }
+
         public ActionResult Cadastro() {
             return View();
         }
 
         public ActionResult Carrossel() {
-            return View();
+            return View( _produtoRepository.GetProdutos() );
         }
 
         public ActionResult Resumo() {
