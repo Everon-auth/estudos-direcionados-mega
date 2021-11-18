@@ -13,7 +13,4 @@
     <SourceRoot Include="C:\Users\Everton\.nuget\packages\" />
     <SourceRoot Include="E:\Program Files\SDK\NuGetPackages\" />
   </ItemGroup>
-  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgMicrosoft_EntityFrameworkCore_Tools Condition=" '$(PkgMicrosoft_EntityFrameworkCore_Tools)' == '' ">C:\Users\Everton\.nuget\packages\microsoft.entityframeworkcore.tools\2.0.0</PkgMicrosoft_EntityFrameworkCore_Tools>
-  </PropertyGroup>
 </Project>

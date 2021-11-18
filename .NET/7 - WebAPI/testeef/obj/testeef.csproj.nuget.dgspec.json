@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Workstation\\estudos-direcionados-mega\\.NET\\6 - ASP.NET\\MVC\\MVC\\CasaDoCodigo.csproj": {}
+    "E:\\Workstation\\estudos-direcionados-mega\\.NET\\7 - WebAPI\\testeef\\testeef.csproj": {}
   },
   "projects": {
-    "E:\\Workstation\\estudos-direcionados-mega\\.NET\\6 - ASP.NET\\MVC\\MVC\\CasaDoCodigo.csproj": {
+    "E:\\Workstation\\estudos-direcionados-mega\\.NET\\7 - WebAPI\\testeef\\testeef.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Workstation\\estudos-direcionados-mega\\.NET\\6 - ASP.NET\\MVC\\MVC\\CasaDoCodigo.csproj",
-        "projectName": "CasaDoCodigo",
-        "projectPath": "E:\\Workstation\\estudos-direcionados-mega\\.NET\\6 - ASP.NET\\MVC\\MVC\\CasaDoCodigo.csproj",
+        "projectUniqueName": "E:\\Workstation\\estudos-direcionados-mega\\.NET\\7 - WebAPI\\testeef\\testeef.csproj",
+        "projectName": "testeef",
+        "projectPath": "E:\\Workstation\\estudos-direcionados-mega\\.NET\\7 - WebAPI\\testeef\\testeef.csproj",
         "packagesPath": "C:\\Users\\Everton\\.nuget\\packages\\",
-        "outputPath": "E:\\Workstation\\estudos-direcionados-mega\\.NET\\6 - ASP.NET\\MVC\\MVC\\obj\\",
+        "outputPath": "E:\\Workstation\\estudos-direcionados-mega\\.NET\\7 - WebAPI\\testeef\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "E:\\Program Files\\SDK\\NuGetPackages"
@@ -22,15 +22,15 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "netcoreapp3.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -41,18 +41,12 @@
         }
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
-            "Microsoft.EntityFrameworkCore.SqlServer": {
+            "Microsoft.EntityFrameworkCore.InMemory": {
               "target": "Package",
-              "version": "[2.0.0, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.0.0, )"
+              "version": "[3.0.0, )"
             }
           },
           "imports": [
