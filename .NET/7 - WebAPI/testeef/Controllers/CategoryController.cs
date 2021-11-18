@@ -4,6 +4,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using testeef.Data;
 using testeef.Models;
+using System.Text.Json;
+using System;
 
 namespace testeef.Controllers {
 
@@ -25,16 +27,16 @@ namespace testeef.Controllers {
 
         public async Task<ActionResult<Category>> Post(
             [FromServices] DataContext context ,
-            [FromBody] Category model ) {
-
+            [FromBody] Category Model ) {
             if( ModelState.IsValid ) {
-                context.categories.Add( model );
+                context.categories.Add( Model );
                 await context.SaveChangesAsync();
-                return model;
+                return Model;
             } else {
                 return BadRequest( ModelState );
             }
         }
+
 
     }
 }
