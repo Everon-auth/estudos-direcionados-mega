@@ -687,6 +687,7 @@ contas. OrderBy(conta => conta. Numero)
 ## Entity Framework
 
 Framework que substitui o uso do ADO. NET, dominuindo o tamanho de código.
+Comunica com o banco de dados, faz as requisições nas tabelas do Database usando a classe dbset e também tem como fazer a ageração de tabelas por migração de database com as classes definidas como um dbset de uma tabela.
 
 Crud com Entity:
 ~~~~CSharp
@@ -912,6 +913,157 @@ pelo prompt de comando, navegar até uma pasta vazia determinada para o projeto,
 
 ## DotnetCore -> Rodando a aplicação
 
-pelo cmd, acessar a pasta raiz onde foi criado o projeto e executar o comando -> dotnet run
+Pelo cmd, acessar a pasta raiz onde foi criado o projeto e executar o comando -> dotnet run
 
-video 6 ajax min 6
+## Criação de API com dotNET Core e entity framework
+
+API é um conjunto de definições e protocolos usado no desenvolvimento e na integração de software de aplicações. API é um acrônimo em inglês que significa interface de programação de aplicações. As APIs costumam ser vistas como contratos, com documentações que representam um acordo entre as partes interessadas.
+
+~~~~Csharp
+
+// controller de quais endereços a api vai receber os dados e da pra configurar as regras de negócio em alguma coisa aqui.
+
+using System. Collections. Generic; 
+using System. Threading. Tasks; 
+using Microsoft. AspNetCore. Mvc; 
+using Microsoft. EntityFrameworkCore; 
+using testeef. Data; 
+using testeef. Models; 
+using System. Text. Json; 
+using System; 
+
+namespace testeef. Controllers {
+
+    [ApiController]
+    [Route( "/categories" )]
+
+    public class CategoryController : ControllerBase {
+
+        [HttpGet]
+        [Route( "" )]
+
+        public async Task<ActionResult<List<Category>>> Get( [FromServices] DataContext context ) {
+            var categories = await context.categories.ToListAsync();
+            return categories;
+        }
+
+        [HttpPost]
+        [Route( "" )]
+
+        public async Task<ActionResult<Category>> Post(
+            [FromServices] DataContext context ,
+            [FromBody] Category Model ) {
+            if( ModelState.IsValid ) {
+                context.categories.Add( Model );
+                await context.SaveChangesAsync();
+                return Model;
+            } else {
+                return BadRequest( ModelState );
+            }
+        }
+
+    }
+
+}
+
+// startup.cs (parte dos services principalmente)
+
+using Microsoft. AspNetCore. Builder; 
+using Microsoft. AspNetCore. Hosting; 
+using Microsoft. AspNetCore. HttpsPolicy; 
+using Microsoft. AspNetCore. Mvc; 
+using Microsoft. EntityFrameworkCore; 
+using Microsoft. Extensions. Configuration; 
+using Microsoft. Extensions. DependencyInjection; 
+using Microsoft. Extensions. Hosting; 
+using Microsoft. Extensions. Logging; 
+using System; 
+using System. Collections. Generic; 
+using System. Linq; 
+using System. Threading. Tasks; 
+using testeef. Data; 
+
+namespace testeef {
+
+    public class Startup {
+        public Startup( IConfiguration configuration ) {
+            Configuration = configuration;
+        }
+
+        public IConfiguration Configuration { get; }
+
+        // This method gets called by the runtime. Use this method to add services to the container.
+        public void ConfigureServices( IServiceCollection services ) {
+
+            // Definindo o database
+            services.AddDbContext<DataContext>( opt => opt.UseInMemoryDatabase( "Database" ) );
+            // Definindo como scopo da aplicação
+            services.AddScoped<DataContext,DataContext>();
+            services.AddControllers();
+        }
+
+        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        public void Configure( IApplicationBuilder app , IWebHostEnvironment env ) {
+            if( env.IsDevelopment() ) {
+                app.UseDeveloperExceptionPage();
+            }
+
+            app.UseHttpsRedirection();
+
+            app.UseRouting();
+
+            app.UseAuthorization();
+
+            app. UseEndpoints( endpoints => {
+                endpoints. MapControllers(); 
+            } ); 
+        }
+
+    }
+
+}
+
+// comunicação com as tabelas
+
+using Microsoft. EntityFrameworkCore; 
+using testeef. Models; 
+
+namespace testeef. Data {
+
+    public class DataContext : DbContext {
+
+        public DataContext( DbContextOptions<DataContext> options )
+            : base( options: options ) {
+        }
+
+        public DbSet<Product> products { get; set; }
+        public DbSet<Category> categories { get; set; }
+
+    }
+
+}
+
+// Definição dos parametros da api
+
+using System. ComponentModel. DataAnnotations; 
+namespace testeef. Models {
+
+    public class Category {
+
+        [Key]
+
+        public int Id { get; set; }
+
+        [Required( ErrorMessage = "Este campo é obrigatório" )]
+        [MaxLength( 60 , ErrorMessage = "Este campo deve conter no máximo 60 caracteres" )]
+        [MinLength( 3 , ErrorMessage = "Este campo deve conter no mínimo 3 caracteres" )]
+        public string Title { get; set; }
+
+    }
+
+}
+~~~~
+
+## Socket (Websocket)
+
+Websocket é uma forma de comunicação entre backend e front-end, a diferença é que ela é uma comunicação aberta de entrada e saída, usada principalmente em chats para a comunicação ao vivo e distribuindo a informação igualmente pra todo mundo que estiver conectado ao Socket

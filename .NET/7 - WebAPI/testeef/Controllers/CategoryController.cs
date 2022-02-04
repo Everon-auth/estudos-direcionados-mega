@@ -10,7 +10,7 @@ using System;
 namespace testeef.Controllers {
 
     [ApiController]
-    [Route( "v1/categories" )]
+    [Route( "/categories" )]
 
     public class CategoryController : ControllerBase {
 
