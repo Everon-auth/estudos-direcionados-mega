@@ -4,12 +4,12 @@ namespace MVC.Controllers {
     public class PedidoController : Controller {
 
 
-        private IProdutoRepository _produtoRepository;
+       private IProdutoRepository _produtoRepository;
 
         public PedidoController( IProdutoRepository produtoRepository ) {
-            this._produtoRepository = produtoRepository;
+            _produtoRepository = produtoRepository;
         }
-
+         
         public ActionResult Cadastro() {
             return View();
         }

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Workstation\\estudos-direcionados-mega\\.NET\\6 - ASP.NET\\MVC\\MVC\\CasaDoCodigo.csproj": {}
+    "C:\\Users\\everton.auth\\Workstation\\estudos-direcionados-mega\\.NET\\6 - ASP.NET\\MVC\\MVC\\CasaDoCodigo.csproj": {}
   },
   "projects": {
-    "E:\\Workstation\\estudos-direcionados-mega\\.NET\\6 - ASP.NET\\MVC\\MVC\\CasaDoCodigo.csproj": {
+    "C:\\Users\\everton.auth\\Workstation\\estudos-direcionados-mega\\.NET\\6 - ASP.NET\\MVC\\MVC\\CasaDoCodigo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Workstation\\estudos-direcionados-mega\\.NET\\6 - ASP.NET\\MVC\\MVC\\CasaDoCodigo.csproj",
+        "projectUniqueName": "C:\\Users\\everton.auth\\Workstation\\estudos-direcionados-mega\\.NET\\6 - ASP.NET\\MVC\\MVC\\CasaDoCodigo.csproj",
         "projectName": "CasaDoCodigo",
-        "projectPath": "E:\\Workstation\\estudos-direcionados-mega\\.NET\\6 - ASP.NET\\MVC\\MVC\\CasaDoCodigo.csproj",
-        "packagesPath": "C:\\Users\\Everton\\.nuget\\packages\\",
-        "outputPath": "E:\\Workstation\\estudos-direcionados-mega\\.NET\\6 - ASP.NET\\MVC\\MVC\\obj\\",
+        "projectPath": "C:\\Users\\everton.auth\\Workstation\\estudos-direcionados-mega\\.NET\\6 - ASP.NET\\MVC\\MVC\\CasaDoCodigo.csproj",
+        "packagesPath": "C:\\Users\\everton.auth\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\everton.auth\\Workstation\\estudos-direcionados-mega\\.NET\\6 - ASP.NET\\MVC\\MVC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "E:\\Program Files\\SDK\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Everton\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\everton.auth\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
